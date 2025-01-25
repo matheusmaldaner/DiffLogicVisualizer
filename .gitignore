@@ -1,5 +1,8 @@
-venv/
+visualization_env/
 db.sqlite3
 mybackend/__pycache__
+mybackend/api/__pycache__
+mybackend/mybackend/__pycache__
 .DS_Store
 api/__pycache__
+mybackend/api/migrations/__pycache__
