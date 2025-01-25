@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack://[project]/components/Welcome/Welcome.module.css"],"sourcesContent":[".title {\r\n  color: var(--mantine-color-black);\r\n}\r\n  [data-mantine-color-scheme='dark'] .title {\r\n  color: var(--mantine-color-white);\r\n}\r\n  .title {\r\n  font-size: calc(6.25rem * var(--mantine-scale));\r\n  font-weight: 900;\r\n  letter-spacing: calc(-0.125rem * var(--mantine-scale));\r\n}\r\n\r\n  @media (max-width: 62em) {.title {\r\n    font-size: calc(3.125rem * var(--mantine-scale))\r\n}\r\n  }\r\n"],"names":[],"mappings":"AAAA;;;;AAGE;;;;AAGA;;;;;;AAMA;EAA0B"}},
+    {"offset": {"line": 20, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack://[project]/components/Main/Main.module.css"],"sourcesContent":[".image {\r\n    display: flex;\r\n    align-items: center;\r\n    width: 3vw;\r\n    height: 5vh;\r\n  }\r\n  \r\n    @media (max-width: 48em) {.image {\r\n      height: 42px;\r\n      width: 100%\r\n  }\r\n    }\r\n  \r\n    @media (hover: hover) {\r\n  \r\n    .image:hover {\r\n      background-color: var(--mantine-color-gray-0);\r\n    }\r\n      [data-mantine-color-scheme='dark'] .image:hover {\r\n      background-color: var(--mantine-color-dark-6);\r\n    }\r\n}\r\n  \r\n    @media (hover: none) {\r\n  \r\n    .image:active {\r\n      background-color: var(--mantine-color-gray-0);\r\n    }\r\n      [data-mantine-color-scheme='dark'] .image:active {\r\n      background-color: var(--mantine-color-dark-6);\r\n    }\r\n}"],"names":[],"mappings":"AAAA;;;;;;;AAOI;EAA0B;;;;;;AAM1B;EAEA;;;;EAGE;;;;;AAKF;EAEA;;;;EAGE"}},
+    {"offset": {"line": 34, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}

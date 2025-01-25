@@ -1,0 +1,36 @@
+/* [project]/components/Main/Main.module.css [app-client] (css) */
+.Main-module__XlLuPG__image {
+  display: flex;
+  align-items: center;
+  width: 3vw;
+  height: 5vh;
+}
+
+@media (width <= 48em) {
+  .Main-module__XlLuPG__image {
+    height: 42px;
+    width: 100%;
+  }
+}
+
+@media (hover: hover) {
+  .Main-module__XlLuPG__image:hover {
+    background-color: var(--mantine-color-gray-0);
+  }
+
+  [data-mantine-color-scheme="dark"] .Main-module__XlLuPG__image:hover {
+    background-color: var(--mantine-color-dark-6);
+  }
+}
+
+@media (hover: none) {
+  .Main-module__XlLuPG__image:active {
+    background-color: var(--mantine-color-gray-0);
+  }
+
+  [data-mantine-color-scheme="dark"] .Main-module__XlLuPG__image:active {
+    background-color: var(--mantine-color-dark-6);
+  }
+}
+
+/*# sourceMappingURL=components_Main_Main_module_b52d8e.css.map*/

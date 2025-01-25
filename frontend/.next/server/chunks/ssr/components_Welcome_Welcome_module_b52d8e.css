@@ -1,0 +1,22 @@
+/* [project]/components/Welcome/Welcome.module.css [app-client] (css) */
+.Welcome-module__NWZgAa__title {
+  color: var(--mantine-color-black);
+}
+
+[data-mantine-color-scheme="dark"] .Welcome-module__NWZgAa__title {
+  color: var(--mantine-color-white);
+}
+
+.Welcome-module__NWZgAa__title {
+  font-size: calc(6.25rem * var(--mantine-scale));
+  font-weight: 900;
+  letter-spacing: calc(-.125rem * var(--mantine-scale));
+}
+
+@media (width <= 62em) {
+  .Welcome-module__NWZgAa__title {
+    font-size: calc(3.125rem * var(--mantine-scale));
+  }
+}
+
+/*# sourceMappingURL=components_Welcome_Welcome_module_b52d8e.css.map*/

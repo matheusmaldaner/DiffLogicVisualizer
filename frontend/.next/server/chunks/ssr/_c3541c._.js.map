@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file://C%3A/Users/dsing/Desktop/ProgrammingJunkFolder/next-app-template/components/ColorSchemeToggle/ColorSchemeToggle.tsx"],"sourcesContent":["'use client';\r\n\r\nimport { Button, Group, useMantineColorScheme } from '@mantine/core';\r\n\r\nexport function ColorSchemeToggle() {\r\n  const { setColorScheme } = useMantineColorScheme();\r\n\r\n  return (\r\n    <Group justify=\"center\" mt=\"xl\">\r\n      <Button onClick={() => setColorScheme('light')}>Light</Button>\r\n      <Button onClick={() => setColorScheme('dark')}>Dark</Button>\r\n      <Button onClick={() => setColorScheme('auto')}>Auto</Button>\r\n    </Group>\r\n  );\r\n}\r\n"],"names":[],"mappings":";;;;AAEA;AAAA;AAAA;AAFA;;;AAIO,SAAS;IACd,MAAM,EAAE,cAAc,EAAE,GAAG,CAAA,GAAA,8OAAA,CAAA,wBAAqB,AAAD;IAE/C,qBACE,8OAAC,yKAAA,CAAA,QAAK;QAAC,SAAQ;QAAS,IAAG;;0BACzB,8OAAC,2KAAA,CAAA,SAAM;gBAAC,SAAS,IAAM,eAAe;0BAAU;;;;;;0BAChD,8OAAC,2KAAA,CAAA,SAAM;gBAAC,SAAS,IAAM,eAAe;0BAAS;;;;;;0BAC/C,8OAAC,2KAAA,CAAA,SAAM;gBAAC,SAAS,IAAM,eAAe;0BAAS;;;;;;;;;;;;AAGrD"}},
+    {"offset": {"line": 54, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}

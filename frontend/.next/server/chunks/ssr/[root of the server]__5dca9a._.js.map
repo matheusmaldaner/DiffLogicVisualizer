@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file://C%3A/Users/dsing/Desktop/ProgrammingJunkFolder/next-app-template/theme.ts"],"sourcesContent":["'use client';\r\n\r\nimport { createTheme } from '@mantine/core';\r\n\r\nexport const theme = createTheme({\r\n  /* Put your mantine theme override here */\r\n});\r\n"],"names":[],"mappings":";;;AAEA;AAFA;;AAIO,MAAM,QAAQ,CAAA,GAAA,0MAAA,CAAA,cAAW,AAAD,EAAE;AAEjC"}},
+    {"offset": {"line": 15, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}
