@@ -2,7 +2,7 @@ import { Node } from 'react-flow-renderer';
 import Image from 'next/image';
 import EmperorPenguinBabyImage from '../../pics/EmperorPenguinBaby.jpeg';
 
-const AndGate = () => (
+export const AndGate = () => (
   <svg
     width="80"
     height="50"
@@ -19,7 +19,7 @@ const AndGate = () => (
   </svg>
 );
 
-const OrGate = () => (
+export const OrGate = () => (
   <svg
     width="65"
     height="50"
@@ -36,7 +36,7 @@ const OrGate = () => (
   </svg>
 );
 
-const NotGate = () => (
+export const NotGate = () => (
   <svg
     width="60"
     height="50"
@@ -56,7 +56,7 @@ const NotGate = () => (
   </svg>
 );
 
-const XorGate = () => (
+export const XorGate = () => (
   <svg
     width="65"
     height="50"
@@ -81,7 +81,7 @@ const XorGate = () => (
   </svg>
 );
 
-const NorGate = () => (
+export const NorGate = () => (
   <svg
     width="70"
     height="50"
@@ -101,7 +101,7 @@ const NorGate = () => (
   </svg>
 );
 
-const XnorGate = () => (
+export const XnorGate = () => (
   <svg
     width="100"
     height="50"
@@ -128,7 +128,7 @@ const XnorGate = () => (
 );
 
 
-const NandGate = () => (
+export const NandGate = () => (
   <svg
     width="80"
     height="50"
@@ -148,7 +148,7 @@ const NandGate = () => (
   </svg>
 );
 
-const FalseGate = () => (
+export const FalseGate = () => (
   <svg
     width="50"
     height="50"
@@ -162,7 +162,7 @@ const FalseGate = () => (
   </svg>
 );
 
-const TrueGate = () => (
+export const TrueGate = () => (
   <svg
     width="50"
     height="50"
@@ -178,7 +178,7 @@ const TrueGate = () => (
 
 
 
-export const defaultNodes: Node[] = [
+export const defaultNodes: Node<any>[] = [
   {
     id: '1',
     type: 'input',
@@ -191,7 +191,9 @@ export const defaultNodes: Node[] = [
     },
     position: { x: 50, y: 50 },
     style: { backgroundColor: '#6ede87', color: 'white' },
+    // @ts-ignore to suppress TypeScript error for sourcePosition
     sourcePosition: 'right',
+    // @ts-ignore to suppress TypeScript error for sourcePosition
     targetPosition: 'left',
   },
   {
@@ -206,7 +208,9 @@ export const defaultNodes: Node[] = [
       height: 'auto', // Fit to content
       padding: 0, // Remove padding
     },
+    // @ts-ignore to suppress TypeScript error for sourcePosition
     sourcePosition: 'right',
+    // @ts-ignore to suppress TypeScript error for sourcePosition
     targetPosition: 'left',
   },
   {
@@ -215,7 +219,9 @@ export const defaultNodes: Node[] = [
     data: { label: 'Output Node' },
     position: { x: 500, y: 50 },
     style: { backgroundColor: '#6865A5', color: 'white' },
+    // @ts-ignore to suppress TypeScript error for sourcePosition
     sourcePosition: 'right',
+    // @ts-ignore to suppress TypeScript error for sourcePosition
     targetPosition: 'left',
   },
 ];
