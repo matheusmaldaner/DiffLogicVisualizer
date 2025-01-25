@@ -1,19 +1,24 @@
 'use client';
+
 import { Grid, Container } from '@mantine/core';
 import Image from 'next/image';
 import classes from './Main.module.css';
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState, useCallback } from 'react';
 import * as d3 from 'd3';
 
-import { ReactFlow, MiniMap } from '@xyflow/react';
+import { ReactFlow, MiniMap, applyNodeChanges, applyEdgeChanges } from '@xyflow/react';
 import '@xyflow/react/dist/style.css';
 
 import EmperorPenguinBabyImage from '../../pics/EmperorPenguinBaby.jpeg';
 import SouthernRockhopperPenguinImage from '../../pics/SouthernRockhopperPenguin.jpg';
 import GentooPenguin from '../../pics/GentooPenguin.jpg';
 
-import { defaultNodes } from './nodes';
+import { AndGate, NorGate, OrGate, XorGate, NandGate, XnorGate, TrueGate, FalseGate, NotGate } from './nodes';
 import { defaultEdges } from './edges';
+
+import NodeGate from '../NodeGate';
+
+import jsonData from '../../temp.json';
 
 export function Main(props: any) {
   const [leftImagePosition, setLeftImagePosition] = useState<{ top: number, left: number }>({ top: 0, left: 0 });
@@ -22,6 +27,72 @@ export function Main(props: any) {
   const leftImageRef = useRef<HTMLImageElement | null>(null);
   const centerImageRef = useRef<HTMLImageElement | null>(null);
 
+  const [defaultNodes, setDefaultNodes] = useState<any[]>([]);
+  const [defaultEdges, setDefaultEdges] = useState<any[]>([]);
+
+
+  useEffect(() => {
+    // Map gate strings to corresponding components
+    const gateMap = {
+      'not': <NotGate />,
+      'and': <AndGate />,
+      'or': <OrGate />,
+      'xnor': <XnorGate />,
+      'true': <TrueGate />,
+    };
+
+    // Create new nodes based on jsonData
+    const newNodes = jsonData.map((node: { neuron_idx: number; gate: string; inputs: number[] }) => {
+      const [left, right] = node.inputs;
+      const nodeGate = new NodeGate(node.neuron_idx.toString(), node.gate, left.toString(), right.toString());
+
+      // @ts-ignore
+      const gateComponent = gateMap[node.gate] || <div>Unknown Gate</div>;
+
+      return {
+        id: nodeGate.index, // Use index for id
+        data: { label: gateComponent }, // Example label
+        position: { x: Math.random() * 500, y: Math.random() * 500 }, // Random position
+        style: {
+          backgroundColor: 'transparent',
+          border: 'none',
+          boxShadow: 'none',
+          width: 'auto',
+          height: 'auto',
+          padding: 0,
+        },
+        sourcePosition: 'right',
+        targetPosition: 'left',
+      };
+    });
+
+    const newEdges = jsonData.flatMap((node: { neuron_idx: number; inputs: number[] }) => {
+      return node.inputs.map((inputIdx: number) => ({
+        id: `e${inputIdx}-${node.neuron_idx}`,
+        source: inputIdx.toString(),
+        target: node.neuron_idx.toString(),
+        animated: true, // Optional: you can toggle the animation
+      }));
+    });
+
+    // Update state with generated nodes
+    setDefaultNodes(newNodes);
+    setDefaultEdges(newEdges);
+  }, []); // Empty dependency array to run once on mount
+
+
+  const onNodesChange = useCallback(
+    // @ts-ignore to suppress TypeScript error
+    (changes) => setDefaultNodes((nds) => applyNodeChanges(changes, nds)),
+    []
+  );
+
+  const onEdgesChange = useCallback(
+    // @ts-ignore to suppress TypeScript error
+    (changes) => setDefaultEdges((eds) => applyEdgeChanges(changes, eds)),
+    []
+  );
+  
   const [selectedImage, setSelectedImage] = useState(EmperorPenguinBabyImage);
 
   useEffect(() => {
@@ -71,7 +142,7 @@ export function Main(props: any) {
     }
   }, [leftImagePosition, centerImagePosition]);
 
-  const nodeColor = (node) => {
+  const nodeColor = (node: any) => {
     switch (node.type) {
       case 'input':
         return '#6ede87';
@@ -84,9 +155,12 @@ export function Main(props: any) {
 
   return (
     <div style={{ height: '500px', width: '100%' }}> {/* Specify a height */}
-        <ReactFlow defaultNodes={defaultNodes} defaultEdges={defaultEdges} fitView>
-          <MiniMap nodeColor={nodeColor} nodeStrokeWidth={3} zoomable pannable />
-        </ReactFlow>
-      </div>
+    {/* @ts-ignore to suppress TypeScript error */}
+    {defaultNodes.length > 0 && (
+      <ReactFlow nodes={defaultNodes} edges={defaultEdges} onNodesChange={onNodesChange} onEdgesChange={onEdgesChange} fitView>
+        <MiniMap nodeColor={nodeColor} nodeStrokeWidth={3} zoomable pannable />
+      </ReactFlow>
+    )}
+  </div>
   );
 }

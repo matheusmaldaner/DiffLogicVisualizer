@@ -485,7 +485,9 @@ const defaultNodes = [
             backgroundColor: '#6ede87',
             color: 'white'
         },
+        // @ts-ignore to suppress TypeScript error for sourcePosition
         sourcePosition: 'right',
+        // @ts-ignore to suppress TypeScript error for sourcePosition
         targetPosition: 'left'
     },
     {
@@ -493,7 +495,7 @@ const defaultNodes = [
         data: {
             label: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(XnorGate, {}, void 0, false, {
                 fileName: "[project]/components/Main/nodes.tsx",
-                lineNumber: 199,
+                lineNumber: 201,
                 columnNumber: 20
             }, this)
         },
@@ -509,7 +511,9 @@ const defaultNodes = [
             height: 'auto',
             padding: 0
         },
+        // @ts-ignore to suppress TypeScript error for sourcePosition
         sourcePosition: 'right',
+        // @ts-ignore to suppress TypeScript error for sourcePosition
         targetPosition: 'left'
     },
     {
@@ -526,7 +530,9 @@ const defaultNodes = [
             backgroundColor: '#6865A5',
             color: 'white'
         },
+        // @ts-ignore to suppress TypeScript error for sourcePosition
         sourcePosition: 'right',
+        // @ts-ignore to suppress TypeScript error for sourcePosition
         targetPosition: 'left'
     }
 ];
@@ -612,6 +618,7 @@ function Main(props) {
     });
     const leftImageRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
     const centerImageRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
+    const nodes = [];
     const [selectedImage, setSelectedImage] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(__TURBOPACK__imported__module__$5b$project$5d2f$pics$2f$EmperorPenguinBaby$2e$jpeg$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$pics$2f$EmperorPenguinBaby$2e$jpeg__$5b$app$2d$client$5d$__$28$static$2922$__$7d$__$5b$app$2d$client$5d$__$28$structured__image__object$2c$__ecmascript$29$__["default"]);
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
         "Main.useEffect": ()=>{
@@ -692,18 +699,18 @@ function Main(props) {
                     pannable: true
                 }, void 0, false, {
                     fileName: "[project]/components/Main/Main.tsx",
-                    lineNumber: 88,
+                    lineNumber: 94,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/Main/Main.tsx",
-                lineNumber: 87,
+                lineNumber: 93,
                 columnNumber: 9
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/Main/Main.tsx",
-        lineNumber: 86,
+        lineNumber: 91,
         columnNumber: 5
     }, this);
 }
