@@ -5,3 +5,7 @@ from rest_framework import status
 class HelloWorldAPIView(APIView):
     def get(self, request):
         return Response({"message": "Hello from Django!"}, status=status.HTTP_200_OK)
+    
+class ModelAPIView(APIView):
+    def get(self, request):
+        return Response({"message": "Hello from Django!"}, status=status.HTTP_200_OK)
