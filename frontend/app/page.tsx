@@ -1,9 +1,9 @@
-import { HeaderMegaMenu } from '@/components/Header/HeaderMegaMenu';
+import LandingPage from '@/app/landing/page.tsx';
 
 export default function HomePage() {
   return (
     <>
-      <HeaderMegaMenu />
+      <LandingPage />
     </>
   );
 }
