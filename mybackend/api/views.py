@@ -16,6 +16,9 @@ from .difflogic_setup import (
     get_model_info
 )
 
+pr_cl = None
+mod_info = None
+
 class ModelAPIView(APIView):
     """
     1) If POST includes a .pth under 'model_file', store as user_model.
@@ -62,6 +65,40 @@ class ModelAPIView(APIView):
             return Response({"error": str(e)}, status=status.HTTP_400_BAD_REQUEST)
 
 class ImageAPIView(APIView):
+    def get_all_connections(self, model):
+    
+        # map gate names to indices
+        ALL_OPERATIONS = [
+            "zero", "and", "not_implies", "a", "not_implied_by", "b", "xor", "or", 
+            "not_or", "not_xor", "not_b", "implied_by", "not_a", "implies", "not_and", "one"
+        ]
+
+        gates_per_layer = []
+        
+        for layer_idx, layer in enumerate(model.logic_layers):
+            layer_connections = []
+            
+            # for each neuron in the layer
+            for neuron_idx in range(layer.weights.size(0)):
+                # get the learned gate by taking the argmax of the weights for the neuron
+                gate_op_idx = layer.weights[neuron_idx].argmax().item()
+                learned_gate = ALL_OPERATIONS[gate_op_idx]
+
+                # get the input connections (indices) for the gate
+                input_neuron_a = layer.indices[0][neuron_idx].item()
+                input_neuron_b = layer.indices[1][neuron_idx].item()
+
+                # store the gate and connections
+                layer_connections.append({
+                    'neuron_idx': neuron_idx,
+                    'gate': learned_gate,
+                    'inputs': (input_neuron_a, input_neuron_b),
+                })
+            
+            gates_per_layer.append(layer_connections)
+        
+        return gates_per_layer
+
     def post(self, request, *args, **kwargs):
         image_file = request.FILES.get('image_file')
         if not image_file:
@@ -77,6 +114,8 @@ class ImageAPIView(APIView):
         # 1. Load the requested model (CPU)
         path = choose_model_path(model_choice)
         model = load_difflogic_model(path)
+
+        connections = self.get_all_connections(model)
 
         # 2. Convert the uploaded image to a flat tensor
         try:
@@ -120,10 +159,26 @@ class ImageAPIView(APIView):
 
         # 7. Retrieve model structure info
         info = get_model_info(model)
+        mod_info = info
+        pr_cl = predicted_class
 
         # 8. Return everything in the response
         return Response({
             "predicted_class": predicted_class,
             "model_info": info,
-            "image_url": image_url
+            "image_url": image_url,
+            "connections": connections
+        }, status=status.HTTP_200_OK)
+    
+class OutputAPIView(APIView):
+    def get(self, request, *args, **kwargs):
+        global pr_cl
+        global mod_info
+        if pr_cl is None or mod_info is None:
+            return Response({
+                "error": "No image has been processed yet."
+            }, status=status.HTTP_400_BAD_REQUEST)
+        return Response({
+            "predicted_class": pr_cl,
+            "model_info": mod_info
         }, status=status.HTTP_200_OK)

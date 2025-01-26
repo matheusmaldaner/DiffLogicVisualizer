@@ -91,10 +91,15 @@ var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_
 __turbopack_esm__({
     "AndGate": (()=>AndGate),
     "FalseGate": (()=>FalseGate),
+    "ImpliedByGate": (()=>ImpliedByGate),
+    "ImplyGate": (()=>ImplyGate),
     "NandGate": (()=>NandGate),
     "NorGate": (()=>NorGate),
     "NotGate": (()=>NotGate),
+    "NotImpliedByGate": (()=>NotImpliedByGate),
+    "NotImplyGate": (()=>NotImplyGate),
     "OrGate": (()=>OrGate),
+    "PassThroughGate": (()=>PassThroughGate),
     "TrueGate": (()=>TrueGate),
     "XnorGate": (()=>XnorGate),
     "XorGate": (()=>XorGate),
@@ -320,6 +325,260 @@ const XnorGate = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$projec
         lineNumber: 105,
         columnNumber: 3
     }, this);
+const ImplyGate = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+        width: "100",
+        height: "50",
+        viewBox: "0 0 100 50",
+        xmlns: "http://www.w3.org/2000/svg",
+        style: {
+            display: 'block',
+            margin: 'auto'
+        },
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                d: "M 0 25 Q 25 25 50 0 L 50 50 Q 25 25 0 25 Z" // OR gate shape
+                ,
+                fill: "#ff0072",
+                stroke: "black",
+                strokeWidth: "2"
+            }, void 0, false, {
+                fileName: "[project]/components/Main/nodes.tsx",
+                lineNumber: 139,
+                columnNumber: 5
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
+                cx: "10",
+                cy: "10",
+                r: "6",
+                fill: "white",
+                stroke: "black",
+                strokeWidth: "2"
+            }, void 0, false, {
+                fileName: "[project]/components/Main/nodes.tsx",
+                lineNumber: 146,
+                columnNumber: 5
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                d: "M 10 4 V 16" // Vertical line for NOT gate
+                ,
+                stroke: "black",
+                strokeWidth: "2"
+            }, void 0, false, {
+                fileName: "[project]/components/Main/nodes.tsx",
+                lineNumber: 147,
+                columnNumber: 5
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/components/Main/nodes.tsx",
+        lineNumber: 131,
+        columnNumber: 3
+    }, this);
+const NotImplyGate = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+        width: "100",
+        height: "50",
+        viewBox: "0 0 100 50",
+        xmlns: "http://www.w3.org/2000/svg",
+        style: {
+            display: 'block',
+            margin: 'auto'
+        },
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                d: "M 0 25 Q 25 25 50 0 L 50 50 Q 25 25 0 25 Z" // OR gate shape
+                ,
+                fill: "#ff0072",
+                stroke: "black",
+                strokeWidth: "2"
+            }, void 0, false, {
+                fileName: "[project]/components/Main/nodes.tsx",
+                lineNumber: 164,
+                columnNumber: 5
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
+                cx: "10",
+                cy: "10",
+                r: "6",
+                fill: "white",
+                stroke: "black",
+                strokeWidth: "2"
+            }, void 0, false, {
+                fileName: "[project]/components/Main/nodes.tsx",
+                lineNumber: 171,
+                columnNumber: 5
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                d: "M 10 4 V 16" // Vertical line for NOT gate
+                ,
+                stroke: "black",
+                strokeWidth: "2"
+            }, void 0, false, {
+                fileName: "[project]/components/Main/nodes.tsx",
+                lineNumber: 172,
+                columnNumber: 5
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
+                cx: "90",
+                cy: "25",
+                r: "6",
+                fill: "white",
+                stroke: "black",
+                strokeWidth: "2"
+            }, void 0, false, {
+                fileName: "[project]/components/Main/nodes.tsx",
+                lineNumber: 178,
+                columnNumber: 5
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/components/Main/nodes.tsx",
+        lineNumber: 156,
+        columnNumber: 3
+    }, this);
+const ImpliedByGate = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+        width: "100",
+        height: "50",
+        viewBox: "0 0 100 50",
+        xmlns: "http://www.w3.org/2000/svg",
+        style: {
+            display: 'block',
+            margin: 'auto'
+        },
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                d: "M 0 25 Q 25 25 50 0 L 50 50 Q 25 25 0 25 Z" // OR gate shape
+                ,
+                fill: "#ff0072",
+                stroke: "black",
+                strokeWidth: "2"
+            }, void 0, false, {
+                fileName: "[project]/components/Main/nodes.tsx",
+                lineNumber: 191,
+                columnNumber: 5
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
+                cx: "10",
+                cy: "40",
+                r: "6",
+                fill: "white",
+                stroke: "black",
+                strokeWidth: "2"
+            }, void 0, false, {
+                fileName: "[project]/components/Main/nodes.tsx",
+                lineNumber: 198,
+                columnNumber: 5
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                d: "M 10 34 V 46" // Vertical line for NOT gate
+                ,
+                stroke: "black",
+                strokeWidth: "2"
+            }, void 0, false, {
+                fileName: "[project]/components/Main/nodes.tsx",
+                lineNumber: 199,
+                columnNumber: 5
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/components/Main/nodes.tsx",
+        lineNumber: 183,
+        columnNumber: 3
+    }, this);
+const NotImpliedByGate = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+        width: "100",
+        height: "50",
+        viewBox: "0 0 100 50",
+        xmlns: "http://www.w3.org/2000/svg",
+        style: {
+            display: 'block',
+            margin: 'auto'
+        },
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                d: "M 0 25 Q 25 25 50 0 L 50 50 Q 25 25 0 25 Z" // OR gate shape
+                ,
+                fill: "#ff0072",
+                stroke: "black",
+                strokeWidth: "2"
+            }, void 0, false, {
+                fileName: "[project]/components/Main/nodes.tsx",
+                lineNumber: 216,
+                columnNumber: 5
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
+                cx: "10",
+                cy: "40",
+                r: "6",
+                fill: "white",
+                stroke: "black",
+                strokeWidth: "2"
+            }, void 0, false, {
+                fileName: "[project]/components/Main/nodes.tsx",
+                lineNumber: 223,
+                columnNumber: 5
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                d: "M 10 34 V 46" // Vertical line for NOT gate
+                ,
+                stroke: "black",
+                strokeWidth: "2"
+            }, void 0, false, {
+                fileName: "[project]/components/Main/nodes.tsx",
+                lineNumber: 224,
+                columnNumber: 5
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
+                cx: "90",
+                cy: "25",
+                r: "6",
+                fill: "white",
+                stroke: "black",
+                strokeWidth: "2"
+            }, void 0, false, {
+                fileName: "[project]/components/Main/nodes.tsx",
+                lineNumber: 230,
+                columnNumber: 5
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/components/Main/nodes.tsx",
+        lineNumber: 208,
+        columnNumber: 3
+    }, this);
+const PassThroughGate = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+        width: "50" // Adjust width as needed
+        ,
+        height: "50" // Adjust height as needed
+        ,
+        viewBox: "0 0 50 50" // Adjusted to fit the circle perfectly
+        ,
+        xmlns: "http://www.w3.org/2000/svg",
+        style: {
+            display: 'block',
+            margin: 'auto'
+        },
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
+            cx: "25" // Center X coordinate
+            ,
+            cy: "25" // Center Y coordinate
+            ,
+            r: "20" // Radius of the circle
+            ,
+            fill: "#6ede87" // Fill color
+            ,
+            stroke: "black" // Border color
+            ,
+            strokeWidth: "2" // Border thickness
+        }, void 0, false, {
+            fileName: "[project]/components/Main/nodes.tsx",
+            lineNumber: 243,
+            columnNumber: 5
+        }, this)
+    }, void 0, false, {
+        fileName: "[project]/components/Main/nodes.tsx",
+        lineNumber: 235,
+        columnNumber: 3
+    }, this);
 const NandGate = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
         width: "80",
         height: "50",
@@ -338,7 +597,7 @@ const NandGate = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$projec
                 strokeWidth: "2"
             }, void 0, false, {
                 fileName: "[project]/components/Main/nodes.tsx",
-                lineNumber: 140,
+                lineNumber: 263,
                 columnNumber: 5
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
@@ -350,13 +609,13 @@ const NandGate = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$projec
                 strokeWidth: "2"
             }, void 0, false, {
                 fileName: "[project]/components/Main/nodes.tsx",
-                lineNumber: 147,
+                lineNumber: 270,
                 columnNumber: 5
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/Main/nodes.tsx",
-        lineNumber: 132,
+        lineNumber: 255,
         columnNumber: 3
     }, this);
 const FalseGate = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
@@ -379,7 +638,7 @@ const FalseGate = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$proje
                 strokeWidth: "2"
             }, void 0, false, {
                 fileName: "[project]/components/Main/nodes.tsx",
-                lineNumber: 160,
+                lineNumber: 283,
                 columnNumber: 5
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("text", {
@@ -392,13 +651,13 @@ const FalseGate = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$proje
                 children: "0"
             }, void 0, false, {
                 fileName: "[project]/components/Main/nodes.tsx",
-                lineNumber: 161,
+                lineNumber: 284,
                 columnNumber: 5
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/Main/nodes.tsx",
-        lineNumber: 152,
+        lineNumber: 275,
         columnNumber: 3
     }, this);
 const TrueGate = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
@@ -421,7 +680,7 @@ const TrueGate = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$projec
                 strokeWidth: "2"
             }, void 0, false, {
                 fileName: "[project]/components/Main/nodes.tsx",
-                lineNumber: 174,
+                lineNumber: 297,
                 columnNumber: 5
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("text", {
@@ -434,13 +693,13 @@ const TrueGate = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$projec
                 children: "1"
             }, void 0, false, {
                 fileName: "[project]/components/Main/nodes.tsx",
-                lineNumber: 175,
+                lineNumber: 298,
                 columnNumber: 5
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/Main/nodes.tsx",
-        lineNumber: 166,
+        lineNumber: 289,
         columnNumber: 3
     }, this);
 const defaultNodes = [
@@ -459,12 +718,12 @@ const defaultNodes = [
                     layout: "intrinsic"
                 }, void 0, false, {
                     fileName: "[project]/components/Main/nodes.tsx",
-                    lineNumber: 188,
+                    lineNumber: 311,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/Main/nodes.tsx",
-                lineNumber: 187,
+                lineNumber: 310,
                 columnNumber: 9
             }, this)
         },
@@ -486,7 +745,7 @@ const defaultNodes = [
         data: {
             label: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(XnorGate, {}, void 0, false, {
                 fileName: "[project]/components/Main/nodes.tsx",
-                lineNumber: 201,
+                lineNumber: 324,
                 columnNumber: 20
             }, this)
         },
@@ -541,11 +800,13 @@ class NodeGate {
     gate;
     left;
     right;
-    constructor(index, gate, left, right){
+    a;
+    constructor(index, gate, left, right, a){
         this.index = index;
         this.gate = gate;
         this.left = left;
         this.right = right;
+        this.a = a;
     }
     // You can also add any methods to manipulate or retrieve data if necessary
     displayNodeInfo() {
@@ -611,6 +872,9 @@ function Main(props) {
     const onEdgesChange = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useCallback"])(// @ts-ignore to suppress TypeScript error
     (changes)=>setDefaultEdges((eds)=>(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$xyflow$2f$react$2f$dist$2f$esm$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__["applyEdgeChanges"])(changes, eds)), []);
     const [selectedImage, setSelectedImage] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(__TURBOPACK__imported__module__$5b$project$5d2f$pics$2f$EmperorPenguinBaby$2e$jpeg$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$pics$2f$EmperorPenguinBaby$2e$jpeg__$5b$app$2d$ssr$5d$__$28$static$2922$__$7d$__$5b$app$2d$ssr$5d$__$28$structured__image__object$2c$__ecmascript$29$__["default"]);
+    const [modelInfo, setModelInfo] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(null);
+    const [predClasses, setPrediction] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(null);
+    const [connections, setConnections] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(null);
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
         if (props.selectedImage === '/_next/static/media/EmperorPenguinBaby.7955bfc0.jpeg') {
             setSelectedImage(__TURBOPACK__imported__module__$5b$project$5d2f$pics$2f$EmperorPenguinBaby$2e$jpeg$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$pics$2f$EmperorPenguinBaby$2e$jpeg__$5b$app$2d$ssr$5d$__$28$static$2922$__$7d$__$5b$app$2d$ssr$5d$__$28$structured__image__object$2c$__ecmascript$29$__["default"]);
@@ -623,6 +887,16 @@ function Main(props) {
         }
     }, [
         props.selectedImage
+    ]);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
+        setModelInfo(props.modelInfo);
+        setPrediction(props.predClasses);
+        setConnections(props.connections);
+        console.log(props.connections);
+    }, [
+        props.modelInfo,
+        props.predClasses,
+        props.connections
     ]);
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
         if (leftImageRef.current) {
@@ -643,42 +917,97 @@ function Main(props) {
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
         // Map gate strings to corresponding components
         const gateMap = {
-            'not': /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Main$2f$nodes$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["NotGate"], {}, void 0, false, {
+            'zero': /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Main$2f$nodes$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["FalseGate"], {}, void 0, false, {
                 fileName: "[project]/components/Main/Main.tsx",
-                lineNumber: 81,
-                columnNumber: 14
+                lineNumber: 91,
+                columnNumber: 15
             }, this),
             'and': /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Main$2f$nodes$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AndGate"], {}, void 0, false, {
                 fileName: "[project]/components/Main/Main.tsx",
-                lineNumber: 82,
+                lineNumber: 92,
+                columnNumber: 14
+            }, this),
+            'not_implies': /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Main$2f$nodes$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["NotImplyGate"], {}, void 0, false, {
+                fileName: "[project]/components/Main/Main.tsx",
+                lineNumber: 93,
+                columnNumber: 22
+            }, this),
+            'a': /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Main$2f$nodes$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["PassThroughGate"], {}, void 0, false, {
+                fileName: "[project]/components/Main/Main.tsx",
+                lineNumber: 94,
+                columnNumber: 12
+            }, this),
+            'not_implied_by': /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Main$2f$nodes$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["NotImpliedByGate"], {}, void 0, false, {
+                fileName: "[project]/components/Main/Main.tsx",
+                lineNumber: 95,
+                columnNumber: 25
+            }, this),
+            'b': /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Main$2f$nodes$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["PassThroughGate"], {}, void 0, false, {
+                fileName: "[project]/components/Main/Main.tsx",
+                lineNumber: 96,
+                columnNumber: 12
+            }, this),
+            'xor': /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Main$2f$nodes$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["XorGate"], {}, void 0, false, {
+                fileName: "[project]/components/Main/Main.tsx",
+                lineNumber: 97,
                 columnNumber: 14
             }, this),
             'or': /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Main$2f$nodes$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["OrGate"], {}, void 0, false, {
                 fileName: "[project]/components/Main/Main.tsx",
-                lineNumber: 83,
+                lineNumber: 98,
                 columnNumber: 13
             }, this),
-            'xnor': /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Main$2f$nodes$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["XnorGate"], {}, void 0, false, {
+            'not_or': /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Main$2f$nodes$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["NorGate"], {}, void 0, false, {
                 fileName: "[project]/components/Main/Main.tsx",
-                lineNumber: 84,
-                columnNumber: 15
+                lineNumber: 99,
+                columnNumber: 17
             }, this),
-            'true': /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Main$2f$nodes$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TrueGate"], {}, void 0, false, {
+            'not_xor': /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Main$2f$nodes$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["XnorGate"], {}, void 0, false, {
                 fileName: "[project]/components/Main/Main.tsx",
-                lineNumber: 85,
-                columnNumber: 15
+                lineNumber: 100,
+                columnNumber: 18
+            }, this),
+            'not_b': /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Main$2f$nodes$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["NotGate"], {}, void 0, false, {
+                fileName: "[project]/components/Main/Main.tsx",
+                lineNumber: 101,
+                columnNumber: 16
+            }, this),
+            'implied_by': /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Main$2f$nodes$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["ImpliedByGate"], {}, void 0, false, {
+                fileName: "[project]/components/Main/Main.tsx",
+                lineNumber: 102,
+                columnNumber: 21
+            }, this),
+            'not_a': /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Main$2f$nodes$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["NotGate"], {}, void 0, false, {
+                fileName: "[project]/components/Main/Main.tsx",
+                lineNumber: 103,
+                columnNumber: 16
+            }, this),
+            'implies': /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Main$2f$nodes$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["ImplyGate"], {}, void 0, false, {
+                fileName: "[project]/components/Main/Main.tsx",
+                lineNumber: 104,
+                columnNumber: 18
+            }, this),
+            'not_and': /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Main$2f$nodes$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["NandGate"], {}, void 0, false, {
+                fileName: "[project]/components/Main/Main.tsx",
+                lineNumber: 105,
+                columnNumber: 18
+            }, this),
+            'one': /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Main$2f$nodes$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TrueGate"], {}, void 0, false, {
+                fileName: "[project]/components/Main/Main.tsx",
+                lineNumber: 106,
+                columnNumber: 14
             }, this)
         };
         // Create new nodes based on jsonData
         const newNodes = __TURBOPACK__imported__module__$5b$project$5d2f$temp$2e$json__$28$json$29$__["default"].map((node)=>{
             const [left, right] = node.inputs;
-            const nodeGate = new __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$NodeGate$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"](node.neuron_idx.toString(), node.gate, left.toString(), right.toString());
+            const nodeGate = new __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$NodeGate$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"](node.neuron_idx.toString(), node.gate, left.toString(), right.toString(), true);
             // @ts-ignore
             const gateComponent = gateMap[node.gate] || /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 children: "Unknown Gate"
             }, void 0, false, {
                 fileName: "[project]/components/Main/Main.tsx",
-                lineNumber: 94,
+                lineNumber: 115,
                 columnNumber: 51
             }, this);
             return {
@@ -737,12 +1066,12 @@ function Main(props) {
                         }
                     }, void 0, false, {
                         fileName: "[project]/components/Main/Main.tsx",
-                        lineNumber: 137,
+                        lineNumber: 158,
                         columnNumber: 31
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/components/Main/Main.tsx",
-                    lineNumber: 136,
+                    lineNumber: 157,
                     columnNumber: 11
                 }, this)
             },
@@ -818,18 +1147,18 @@ function Main(props) {
                     pannable: true
                 }, void 0, false, {
                     fileName: "[project]/components/Main/Main.tsx",
-                    lineNumber: 200,
+                    lineNumber: 221,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/Main/Main.tsx",
-                lineNumber: 199,
+                lineNumber: 220,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/Main/Main.tsx",
-        lineNumber: 196,
+        lineNumber: 217,
         columnNumber: 5
     }, this);
 }
@@ -1034,6 +1363,9 @@ function HeaderMegaMenu() {
     const [responseMessage, setResponseMessage] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(null);
     const [predictedClass, setPredictedClass] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(null);
     const [modelChoice, setModelChoice] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])("model_001");
+    const [info, setInfo] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(null);
+    const [prediction, setPrediction] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(null);
+    const [connections, setConnections] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(null);
     function onImageClick(src) {
         setImage(src);
     }
@@ -1060,7 +1392,9 @@ function HeaderMegaMenu() {
                 }
             });
             setResponseMessage(response.data.message);
-            setPredictedClass(response.data.predicted_class);
+            setPrediction(response.data.predicted_class);
+            setInfo(response.data.model_info);
+            setConnections(response.data.connections);
             setImage(response.data.image_url);
             console.log(response.data);
         } catch (error) {
@@ -1096,12 +1430,12 @@ function HeaderMegaMenu() {
                                     onClick: ()=>onImageClick(__TURBOPACK__imported__module__$5b$project$5d2f$pics$2f$EmperorPenguinBaby$2e$jpeg$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$pics$2f$EmperorPenguinBaby$2e$jpeg__$5b$app$2d$ssr$5d$__$28$static$2922$__$7d$__$5b$app$2d$ssr$5d$__$28$structured__image__object$2c$__ecmascript$29$__["default"].src)
                                 }, void 0, false, {
                                     fileName: "[project]/components/Header/HeaderMegaMenu.tsx",
-                                    lineNumber: 77,
+                                    lineNumber: 82,
                                     columnNumber: 17
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/components/Header/HeaderMegaMenu.tsx",
-                                lineNumber: 76,
+                                lineNumber: 81,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -1116,12 +1450,12 @@ function HeaderMegaMenu() {
                                     onClick: ()=>onImageClick(__TURBOPACK__imported__module__$5b$project$5d2f$pics$2f$SouthernRockhopperPenguin$2e$jpg$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$pics$2f$SouthernRockhopperPenguin$2e$jpg__$5b$app$2d$ssr$5d$__$28$static$2922$__$7d$__$5b$app$2d$ssr$5d$__$28$structured__image__object$2c$__ecmascript$29$__["default"].src)
                                 }, void 0, false, {
                                     fileName: "[project]/components/Header/HeaderMegaMenu.tsx",
-                                    lineNumber: 87,
+                                    lineNumber: 92,
                                     columnNumber: 17
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/components/Header/HeaderMegaMenu.tsx",
-                                lineNumber: 86,
+                                lineNumber: 91,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -1136,12 +1470,12 @@ function HeaderMegaMenu() {
                                     onClick: ()=>onImageClick(__TURBOPACK__imported__module__$5b$project$5d2f$pics$2f$GentooPenguin$2e$jpg$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$pics$2f$GentooPenguin$2e$jpg__$5b$app$2d$ssr$5d$__$28$static$2922$__$7d$__$5b$app$2d$ssr$5d$__$28$structured__image__object$2c$__ecmascript$29$__["default"].src)
                                 }, void 0, false, {
                                     fileName: "[project]/components/Header/HeaderMegaMenu.tsx",
-                                    lineNumber: 91,
+                                    lineNumber: 96,
                                     columnNumber: 17
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/components/Header/HeaderMegaMenu.tsx",
-                                lineNumber: 90,
+                                lineNumber: 95,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1170,12 +1504,12 @@ function HeaderMegaMenu() {
                                     children: "+"
                                 }, void 0, false, {
                                     fileName: "[project]/components/Header/HeaderMegaMenu.tsx",
-                                    lineNumber: 111,
+                                    lineNumber: 116,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/components/Header/HeaderMegaMenu.tsx",
-                                lineNumber: 95,
+                                lineNumber: 100,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -1188,45 +1522,48 @@ function HeaderMegaMenu() {
                                 onChange: handleFileChange
                             }, void 0, false, {
                                 fileName: "[project]/components/Header/HeaderMegaMenu.tsx",
-                                lineNumber: 124,
+                                lineNumber: 129,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/Header/HeaderMegaMenu.tsx",
-                        lineNumber: 75,
+                        lineNumber: 80,
                         columnNumber: 13
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/components/Header/HeaderMegaMenu.tsx",
-                    lineNumber: 73,
+                    lineNumber: 78,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/Header/HeaderMegaMenu.tsx",
-                lineNumber: 72,
+                lineNumber: 77,
                 columnNumber: 9
             }, this),
             image && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Main$2f$Main$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Main"], {
                 selectedImage: image,
+                modelInfo: info,
+                predClasses: prediction,
+                connections: connections,
                 style: {
                     position: 'absolute',
                     top: '100vh'
                 }
             }, void 0, false, {
                 fileName: "[project]/components/Header/HeaderMegaMenu.tsx",
-                lineNumber: 137,
+                lineNumber: 142,
                 columnNumber: 19
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Dropdown$2f$Dropdown$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Dropdown"], {}, void 0, false, {
                 fileName: "[project]/components/Header/HeaderMegaMenu.tsx",
-                lineNumber: 139,
+                lineNumber: 144,
                 columnNumber: 9
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/Header/HeaderMegaMenu.tsx",
-        lineNumber: 71,
+        lineNumber: 76,
         columnNumber: 7
     }, this);
 }

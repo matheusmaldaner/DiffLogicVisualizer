@@ -127,6 +127,129 @@ export const XnorGate = () => (
   </svg>
 );
 
+export const ImplyGate = () => (
+  <svg
+    width="100"
+    height="50"
+    viewBox="0 0 100 50"
+    xmlns="http://www.w3.org/2000/svg"
+    style={{ display: 'block', margin: 'auto' }}
+  >
+    {/* Main OR Gate Shape */}
+    <path
+      d="M 0 25 Q 25 25 50 0 L 50 50 Q 25 25 0 25 Z" // OR gate shape
+      fill="#ff0072"
+      stroke="black"
+      strokeWidth="2"
+    />
+    {/* NOT Gate for Input A */}
+    <circle cx="10" cy="10" r="6" fill="white" stroke="black" strokeWidth="2" />
+    <path
+      d="M 10 4 V 16" // Vertical line for NOT gate
+      stroke="black"
+      strokeWidth="2"
+    />
+  </svg>
+);
+
+export const NotImplyGate = () => (
+  <svg
+    width="100"
+    height="50"
+    viewBox="0 0 100 50"
+    xmlns="http://www.w3.org/2000/svg"
+    style={{ display: 'block', margin: 'auto' }}
+  >
+    {/* Main OR Gate Shape (IMPLY Gate) */}
+    <path
+      d="M 0 25 Q 25 25 50 0 L 50 50 Q 25 25 0 25 Z" // OR gate shape
+      fill="#ff0072"
+      stroke="black"
+      strokeWidth="2"
+    />
+    {/* NOT Gate for Input A */}
+    <circle cx="10" cy="10" r="6" fill="white" stroke="black" strokeWidth="2" />
+    <path
+      d="M 10 4 V 16" // Vertical line for NOT gate
+      stroke="black"
+      strokeWidth="2"
+    />
+    {/* NOT Gate at Output (Small Circle) */}
+    <circle cx="90" cy="25" r="6" fill="white" stroke="black" strokeWidth="2" />
+  </svg>
+);
+
+export const ImpliedByGate = () => (
+  <svg
+    width="100"
+    height="50"
+    viewBox="0 0 100 50"
+    xmlns="http://www.w3.org/2000/svg"
+    style={{ display: 'block', margin: 'auto' }}
+  >
+    {/* Main OR Gate Shape */}
+    <path
+      d="M 0 25 Q 25 25 50 0 L 50 50 Q 25 25 0 25 Z" // OR gate shape
+      fill="#ff0072"
+      stroke="black"
+      strokeWidth="2"
+    />
+    {/* NOT Gate for Input B */}
+    <circle cx="10" cy="40" r="6" fill="white" stroke="black" strokeWidth="2" />
+    <path
+      d="M 10 34 V 46" // Vertical line for NOT gate
+      stroke="black"
+      strokeWidth="2"
+    />
+  </svg>
+);
+
+export const NotImpliedByGate = () => (
+  <svg
+    width="100"
+    height="50"
+    viewBox="0 0 100 50"
+    xmlns="http://www.w3.org/2000/svg"
+    style={{ display: 'block', margin: 'auto' }}
+  >
+    {/* Main OR Gate Shape (ImpliedBy Gate) */}
+    <path
+      d="M 0 25 Q 25 25 50 0 L 50 50 Q 25 25 0 25 Z" // OR gate shape
+      fill="#ff0072"
+      stroke="black"
+      strokeWidth="2"
+    />
+    {/* NOT Gate for Input B */}
+    <circle cx="10" cy="40" r="6" fill="white" stroke="black" strokeWidth="2" />
+    <path
+      d="M 10 34 V 46" // Vertical line for NOT gate
+      stroke="black"
+      strokeWidth="2"
+    />
+    {/* NOT Gate at Output (Small Circle) */}
+    <circle cx="90" cy="25" r="6" fill="white" stroke="black" strokeWidth="2" />
+  </svg>
+);
+
+export const PassThroughGate = () => (
+  <svg
+    width="50" // Adjust width as needed
+    height="50" // Adjust height as needed
+    viewBox="0 0 50 50" // Adjusted to fit the circle perfectly
+    xmlns="http://www.w3.org/2000/svg"
+    style={{ display: 'block', margin: 'auto' }}
+  >
+    {/* Circle */}
+    <circle
+      cx="25" // Center X coordinate
+      cy="25" // Center Y coordinate
+      r="20"  // Radius of the circle
+      fill="#6ede87" // Fill color
+      stroke="black" // Border color
+      strokeWidth="2" // Border thickness
+    />
+  </svg>
+);
 
 export const NandGate = () => (
   <svg

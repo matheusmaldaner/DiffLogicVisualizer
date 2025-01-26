@@ -3,12 +3,14 @@ class NodeGate {
     gate: string;
     left: string;
     right: string;
+    a: boolean;
   
-    constructor(index: string, gate: string, left: string, right: string) {
+    constructor(index: string, gate: string, left: string, right: string, a: boolean) {
       this.index = index;
       this.gate = gate;
       this.left = left;
       this.right = right;
+      this.a = a;
     }
   
     // You can also add any methods to manipulate or retrieve data if necessary

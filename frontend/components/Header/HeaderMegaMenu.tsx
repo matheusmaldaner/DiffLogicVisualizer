@@ -23,6 +23,9 @@ import axios from 'axios';
     const [responseMessage, setResponseMessage] = useState<string | null>(null);
     const [predictedClass, setPredictedClass] = useState<number | null>(null);
     const [modelChoice, setModelChoice] = useState<string>("model_001");
+    const [info, setInfo] = useState<any | null>(null);
+    const [prediction, setPrediction] = useState<any | null>(null);
+    const [connections, setConnections] = useState<any | null>(null);
 
     function onImageClick(src: string) {
       setImage(src)
@@ -55,7 +58,9 @@ import axios from 'axios';
       });
 
       setResponseMessage(response.data.message);
-      setPredictedClass(response.data.predicted_class);
+      setPrediction(response.data.predicted_class);
+      setInfo(response.data.model_info);
+      setConnections(response.data.connections);
 
       setImage(response.data.image_url);
 
@@ -134,7 +139,7 @@ import axios from 'axios';
           </Group>
         </header>
 
-        {image && <Main selectedImage={image} style={{ position: 'absolute', top: '100vh' }} />}
+        {image && <Main selectedImage={image} modelInfo={info} predClasses={prediction} connections={connections} style={{ position: 'absolute', top: '100vh' }} />}
 
         <Dropdown />
       </Box>

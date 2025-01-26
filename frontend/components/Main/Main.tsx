@@ -13,7 +13,7 @@ import EmperorPenguinBabyImage from '../../pics/EmperorPenguinBaby.jpeg';
 import SouthernRockhopperPenguinImage from '../../pics/SouthernRockhopperPenguin.jpg';
 import GentooPenguin from '../../pics/GentooPenguin.jpg';
 
-import { AndGate, NorGate, OrGate, XorGate, NandGate, XnorGate, TrueGate, FalseGate, NotGate } from './nodes';
+import { AndGate, NorGate, OrGate, XorGate, NandGate, XnorGate, TrueGate, FalseGate, NotGate, PassThroughGate, ImplyGate, NotImplyGate, ImpliedByGate, NotImpliedByGate } from './nodes';
 import { defaultEdges } from './edges';
 
 import NodeGate from '../NodeGate';
@@ -47,6 +47,9 @@ export function Main(props: any) {
   );
   
   const [selectedImage, setSelectedImage] = useState(EmperorPenguinBabyImage);
+  const [modelInfo, setModelInfo] = useState<any | null>(null);
+  const [predClasses, setPrediction] = useState<any | null>(null);
+  const [connections, setConnections] = useState<any | null>(null);
 
   useEffect(() => {
     if (props.selectedImage === '/_next/static/media/EmperorPenguinBaby.7955bfc0.jpeg') {
@@ -64,6 +67,13 @@ export function Main(props: any) {
   }, [props.selectedImage]);
 
   useEffect(() => {
+    setModelInfo(props.modelInfo);
+    setPrediction(props.predClasses);
+    setConnections(props.connections);
+    console.log(props.connections)
+  }, [props.modelInfo, props.predClasses, props.connections]);
+
+  useEffect(() => {
     if (leftImageRef.current) {
       const leftImageRect = leftImageRef.current.getBoundingClientRect();
       setLeftImagePosition({ top: (leftImageRect.top + leftImageRect.bottom) / 2, left: leftImageRect.right });
@@ -78,17 +88,28 @@ export function Main(props: any) {
   useEffect(() => {
     // Map gate strings to corresponding components
     const gateMap = {
-      'not': <NotGate />,
+      'zero': <FalseGate />,
       'and': <AndGate />,
+      'not_implies': <NotImplyGate />,
+      'a': <PassThroughGate />,
+      'not_implied_by': <NotImpliedByGate />,
+      'b': <PassThroughGate />,
+      'xor': <XorGate />,
       'or': <OrGate />,
-      'xnor': <XnorGate />,
-      'true': <TrueGate />,
+      'not_or': <NorGate />,
+      'not_xor': <XnorGate />,
+      'not_b': <NotGate/>,
+      'implied_by': <ImpliedByGate/>,
+      'not_a': <NotGate />,
+      'implies': <ImplyGate/>,
+      'not_and': <NandGate/>,
+      'one': <TrueGate />,
     };
 
     // Create new nodes based on jsonData
     const newNodes = jsonData.map((node: { neuron_idx: number; gate: string; inputs: number[] }) => {
       const [left, right] = node.inputs;
-      const nodeGate = new NodeGate(node.neuron_idx.toString(), node.gate, left.toString(), right.toString());
+      const nodeGate = new NodeGate(node.neuron_idx.toString(), node.gate, left.toString(), right.toString(), true);
 
       // @ts-ignore
       const gateComponent = gateMap[node.gate] || <div>Unknown Gate</div>;
