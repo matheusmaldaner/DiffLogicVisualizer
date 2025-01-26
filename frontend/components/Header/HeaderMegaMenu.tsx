@@ -45,6 +45,36 @@ import { Dropdown } from "../Dropdown/Dropdown.tsx";
                 <Image src={GentooPenguin.src} alt="GentooPenguin" className={classes.image} width={500} height={500} onClick={() => onImageClick(GentooPenguin.src)}/>
             </a>
 
+            {/* Custom Add Button */}
+            <button
+              type="button"
+              onClick={() => alert("Add Image functionality to be implemented")}
+              style={{
+                width: 45,
+                height: 35,
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+                border: '2px dashed #ccc',
+                borderRadius: '8px',
+                backgroundColor: 'transparent',
+                cursor: 'pointer',
+                position: 'relative', // Allows inner content adjustment
+              }}
+            >
+              <span
+                style={{
+                  fontSize: '40px',
+                  fontWeight: 'bold',
+                  color: '#888',
+                  position: 'relative', // Enables relative movement
+                  top: '-5px', // Adjust this value to lift the text
+                }}
+              >
+                +
+              </span>
+            </button>
+
             </Group>
   
           </Group>

@@ -847,10 +847,26 @@ __turbopack_esm__({
     "Dropdown": (()=>Dropdown)
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+(()=>{
+    const e = new Error("Cannot find module 'axios'");
+    e.code = 'MODULE_NOT_FOUND';
+    throw e;
+})();
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mantine$2f$core$2f$esm$2f$components$2f$Select$2f$Select$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@mantine/core/esm/components/Select/Select.mjs [app-client] (ecmascript)");
 ;
 ;
+;
 function Dropdown() {
+    const handleModelSelect = async (value)=>{
+        try {
+            const response = await axios.post('http://127.0.0.1:8000/api/model/', {
+                model_choice: value
+            });
+            console.log('Response from API:', response.data);
+        } catch (error) {
+            console.error('Error loading model:', error.response?.data || error.message);
+        }
+    };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         style: {
             display: 'flex',
@@ -861,22 +877,23 @@ function Dropdown() {
             label: "Models library",
             placeholder: "Pick a model",
             data: [
-                'React',
-                'Angular',
-                'Vue',
-                'Svelte'
+                'model_001',
+                'model_002',
+                'model_003'
             ],
             style: {
                 width: 250
-            }
+            },
+            // @ts-ignore
+            onChange: (value)=>handleModelSelect(value)
         }, void 0, false, {
             fileName: "[project]/components/Dropdown/Dropdown.tsx",
-            lineNumber: 6,
+            lineNumber: 19,
             columnNumber: 5
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/Dropdown/Dropdown.tsx",
-        lineNumber: 5,
+        lineNumber: 18,
         columnNumber: 5
     }, this);
 }
@@ -999,6 +1016,40 @@ function HeaderMegaMenu() {
                                 fileName: "[project]/components/Header/HeaderMegaMenu.tsx",
                                 lineNumber: 44,
                                 columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                type: "button",
+                                onClick: ()=>alert("Add Image functionality to be implemented"),
+                                style: {
+                                    width: 45,
+                                    height: 35,
+                                    display: 'flex',
+                                    justifyContent: 'center',
+                                    alignItems: 'center',
+                                    border: '2px dashed #ccc',
+                                    borderRadius: '8px',
+                                    backgroundColor: 'transparent',
+                                    cursor: 'pointer',
+                                    position: 'relative'
+                                },
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                    style: {
+                                        fontSize: '40px',
+                                        fontWeight: 'bold',
+                                        color: '#888',
+                                        position: 'relative',
+                                        top: '-5px'
+                                    },
+                                    children: "+"
+                                }, void 0, false, {
+                                    fileName: "[project]/components/Header/HeaderMegaMenu.tsx",
+                                    lineNumber: 65,
+                                    columnNumber: 15
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "[project]/components/Header/HeaderMegaMenu.tsx",
+                                lineNumber: 49,
+                                columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
@@ -1024,12 +1075,12 @@ function HeaderMegaMenu() {
                 }
             }, void 0, false, {
                 fileName: "[project]/components/Header/HeaderMegaMenu.tsx",
-                lineNumber: 53,
+                lineNumber: 83,
                 columnNumber: 19
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Dropdown$2f$Dropdown$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Dropdown"], {}, void 0, false, {
                 fileName: "[project]/components/Header/HeaderMegaMenu.tsx",
-                lineNumber: 55,
+                lineNumber: 85,
                 columnNumber: 9
             }, this)
         ]
