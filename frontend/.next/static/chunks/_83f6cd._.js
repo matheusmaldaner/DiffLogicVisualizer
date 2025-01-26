@@ -117,611 +117,1068 @@ __turbopack_esm__({
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/image.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$pics$2f$EmperorPenguinBaby$2e$jpeg$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$pics$2f$EmperorPenguinBaby$2e$jpeg__$5b$app$2d$client$5d$__$28$static$2922$__$7d$__$5b$app$2d$client$5d$__$28$structured__image__object$2c$__ecmascript$29$__ = __turbopack_import__('[project]/pics/EmperorPenguinBaby.jpeg.mjs { IMAGE => "[project]/pics/EmperorPenguinBaby.jpeg [app-client] (static)" } [app-client] (structured image object, ecmascript)');
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$flow$2d$renderer$2f$dist$2f$esm$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_import__("[project]/node_modules/react-flow-renderer/dist/esm/index.js [app-client] (ecmascript) <locals>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$flow$2d$renderer$2f$dist$2f$esm$2f$index$2d$a12c80bd$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__P__as__Position$3e$__ = __turbopack_import__("[project]/node_modules/react-flow-renderer/dist/esm/index-a12c80bd.js [app-client] (ecmascript) <export P as Position>");
 ;
 ;
 ;
-const AndGate = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
-        width: "80",
-        height: "50",
-        viewBox: "0 0 74 50",
-        xmlns: "http://www.w3.org/2000/svg",
-        style: {
-            display: 'block',
-            margin: 'auto'
-        },
-        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
-            d: "M 0 0 L 50 0 A 25 25 0 0 1 50 50 L 0 50 Z",
-            fill: "#ff0072",
-            stroke: "black",
-            strokeWidth: "2"
-        }, void 0, false, {
-            fileName: "[project]/components/Main/nodes.tsx",
-            lineNumber: 13,
-            columnNumber: 5
-        }, this)
-    }, void 0, false, {
+;
+const AndGate = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$flow$2d$renderer$2f$dist$2f$esm$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["ReactFlowProvider"], {
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$flow$2d$renderer$2f$dist$2f$esm$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["Handle"], {
+                type: "target",
+                position: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$flow$2d$renderer$2f$dist$2f$esm$2f$index$2d$a12c80bd$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__P__as__Position$3e$__["Position"].Left,
+                id: "a",
+                style: {
+                    top: '10%'
+                }
+            }, void 0, false, {
+                fileName: "[project]/components/Main/nodes.tsx",
+                lineNumber: 7,
+                columnNumber: 5
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$flow$2d$renderer$2f$dist$2f$esm$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["Handle"], {
+                type: "target",
+                position: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$flow$2d$renderer$2f$dist$2f$esm$2f$index$2d$a12c80bd$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__P__as__Position$3e$__["Position"].Left,
+                id: "b",
+                style: {
+                    top: '90%'
+                }
+            }, void 0, false, {
+                fileName: "[project]/components/Main/nodes.tsx",
+                lineNumber: 13,
+                columnNumber: 3
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                width: "80",
+                height: "50",
+                viewBox: "0 0 74 50",
+                xmlns: "http://www.w3.org/2000/svg",
+                style: {
+                    display: 'block',
+                    margin: 'auto'
+                },
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                    d: "M 0 0 L 50 0 A 25 25 0 0 1 50 50 L 0 50 Z",
+                    fill: "#ff0072",
+                    stroke: "black",
+                    strokeWidth: "2"
+                }, void 0, false, {
+                    fileName: "[project]/components/Main/nodes.tsx",
+                    lineNumber: 26,
+                    columnNumber: 5
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/components/Main/nodes.tsx",
+                lineNumber: 19,
+                columnNumber: 3
+            }, this)
+        ]
+    }, void 0, true, {
         fileName: "[project]/components/Main/nodes.tsx",
         lineNumber: 6,
         columnNumber: 3
     }, this);
 _c = AndGate;
-const OrGate = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
-        width: "65",
-        height: "50",
-        viewBox: "0 0 65 50" // Adjusted to fit the OR gate perfectly
-        ,
-        xmlns: "http://www.w3.org/2000/svg",
-        style: {
-            display: 'block',
-            margin: 'auto'
-        },
-        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
-            d: "M 0 0 Q 25 25 0 50 L 50 50 Q 75 25 50 0 Z",
-            fill: "#ff0072",
-            stroke: "black",
-            strokeWidth: "2"
-        }, void 0, false, {
-            fileName: "[project]/components/Main/nodes.tsx",
-            lineNumber: 30,
-            columnNumber: 5
-        }, this)
-    }, void 0, false, {
+const OrGate = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$flow$2d$renderer$2f$dist$2f$esm$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["ReactFlowProvider"], {
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$flow$2d$renderer$2f$dist$2f$esm$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["Handle"], {
+                type: "target",
+                position: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$flow$2d$renderer$2f$dist$2f$esm$2f$index$2d$a12c80bd$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__P__as__Position$3e$__["Position"].Left,
+                id: "a",
+                style: {
+                    top: '10%'
+                }
+            }, void 0, false, {
+                fileName: "[project]/components/Main/nodes.tsx",
+                lineNumber: 38,
+                columnNumber: 3
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$flow$2d$renderer$2f$dist$2f$esm$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["Handle"], {
+                type: "target",
+                position: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$flow$2d$renderer$2f$dist$2f$esm$2f$index$2d$a12c80bd$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__P__as__Position$3e$__["Position"].Left,
+                id: "b",
+                style: {
+                    top: '90%'
+                }
+            }, void 0, false, {
+                fileName: "[project]/components/Main/nodes.tsx",
+                lineNumber: 44,
+                columnNumber: 1
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                width: "65",
+                height: "50",
+                viewBox: "0 0 65 50" // Adjusted to fit the OR gate perfectly
+                ,
+                xmlns: "http://www.w3.org/2000/svg",
+                style: {
+                    display: 'block',
+                    margin: 'auto'
+                },
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                    d: "M 0 0 Q 25 25 0 50 L 50 50 Q 75 25 50 0 Z",
+                    fill: "#ff0072",
+                    stroke: "black",
+                    strokeWidth: "2"
+                }, void 0, false, {
+                    fileName: "[project]/components/Main/nodes.tsx",
+                    lineNumber: 57,
+                    columnNumber: 5
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/components/Main/nodes.tsx",
+                lineNumber: 50,
+                columnNumber: 3
+            }, this)
+        ]
+    }, void 0, true, {
         fileName: "[project]/components/Main/nodes.tsx",
-        lineNumber: 23,
+        lineNumber: 37,
         columnNumber: 3
     }, this);
 _c1 = OrGate;
-const NotGate = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
-        width: "60",
-        height: "50",
-        viewBox: "0 0 70 50" // Adjusted to fit the NOT gate perfectly
-        ,
-        xmlns: "http://www.w3.org/2000/svg",
-        style: {
-            display: 'block',
-            margin: 'auto'
-        },
-        children: [
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
-                d: "M 5 5 L 55 25 L 5 45 Z",
-                fill: "#ff0072",
-                stroke: "black",
-                strokeWidth: "2"
-            }, void 0, false, {
-                fileName: "[project]/components/Main/nodes.tsx",
-                lineNumber: 48,
-                columnNumber: 5
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
-                cx: "60",
-                cy: "25",
-                r: "5",
-                fill: "#ffffff",
-                stroke: "black",
-                strokeWidth: "2"
-            }, void 0, false, {
-                fileName: "[project]/components/Main/nodes.tsx",
-                lineNumber: 55,
-                columnNumber: 5
-            }, this)
-        ]
-    }, void 0, true, {
-        fileName: "[project]/components/Main/nodes.tsx",
-        lineNumber: 40,
-        columnNumber: 3
-    }, this);
-_c2 = NotGate;
-const XorGate = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
-        width: "65",
-        height: "50",
-        viewBox: "0 0 60 50" // Adjusted to fit the XOR gate perfectly
-        ,
-        xmlns: "http://www.w3.org/2000/svg",
-        style: {
-            display: 'block',
-            margin: 'auto'
-        },
-        children: [
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
-                d: "M 0 0 Q 25 25 0 50 L 50 50 Q 75 25 50 0 Z",
-                fill: "#ff0072",
-                stroke: "black",
-                strokeWidth: "2"
-            }, void 0, false, {
-                fileName: "[project]/components/Main/nodes.tsx",
-                lineNumber: 68,
-                columnNumber: 5
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
-                d: "M 10 0 Q 35 25 10 50",
-                fill: "transparent",
-                stroke: "black",
-                strokeWidth: "2"
-            }, void 0, false, {
-                fileName: "[project]/components/Main/nodes.tsx",
-                lineNumber: 75,
-                columnNumber: 5
-            }, this)
-        ]
-    }, void 0, true, {
-        fileName: "[project]/components/Main/nodes.tsx",
-        lineNumber: 60,
-        columnNumber: 3
-    }, this);
-_c3 = XorGate;
-const NorGate = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
-        width: "70",
-        height: "50",
-        viewBox: "0 0 85 50" // Adjusted to fit the NOR gate perfectly
-        ,
-        xmlns: "http://www.w3.org/2000/svg",
-        style: {
-            display: 'block',
-            margin: 'auto'
-        },
-        children: [
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
-                d: "M 0 0 Q 25 25 0 50 L 50 50 Q 75 25 50 0 Z",
-                fill: "#ff0072",
-                stroke: "black",
-                strokeWidth: "2"
-            }, void 0, false, {
-                fileName: "[project]/components/Main/nodes.tsx",
-                lineNumber: 93,
-                columnNumber: 5
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
-                cx: "75",
-                cy: "25",
-                r: "6",
-                fill: "white",
-                stroke: "black",
-                strokeWidth: "2"
-            }, void 0, false, {
-                fileName: "[project]/components/Main/nodes.tsx",
-                lineNumber: 100,
-                columnNumber: 5
-            }, this)
-        ]
-    }, void 0, true, {
-        fileName: "[project]/components/Main/nodes.tsx",
-        lineNumber: 85,
-        columnNumber: 3
-    }, this);
-_c4 = NorGate;
-const XnorGate = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
-        width: "100",
-        height: "50",
-        viewBox: "0 0 100 50" // Adjusted to fit the XNOR gate perfectly
-        ,
-        xmlns: "http://www.w3.org/2000/svg",
-        style: {
-            display: 'block',
-            margin: 'auto'
-        },
-        children: [
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
-                d: "M 0 0 Q 25 25 0 50 L 60 50 Q 85 25 60 0 Z" // XOR gate shape
-                ,
-                fill: "#ff0072",
-                stroke: "black",
-                strokeWidth: "2"
-            }, void 0, false, {
-                fileName: "[project]/components/Main/nodes.tsx",
-                lineNumber: 113,
-                columnNumber: 5
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
-                d: "M 10 0 Q 35 25 10 50",
-                fill: "transparent",
-                stroke: "black",
-                strokeWidth: "2"
-            }, void 0, false, {
-                fileName: "[project]/components/Main/nodes.tsx",
-                lineNumber: 119,
-                columnNumber: 9
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
-                cx: "90",
-                cy: "25",
-                r: "6",
-                fill: "white",
-                stroke: "black",
-                strokeWidth: "2"
-            }, void 0, false, {
-                fileName: "[project]/components/Main/nodes.tsx",
-                lineNumber: 126,
-                columnNumber: 5
-            }, this)
-        ]
-    }, void 0, true, {
-        fileName: "[project]/components/Main/nodes.tsx",
-        lineNumber: 105,
-        columnNumber: 3
-    }, this);
-_c5 = XnorGate;
-const ImplyGate = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
-        width: "100",
-        height: "50",
-        viewBox: "0 0 100 50",
-        xmlns: "http://www.w3.org/2000/svg",
-        style: {
-            display: 'block',
-            margin: 'auto'
-        },
-        children: [
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
-                d: "M 0 25 Q 25 25 50 0 L 50 50 Q 25 25 0 25 Z" // OR gate shape
-                ,
-                fill: "#ff0072",
-                stroke: "black",
-                strokeWidth: "2"
-            }, void 0, false, {
-                fileName: "[project]/components/Main/nodes.tsx",
-                lineNumber: 139,
-                columnNumber: 5
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
-                cx: "10",
-                cy: "10",
-                r: "6",
-                fill: "white",
-                stroke: "black",
-                strokeWidth: "2"
-            }, void 0, false, {
-                fileName: "[project]/components/Main/nodes.tsx",
-                lineNumber: 146,
-                columnNumber: 5
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
-                d: "M 10 4 V 16" // Vertical line for NOT gate
-                ,
-                stroke: "black",
-                strokeWidth: "2"
-            }, void 0, false, {
-                fileName: "[project]/components/Main/nodes.tsx",
-                lineNumber: 147,
-                columnNumber: 5
-            }, this)
-        ]
-    }, void 0, true, {
-        fileName: "[project]/components/Main/nodes.tsx",
-        lineNumber: 131,
-        columnNumber: 3
-    }, this);
-_c6 = ImplyGate;
-const NotImplyGate = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
-        width: "100",
-        height: "50",
-        viewBox: "0 0 100 50",
-        xmlns: "http://www.w3.org/2000/svg",
-        style: {
-            display: 'block',
-            margin: 'auto'
-        },
-        children: [
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
-                d: "M 0 25 Q 25 25 50 0 L 50 50 Q 25 25 0 25 Z" // OR gate shape
-                ,
-                fill: "#ff0072",
-                stroke: "black",
-                strokeWidth: "2"
-            }, void 0, false, {
-                fileName: "[project]/components/Main/nodes.tsx",
-                lineNumber: 164,
-                columnNumber: 5
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
-                cx: "10",
-                cy: "10",
-                r: "6",
-                fill: "white",
-                stroke: "black",
-                strokeWidth: "2"
-            }, void 0, false, {
-                fileName: "[project]/components/Main/nodes.tsx",
-                lineNumber: 171,
-                columnNumber: 5
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
-                d: "M 10 4 V 16" // Vertical line for NOT gate
-                ,
-                stroke: "black",
-                strokeWidth: "2"
-            }, void 0, false, {
-                fileName: "[project]/components/Main/nodes.tsx",
-                lineNumber: 172,
-                columnNumber: 5
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
-                cx: "90",
-                cy: "25",
-                r: "6",
-                fill: "white",
-                stroke: "black",
-                strokeWidth: "2"
-            }, void 0, false, {
-                fileName: "[project]/components/Main/nodes.tsx",
-                lineNumber: 178,
-                columnNumber: 5
-            }, this)
-        ]
-    }, void 0, true, {
-        fileName: "[project]/components/Main/nodes.tsx",
-        lineNumber: 156,
-        columnNumber: 3
-    }, this);
-_c7 = NotImplyGate;
-const ImpliedByGate = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
-        width: "100",
-        height: "50",
-        viewBox: "0 0 100 50",
-        xmlns: "http://www.w3.org/2000/svg",
-        style: {
-            display: 'block',
-            margin: 'auto'
-        },
-        children: [
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
-                d: "M 0 25 Q 25 25 50 0 L 50 50 Q 25 25 0 25 Z" // OR gate shape
-                ,
-                fill: "#ff0072",
-                stroke: "black",
-                strokeWidth: "2"
-            }, void 0, false, {
-                fileName: "[project]/components/Main/nodes.tsx",
-                lineNumber: 191,
-                columnNumber: 5
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
-                cx: "10",
-                cy: "40",
-                r: "6",
-                fill: "white",
-                stroke: "black",
-                strokeWidth: "2"
-            }, void 0, false, {
-                fileName: "[project]/components/Main/nodes.tsx",
-                lineNumber: 198,
-                columnNumber: 5
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
-                d: "M 10 34 V 46" // Vertical line for NOT gate
-                ,
-                stroke: "black",
-                strokeWidth: "2"
-            }, void 0, false, {
-                fileName: "[project]/components/Main/nodes.tsx",
-                lineNumber: 199,
-                columnNumber: 5
-            }, this)
-        ]
-    }, void 0, true, {
-        fileName: "[project]/components/Main/nodes.tsx",
-        lineNumber: 183,
-        columnNumber: 3
-    }, this);
-_c8 = ImpliedByGate;
-const NotImpliedByGate = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
-        width: "100",
-        height: "50",
-        viewBox: "0 0 100 50",
-        xmlns: "http://www.w3.org/2000/svg",
-        style: {
-            display: 'block',
-            margin: 'auto'
-        },
-        children: [
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
-                d: "M 0 25 Q 25 25 50 0 L 50 50 Q 25 25 0 25 Z" // OR gate shape
-                ,
-                fill: "#ff0072",
-                stroke: "black",
-                strokeWidth: "2"
-            }, void 0, false, {
-                fileName: "[project]/components/Main/nodes.tsx",
-                lineNumber: 216,
-                columnNumber: 5
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
-                cx: "10",
-                cy: "40",
-                r: "6",
-                fill: "white",
-                stroke: "black",
-                strokeWidth: "2"
-            }, void 0, false, {
-                fileName: "[project]/components/Main/nodes.tsx",
-                lineNumber: 223,
-                columnNumber: 5
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
-                d: "M 10 34 V 46" // Vertical line for NOT gate
-                ,
-                stroke: "black",
-                strokeWidth: "2"
-            }, void 0, false, {
-                fileName: "[project]/components/Main/nodes.tsx",
-                lineNumber: 224,
-                columnNumber: 5
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
-                cx: "90",
-                cy: "25",
-                r: "6",
-                fill: "white",
-                stroke: "black",
-                strokeWidth: "2"
-            }, void 0, false, {
-                fileName: "[project]/components/Main/nodes.tsx",
-                lineNumber: 230,
-                columnNumber: 5
-            }, this)
-        ]
-    }, void 0, true, {
-        fileName: "[project]/components/Main/nodes.tsx",
-        lineNumber: 208,
-        columnNumber: 3
-    }, this);
-_c9 = NotImpliedByGate;
-const PassThroughGate = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
-        width: "50" // Adjust width as needed
-        ,
-        height: "50" // Adjust height as needed
-        ,
-        viewBox: "0 0 50 50" // Adjusted to fit the circle perfectly
-        ,
-        xmlns: "http://www.w3.org/2000/svg",
-        style: {
-            display: 'block',
-            margin: 'auto'
-        },
-        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
-            cx: "25" // Center X coordinate
-            ,
-            cy: "25" // Center Y coordinate
-            ,
-            r: "20" // Radius of the circle
-            ,
-            fill: "#6ede87" // Fill color
-            ,
-            stroke: "black" // Border color
-            ,
-            strokeWidth: "2" // Border thickness
-        }, void 0, false, {
+const NotGate = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$flow$2d$renderer$2f$dist$2f$esm$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["ReactFlowProvider"], {
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$flow$2d$renderer$2f$dist$2f$esm$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["Handle"], {
+                    type: "target",
+                    position: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$flow$2d$renderer$2f$dist$2f$esm$2f$index$2d$a12c80bd$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__P__as__Position$3e$__["Position"].Left,
+                    id: "a" // Unique ID for the target handle
+                    ,
+                    style: {
+                        background: '#555'
+                    }
+                }, void 0, false, {
+                    fileName: "[project]/components/Main/nodes.tsx",
+                    lineNumber: 71,
+                    columnNumber: 5
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$flow$2d$renderer$2f$dist$2f$esm$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["Handle"], {
+                    type: "source",
+                    position: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$flow$2d$renderer$2f$dist$2f$esm$2f$index$2d$a12c80bd$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__P__as__Position$3e$__["Position"].Right,
+                    style: {
+                        background: '#555'
+                    }
+                }, void 0, false, {
+                    fileName: "[project]/components/Main/nodes.tsx",
+                    lineNumber: 79,
+                    columnNumber: 5
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                    width: "60",
+                    height: "50",
+                    viewBox: "0 0 70 50" // Adjusted to fit the NOT gate perfectly
+                    ,
+                    xmlns: "http://www.w3.org/2000/svg",
+                    style: {
+                        display: 'block',
+                        margin: 'auto'
+                    },
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                            d: "M 5 5 L 55 25 L 5 45 Z",
+                            fill: "#ff0072",
+                            stroke: "black",
+                            strokeWidth: "2"
+                        }, void 0, false, {
+                            fileName: "[project]/components/Main/nodes.tsx",
+                            lineNumber: 94,
+                            columnNumber: 7
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
+                            cx: "60",
+                            cy: "25",
+                            r: "5",
+                            fill: "#ffffff",
+                            stroke: "black",
+                            strokeWidth: "2"
+                        }, void 0, false, {
+                            fileName: "[project]/components/Main/nodes.tsx",
+                            lineNumber: 101,
+                            columnNumber: 7
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/components/Main/nodes.tsx",
+                    lineNumber: 86,
+                    columnNumber: 5
+                }, this)
+            ]
+        }, void 0, true, {
             fileName: "[project]/components/Main/nodes.tsx",
-            lineNumber: 243,
-            columnNumber: 5
+            lineNumber: 69,
+            columnNumber: 3
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/Main/nodes.tsx",
-        lineNumber: 235,
+        lineNumber: 68,
+        columnNumber: 3
+    }, this);
+_c2 = NotGate;
+const XorGate = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$flow$2d$renderer$2f$dist$2f$esm$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["ReactFlowProvider"], {
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$flow$2d$renderer$2f$dist$2f$esm$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["Handle"], {
+                type: "target",
+                position: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$flow$2d$renderer$2f$dist$2f$esm$2f$index$2d$a12c80bd$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__P__as__Position$3e$__["Position"].Left,
+                id: "a",
+                style: {
+                    top: '10%'
+                }
+            }, void 0, false, {
+                fileName: "[project]/components/Main/nodes.tsx",
+                lineNumber: 109,
+                columnNumber: 9
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$flow$2d$renderer$2f$dist$2f$esm$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["Handle"], {
+                type: "target",
+                position: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$flow$2d$renderer$2f$dist$2f$esm$2f$index$2d$a12c80bd$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__P__as__Position$3e$__["Position"].Left,
+                id: "b",
+                style: {
+                    top: '90%'
+                }
+            }, void 0, false, {
+                fileName: "[project]/components/Main/nodes.tsx",
+                lineNumber: 115,
+                columnNumber: 3
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                width: "65",
+                height: "50",
+                viewBox: "0 0 60 50" // Adjusted to fit the XOR gate perfectly
+                ,
+                xmlns: "http://www.w3.org/2000/svg",
+                style: {
+                    display: 'block',
+                    margin: 'auto'
+                },
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                        d: "M 0 0 Q 25 25 0 50 L 50 50 Q 75 25 50 0 Z",
+                        fill: "#ff0072",
+                        stroke: "black",
+                        strokeWidth: "2"
+                    }, void 0, false, {
+                        fileName: "[project]/components/Main/nodes.tsx",
+                        lineNumber: 129,
+                        columnNumber: 5
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                        d: "M 10 0 Q 35 25 10 50",
+                        fill: "transparent",
+                        stroke: "black",
+                        strokeWidth: "2"
+                    }, void 0, false, {
+                        fileName: "[project]/components/Main/nodes.tsx",
+                        lineNumber: 136,
+                        columnNumber: 5
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/components/Main/nodes.tsx",
+                lineNumber: 121,
+                columnNumber: 3
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/components/Main/nodes.tsx",
+        lineNumber: 108,
+        columnNumber: 3
+    }, this);
+_c3 = XorGate;
+const NorGate = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$flow$2d$renderer$2f$dist$2f$esm$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["ReactFlowProvider"], {
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$flow$2d$renderer$2f$dist$2f$esm$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["Handle"], {
+                type: "target",
+                position: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$flow$2d$renderer$2f$dist$2f$esm$2f$index$2d$a12c80bd$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__P__as__Position$3e$__["Position"].Left,
+                id: "a",
+                style: {
+                    top: '10%'
+                }
+            }, void 0, false, {
+                fileName: "[project]/components/Main/nodes.tsx",
+                lineNumber: 148,
+                columnNumber: 9
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$flow$2d$renderer$2f$dist$2f$esm$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["Handle"], {
+                type: "target",
+                position: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$flow$2d$renderer$2f$dist$2f$esm$2f$index$2d$a12c80bd$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__P__as__Position$3e$__["Position"].Left,
+                id: "b",
+                style: {
+                    top: '90%'
+                }
+            }, void 0, false, {
+                fileName: "[project]/components/Main/nodes.tsx",
+                lineNumber: 154,
+                columnNumber: 3
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                width: "70",
+                height: "50",
+                viewBox: "0 0 85 50" // Adjusted to fit the NOR gate perfectly
+                ,
+                xmlns: "http://www.w3.org/2000/svg",
+                style: {
+                    display: 'block',
+                    margin: 'auto'
+                },
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                        d: "M 0 0 Q 25 25 0 50 L 50 50 Q 75 25 50 0 Z",
+                        fill: "#ff0072",
+                        stroke: "black",
+                        strokeWidth: "2"
+                    }, void 0, false, {
+                        fileName: "[project]/components/Main/nodes.tsx",
+                        lineNumber: 168,
+                        columnNumber: 5
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
+                        cx: "75",
+                        cy: "25",
+                        r: "6",
+                        fill: "white",
+                        stroke: "black",
+                        strokeWidth: "2"
+                    }, void 0, false, {
+                        fileName: "[project]/components/Main/nodes.tsx",
+                        lineNumber: 175,
+                        columnNumber: 5
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/components/Main/nodes.tsx",
+                lineNumber: 160,
+                columnNumber: 3
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/components/Main/nodes.tsx",
+        lineNumber: 147,
+        columnNumber: 3
+    }, this);
+_c4 = NorGate;
+const XnorGate = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$flow$2d$renderer$2f$dist$2f$esm$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["ReactFlowProvider"], {
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$flow$2d$renderer$2f$dist$2f$esm$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["Handle"], {
+                type: "target",
+                position: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$flow$2d$renderer$2f$dist$2f$esm$2f$index$2d$a12c80bd$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__P__as__Position$3e$__["Position"].Left,
+                id: "a",
+                style: {
+                    top: '10%'
+                }
+            }, void 0, false, {
+                fileName: "[project]/components/Main/nodes.tsx",
+                lineNumber: 182,
+                columnNumber: 9
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$flow$2d$renderer$2f$dist$2f$esm$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["Handle"], {
+                type: "target",
+                position: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$flow$2d$renderer$2f$dist$2f$esm$2f$index$2d$a12c80bd$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__P__as__Position$3e$__["Position"].Left,
+                id: "b",
+                style: {
+                    top: '90%'
+                }
+            }, void 0, false, {
+                fileName: "[project]/components/Main/nodes.tsx",
+                lineNumber: 188,
+                columnNumber: 3
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                width: "100",
+                height: "50",
+                viewBox: "0 0 100 50" // Adjusted to fit the XNOR gate perfectly
+                ,
+                xmlns: "http://www.w3.org/2000/svg",
+                style: {
+                    display: 'block',
+                    margin: 'auto'
+                },
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                        d: "M 0 0 Q 25 25 0 50 L 60 50 Q 85 25 60 0 Z" // XOR gate shape
+                        ,
+                        fill: "#ff0072",
+                        stroke: "black",
+                        strokeWidth: "2"
+                    }, void 0, false, {
+                        fileName: "[project]/components/Main/nodes.tsx",
+                        lineNumber: 202,
+                        columnNumber: 5
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                        d: "M 10 0 Q 35 25 10 50",
+                        fill: "transparent",
+                        stroke: "black",
+                        strokeWidth: "2"
+                    }, void 0, false, {
+                        fileName: "[project]/components/Main/nodes.tsx",
+                        lineNumber: 208,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
+                        cx: "90",
+                        cy: "25",
+                        r: "6",
+                        fill: "white",
+                        stroke: "black",
+                        strokeWidth: "2"
+                    }, void 0, false, {
+                        fileName: "[project]/components/Main/nodes.tsx",
+                        lineNumber: 215,
+                        columnNumber: 5
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/components/Main/nodes.tsx",
+                lineNumber: 194,
+                columnNumber: 3
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/components/Main/nodes.tsx",
+        lineNumber: 181,
+        columnNumber: 3
+    }, this);
+_c5 = XnorGate;
+const ImplyGate = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$flow$2d$renderer$2f$dist$2f$esm$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["ReactFlowProvider"], {
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$flow$2d$renderer$2f$dist$2f$esm$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["Handle"], {
+                type: "target",
+                position: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$flow$2d$renderer$2f$dist$2f$esm$2f$index$2d$a12c80bd$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__P__as__Position$3e$__["Position"].Left,
+                id: "a",
+                style: {
+                    top: '10%'
+                }
+            }, void 0, false, {
+                fileName: "[project]/components/Main/nodes.tsx",
+                lineNumber: 222,
+                columnNumber: 9
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$flow$2d$renderer$2f$dist$2f$esm$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["Handle"], {
+                type: "target",
+                position: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$flow$2d$renderer$2f$dist$2f$esm$2f$index$2d$a12c80bd$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__P__as__Position$3e$__["Position"].Left,
+                id: "b",
+                style: {
+                    top: '90%'
+                }
+            }, void 0, false, {
+                fileName: "[project]/components/Main/nodes.tsx",
+                lineNumber: 228,
+                columnNumber: 3
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                width: "100",
+                height: "50",
+                viewBox: "0 0 100 50",
+                xmlns: "http://www.w3.org/2000/svg",
+                style: {
+                    display: 'block',
+                    margin: 'auto'
+                },
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                        d: "M 0 25 Q 25 25 50 0 L 50 50 Q 25 25 0 25 Z" // OR gate shape
+                        ,
+                        fill: "#ff0072",
+                        stroke: "black",
+                        strokeWidth: "2"
+                    }, void 0, false, {
+                        fileName: "[project]/components/Main/nodes.tsx",
+                        lineNumber: 242,
+                        columnNumber: 5
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
+                        cx: "10",
+                        cy: "10",
+                        r: "6",
+                        fill: "white",
+                        stroke: "black",
+                        strokeWidth: "2"
+                    }, void 0, false, {
+                        fileName: "[project]/components/Main/nodes.tsx",
+                        lineNumber: 249,
+                        columnNumber: 5
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                        d: "M 10 4 V 16" // Vertical line for NOT gate
+                        ,
+                        stroke: "black",
+                        strokeWidth: "2"
+                    }, void 0, false, {
+                        fileName: "[project]/components/Main/nodes.tsx",
+                        lineNumber: 250,
+                        columnNumber: 5
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/components/Main/nodes.tsx",
+                lineNumber: 234,
+                columnNumber: 3
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/components/Main/nodes.tsx",
+        lineNumber: 221,
+        columnNumber: 3
+    }, this);
+_c6 = ImplyGate;
+const NotImplyGate = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$flow$2d$renderer$2f$dist$2f$esm$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["ReactFlowProvider"], {
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$flow$2d$renderer$2f$dist$2f$esm$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["Handle"], {
+                type: "target",
+                position: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$flow$2d$renderer$2f$dist$2f$esm$2f$index$2d$a12c80bd$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__P__as__Position$3e$__["Position"].Left,
+                id: "a",
+                style: {
+                    top: '10%'
+                }
+            }, void 0, false, {
+                fileName: "[project]/components/Main/nodes.tsx",
+                lineNumber: 261,
+                columnNumber: 9
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$flow$2d$renderer$2f$dist$2f$esm$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["Handle"], {
+                type: "target",
+                position: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$flow$2d$renderer$2f$dist$2f$esm$2f$index$2d$a12c80bd$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__P__as__Position$3e$__["Position"].Left,
+                id: "b",
+                style: {
+                    top: '90%'
+                }
+            }, void 0, false, {
+                fileName: "[project]/components/Main/nodes.tsx",
+                lineNumber: 267,
+                columnNumber: 3
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                width: "100",
+                height: "50",
+                viewBox: "0 0 100 50",
+                xmlns: "http://www.w3.org/2000/svg",
+                style: {
+                    display: 'block',
+                    margin: 'auto'
+                },
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                        d: "M 0 25 Q 25 25 50 0 L 50 50 Q 25 25 0 25 Z" // OR gate shape
+                        ,
+                        fill: "#ff0072",
+                        stroke: "black",
+                        strokeWidth: "2"
+                    }, void 0, false, {
+                        fileName: "[project]/components/Main/nodes.tsx",
+                        lineNumber: 281,
+                        columnNumber: 5
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
+                        cx: "10",
+                        cy: "10",
+                        r: "6",
+                        fill: "white",
+                        stroke: "black",
+                        strokeWidth: "2"
+                    }, void 0, false, {
+                        fileName: "[project]/components/Main/nodes.tsx",
+                        lineNumber: 288,
+                        columnNumber: 5
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                        d: "M 10 4 V 16" // Vertical line for NOT gate
+                        ,
+                        stroke: "black",
+                        strokeWidth: "2"
+                    }, void 0, false, {
+                        fileName: "[project]/components/Main/nodes.tsx",
+                        lineNumber: 289,
+                        columnNumber: 5
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
+                        cx: "90",
+                        cy: "25",
+                        r: "6",
+                        fill: "white",
+                        stroke: "black",
+                        strokeWidth: "2"
+                    }, void 0, false, {
+                        fileName: "[project]/components/Main/nodes.tsx",
+                        lineNumber: 295,
+                        columnNumber: 5
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/components/Main/nodes.tsx",
+                lineNumber: 273,
+                columnNumber: 3
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/components/Main/nodes.tsx",
+        lineNumber: 260,
+        columnNumber: 3
+    }, this);
+_c7 = NotImplyGate;
+const ImpliedByGate = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$flow$2d$renderer$2f$dist$2f$esm$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["ReactFlowProvider"], {
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$flow$2d$renderer$2f$dist$2f$esm$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["Handle"], {
+                type: "target",
+                position: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$flow$2d$renderer$2f$dist$2f$esm$2f$index$2d$a12c80bd$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__P__as__Position$3e$__["Position"].Left,
+                id: "a",
+                style: {
+                    top: '10%'
+                }
+            }, void 0, false, {
+                fileName: "[project]/components/Main/nodes.tsx",
+                lineNumber: 302,
+                columnNumber: 9
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$flow$2d$renderer$2f$dist$2f$esm$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["Handle"], {
+                type: "target",
+                position: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$flow$2d$renderer$2f$dist$2f$esm$2f$index$2d$a12c80bd$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__P__as__Position$3e$__["Position"].Left,
+                id: "b",
+                style: {
+                    top: '90%'
+                }
+            }, void 0, false, {
+                fileName: "[project]/components/Main/nodes.tsx",
+                lineNumber: 308,
+                columnNumber: 3
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                width: "100",
+                height: "50",
+                viewBox: "0 0 100 50",
+                xmlns: "http://www.w3.org/2000/svg",
+                style: {
+                    display: 'block',
+                    margin: 'auto'
+                },
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                        d: "M 0 25 Q 25 25 50 0 L 50 50 Q 25 25 0 25 Z" // OR gate shape
+                        ,
+                        fill: "#ff0072",
+                        stroke: "black",
+                        strokeWidth: "2"
+                    }, void 0, false, {
+                        fileName: "[project]/components/Main/nodes.tsx",
+                        lineNumber: 322,
+                        columnNumber: 5
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
+                        cx: "10",
+                        cy: "40",
+                        r: "6",
+                        fill: "white",
+                        stroke: "black",
+                        strokeWidth: "2"
+                    }, void 0, false, {
+                        fileName: "[project]/components/Main/nodes.tsx",
+                        lineNumber: 329,
+                        columnNumber: 5
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                        d: "M 10 34 V 46" // Vertical line for NOT gate
+                        ,
+                        stroke: "black",
+                        strokeWidth: "2"
+                    }, void 0, false, {
+                        fileName: "[project]/components/Main/nodes.tsx",
+                        lineNumber: 330,
+                        columnNumber: 5
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/components/Main/nodes.tsx",
+                lineNumber: 314,
+                columnNumber: 3
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/components/Main/nodes.tsx",
+        lineNumber: 301,
+        columnNumber: 3
+    }, this);
+_c8 = ImpliedByGate;
+const NotImpliedByGate = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$flow$2d$renderer$2f$dist$2f$esm$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["ReactFlowProvider"], {
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$flow$2d$renderer$2f$dist$2f$esm$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["Handle"], {
+                type: "target",
+                position: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$flow$2d$renderer$2f$dist$2f$esm$2f$index$2d$a12c80bd$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__P__as__Position$3e$__["Position"].Left,
+                id: "a",
+                style: {
+                    top: '10%'
+                }
+            }, void 0, false, {
+                fileName: "[project]/components/Main/nodes.tsx",
+                lineNumber: 341,
+                columnNumber: 9
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$flow$2d$renderer$2f$dist$2f$esm$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["Handle"], {
+                type: "target",
+                position: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$flow$2d$renderer$2f$dist$2f$esm$2f$index$2d$a12c80bd$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__P__as__Position$3e$__["Position"].Left,
+                id: "b",
+                style: {
+                    top: '90%'
+                }
+            }, void 0, false, {
+                fileName: "[project]/components/Main/nodes.tsx",
+                lineNumber: 347,
+                columnNumber: 3
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                width: "100",
+                height: "50",
+                viewBox: "0 0 100 50",
+                xmlns: "http://www.w3.org/2000/svg",
+                style: {
+                    display: 'block',
+                    margin: 'auto'
+                },
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                        d: "M 0 25 Q 25 25 50 0 L 50 50 Q 25 25 0 25 Z" // OR gate shape
+                        ,
+                        fill: "#ff0072",
+                        stroke: "black",
+                        strokeWidth: "2"
+                    }, void 0, false, {
+                        fileName: "[project]/components/Main/nodes.tsx",
+                        lineNumber: 361,
+                        columnNumber: 5
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
+                        cx: "10",
+                        cy: "40",
+                        r: "6",
+                        fill: "white",
+                        stroke: "black",
+                        strokeWidth: "2"
+                    }, void 0, false, {
+                        fileName: "[project]/components/Main/nodes.tsx",
+                        lineNumber: 368,
+                        columnNumber: 5
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                        d: "M 10 34 V 46" // Vertical line for NOT gate
+                        ,
+                        stroke: "black",
+                        strokeWidth: "2"
+                    }, void 0, false, {
+                        fileName: "[project]/components/Main/nodes.tsx",
+                        lineNumber: 369,
+                        columnNumber: 5
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
+                        cx: "90",
+                        cy: "25",
+                        r: "6",
+                        fill: "white",
+                        stroke: "black",
+                        strokeWidth: "2"
+                    }, void 0, false, {
+                        fileName: "[project]/components/Main/nodes.tsx",
+                        lineNumber: 375,
+                        columnNumber: 5
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/components/Main/nodes.tsx",
+                lineNumber: 353,
+                columnNumber: 3
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/components/Main/nodes.tsx",
+        lineNumber: 340,
+        columnNumber: 3
+    }, this);
+_c9 = NotImpliedByGate;
+const PassThroughGate = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$flow$2d$renderer$2f$dist$2f$esm$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["ReactFlowProvider"], {
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$flow$2d$renderer$2f$dist$2f$esm$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["Handle"], {
+                type: "target",
+                position: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$flow$2d$renderer$2f$dist$2f$esm$2f$index$2d$a12c80bd$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__P__as__Position$3e$__["Position"].Left,
+                id: "a" // Unique ID for the target handle
+                ,
+                style: {
+                    background: '#555'
+                }
+            }, void 0, false, {
+                fileName: "[project]/components/Main/nodes.tsx",
+                lineNumber: 383,
+                columnNumber: 5
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$flow$2d$renderer$2f$dist$2f$esm$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["Handle"], {
+                type: "source",
+                position: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$flow$2d$renderer$2f$dist$2f$esm$2f$index$2d$a12c80bd$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__P__as__Position$3e$__["Position"].Right,
+                style: {
+                    background: '#555'
+                }
+            }, void 0, false, {
+                fileName: "[project]/components/Main/nodes.tsx",
+                lineNumber: 391,
+                columnNumber: 5
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                width: "50" // Adjust width as needed
+                ,
+                height: "50" // Adjust height as needed
+                ,
+                viewBox: "0 0 50 50" // Adjusted to fit the circle perfectly
+                ,
+                xmlns: "http://www.w3.org/2000/svg",
+                style: {
+                    display: 'block',
+                    margin: 'auto'
+                },
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
+                    cx: "25" // Center X coordinate
+                    ,
+                    cy: "25" // Center Y coordinate
+                    ,
+                    r: "20" // Radius of the circle
+                    ,
+                    fill: "#6ede87" // Fill color
+                    ,
+                    stroke: "black" // Border color
+                    ,
+                    strokeWidth: "2" // Border thickness
+                }, void 0, false, {
+                    fileName: "[project]/components/Main/nodes.tsx",
+                    lineNumber: 404,
+                    columnNumber: 5
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/components/Main/nodes.tsx",
+                lineNumber: 396,
+                columnNumber: 3
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/components/Main/nodes.tsx",
+        lineNumber: 381,
         columnNumber: 3
     }, this);
 _c10 = PassThroughGate;
-const NandGate = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
-        width: "80",
-        height: "50",
-        viewBox: "0 0 90 50" // Adjusted to fit the NAND gate perfectly
-        ,
-        xmlns: "http://www.w3.org/2000/svg",
-        style: {
-            display: 'block',
-            margin: 'auto'
-        },
+const NandGate = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$flow$2d$renderer$2f$dist$2f$esm$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["ReactFlowProvider"], {
         children: [
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
-                d: "M 0 0 L 50 0 A 25 25 0 0 1 50 50 L 0 50 Z",
-                fill: "#ff0072",
-                stroke: "black",
-                strokeWidth: "2"
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$flow$2d$renderer$2f$dist$2f$esm$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["Handle"], {
+                type: "target",
+                position: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$flow$2d$renderer$2f$dist$2f$esm$2f$index$2d$a12c80bd$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__P__as__Position$3e$__["Position"].Left,
+                id: "a",
+                style: {
+                    top: '10%'
+                }
             }, void 0, false, {
                 fileName: "[project]/components/Main/nodes.tsx",
-                lineNumber: 263,
-                columnNumber: 5
+                lineNumber: 418,
+                columnNumber: 9
             }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
-                cx: "80",
-                cy: "25",
-                r: "6",
-                fill: "white",
-                stroke: "black",
-                strokeWidth: "2"
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$flow$2d$renderer$2f$dist$2f$esm$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["Handle"], {
+                type: "target",
+                position: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$flow$2d$renderer$2f$dist$2f$esm$2f$index$2d$a12c80bd$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__P__as__Position$3e$__["Position"].Left,
+                id: "b",
+                style: {
+                    top: '90%'
+                }
             }, void 0, false, {
                 fileName: "[project]/components/Main/nodes.tsx",
-                lineNumber: 270,
-                columnNumber: 5
+                lineNumber: 424,
+                columnNumber: 3
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                width: "80",
+                height: "50",
+                viewBox: "0 0 90 50" // Adjusted to fit the NAND gate perfectly
+                ,
+                xmlns: "http://www.w3.org/2000/svg",
+                style: {
+                    display: 'block',
+                    margin: 'auto'
+                },
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                        d: "M 0 0 L 50 0 A 25 25 0 0 1 50 50 L 0 50 Z",
+                        fill: "#ff0072",
+                        stroke: "black",
+                        strokeWidth: "2"
+                    }, void 0, false, {
+                        fileName: "[project]/components/Main/nodes.tsx",
+                        lineNumber: 438,
+                        columnNumber: 5
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
+                        cx: "80",
+                        cy: "25",
+                        r: "6",
+                        fill: "white",
+                        stroke: "black",
+                        strokeWidth: "2"
+                    }, void 0, false, {
+                        fileName: "[project]/components/Main/nodes.tsx",
+                        lineNumber: 445,
+                        columnNumber: 5
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/components/Main/nodes.tsx",
+                lineNumber: 430,
+                columnNumber: 3
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/Main/nodes.tsx",
-        lineNumber: 255,
+        lineNumber: 417,
         columnNumber: 3
     }, this);
 _c11 = NandGate;
-const FalseGate = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
-        width: "50",
-        height: "50",
-        viewBox: "0 0 40 40" // Adjusted the viewBox to make the edges closer to the circle
-        ,
-        xmlns: "http://www.w3.org/2000/svg",
-        style: {
-            display: 'block',
-            margin: 'auto'
-        },
+const FalseGate = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$flow$2d$renderer$2f$dist$2f$esm$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["ReactFlowProvider"], {
         children: [
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
-                cx: "20",
-                cy: "20",
-                r: "10",
-                fill: "red",
-                stroke: "black",
-                strokeWidth: "2"
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$flow$2d$renderer$2f$dist$2f$esm$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["Handle"], {
+                type: "target",
+                position: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$flow$2d$renderer$2f$dist$2f$esm$2f$index$2d$a12c80bd$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__P__as__Position$3e$__["Position"].Left,
+                id: "a" // Unique ID for the target handle
+                ,
+                style: {
+                    background: '#555'
+                }
             }, void 0, false, {
                 fileName: "[project]/components/Main/nodes.tsx",
-                lineNumber: 283,
+                lineNumber: 453,
+                columnNumber: 9
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$flow$2d$renderer$2f$dist$2f$esm$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["Handle"], {
+                type: "source",
+                position: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$flow$2d$renderer$2f$dist$2f$esm$2f$index$2d$a12c80bd$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__P__as__Position$3e$__["Position"].Right,
+                style: {
+                    background: '#555'
+                }
+            }, void 0, false, {
+                fileName: "[project]/components/Main/nodes.tsx",
+                lineNumber: 461,
                 columnNumber: 5
             }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("text", {
-                x: "50%",
-                y: "50%",
-                fontSize: "14",
-                textAnchor: "middle",
-                fill: "white",
-                dy: ".3em",
-                children: "0"
-            }, void 0, false, {
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                width: "50",
+                height: "50",
+                viewBox: "0 0 40 40" // Adjusted the viewBox to make the edges closer to the circle
+                ,
+                xmlns: "http://www.w3.org/2000/svg",
+                style: {
+                    display: 'block',
+                    margin: 'auto'
+                },
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
+                        cx: "20",
+                        cy: "20",
+                        r: "10",
+                        fill: "red",
+                        stroke: "black",
+                        strokeWidth: "2"
+                    }, void 0, false, {
+                        fileName: "[project]/components/Main/nodes.tsx",
+                        lineNumber: 474,
+                        columnNumber: 5
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("text", {
+                        x: "50%",
+                        y: "50%",
+                        fontSize: "14",
+                        textAnchor: "middle",
+                        fill: "white",
+                        dy: ".3em",
+                        children: "0"
+                    }, void 0, false, {
+                        fileName: "[project]/components/Main/nodes.tsx",
+                        lineNumber: 475,
+                        columnNumber: 5
+                    }, this)
+                ]
+            }, void 0, true, {
                 fileName: "[project]/components/Main/nodes.tsx",
-                lineNumber: 284,
-                columnNumber: 5
+                lineNumber: 466,
+                columnNumber: 3
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/Main/nodes.tsx",
-        lineNumber: 275,
+        lineNumber: 451,
         columnNumber: 3
     }, this);
 _c12 = FalseGate;
-const TrueGate = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
-        width: "50",
-        height: "50",
-        viewBox: "0 0 40 40" // Adjusted the viewBox to make the edges closer to the circle
-        ,
-        xmlns: "http://www.w3.org/2000/svg",
-        style: {
-            display: 'block',
-            margin: 'auto'
-        },
+const TrueGate = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$flow$2d$renderer$2f$dist$2f$esm$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["ReactFlowProvider"], {
         children: [
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
-                cx: "20",
-                cy: "20",
-                r: "10",
-                fill: "green",
-                stroke: "black",
-                strokeWidth: "2"
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$flow$2d$renderer$2f$dist$2f$esm$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["Handle"], {
+                type: "target",
+                position: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$flow$2d$renderer$2f$dist$2f$esm$2f$index$2d$a12c80bd$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__P__as__Position$3e$__["Position"].Left,
+                id: "a" // Unique ID for the target handle
+                ,
+                style: {
+                    background: '#555'
+                }
             }, void 0, false, {
                 fileName: "[project]/components/Main/nodes.tsx",
-                lineNumber: 297,
+                lineNumber: 483,
+                columnNumber: 9
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$flow$2d$renderer$2f$dist$2f$esm$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["Handle"], {
+                type: "source",
+                position: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$flow$2d$renderer$2f$dist$2f$esm$2f$index$2d$a12c80bd$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__P__as__Position$3e$__["Position"].Right,
+                style: {
+                    background: '#555'
+                }
+            }, void 0, false, {
+                fileName: "[project]/components/Main/nodes.tsx",
+                lineNumber: 491,
                 columnNumber: 5
             }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("text", {
-                x: "50%",
-                y: "50%",
-                fontSize: "14",
-                textAnchor: "middle",
-                fill: "white",
-                dy: ".3em",
-                children: "1"
-            }, void 0, false, {
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                width: "50",
+                height: "50",
+                viewBox: "0 0 40 40" // Adjusted the viewBox to make the edges closer to the circle
+                ,
+                xmlns: "http://www.w3.org/2000/svg",
+                style: {
+                    display: 'block',
+                    margin: 'auto'
+                },
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
+                        cx: "20",
+                        cy: "20",
+                        r: "10",
+                        fill: "green",
+                        stroke: "black",
+                        strokeWidth: "2"
+                    }, void 0, false, {
+                        fileName: "[project]/components/Main/nodes.tsx",
+                        lineNumber: 504,
+                        columnNumber: 5
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("text", {
+                        x: "50%",
+                        y: "50%",
+                        fontSize: "14",
+                        textAnchor: "middle",
+                        fill: "white",
+                        dy: ".3em",
+                        children: "1"
+                    }, void 0, false, {
+                        fileName: "[project]/components/Main/nodes.tsx",
+                        lineNumber: 505,
+                        columnNumber: 5
+                    }, this)
+                ]
+            }, void 0, true, {
                 fileName: "[project]/components/Main/nodes.tsx",
-                lineNumber: 298,
-                columnNumber: 5
+                lineNumber: 496,
+                columnNumber: 3
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/Main/nodes.tsx",
-        lineNumber: 289,
+        lineNumber: 481,
         columnNumber: 3
     }, this);
 _c13 = TrueGate;
@@ -741,12 +1198,12 @@ const defaultNodes = [
                     layout: "intrinsic"
                 }, void 0, false, {
                     fileName: "[project]/components/Main/nodes.tsx",
-                    lineNumber: 311,
+                    lineNumber: 519,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/Main/nodes.tsx",
-                lineNumber: 310,
+                lineNumber: 518,
                 columnNumber: 9
             }, this)
         },
@@ -768,7 +1225,7 @@ const defaultNodes = [
         data: {
             label: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(XnorGate, {}, void 0, false, {
                 fileName: "[project]/components/Main/nodes.tsx",
-                lineNumber: 324,
+                lineNumber: 532,
                 columnNumber: 20
             }, this)
         },
@@ -863,7 +1320,7 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 
 var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, t: __turbopack_require_real__ } = __turbopack_context__;
 {
-__turbopack_export_value__(JSON.parse("[{\"neuron_idx\":0,\"gate\":\"not\",\"inputs\":[0,1]},{\"neuron_idx\":1,\"gate\":\"and\",\"inputs\":[-4096,-4095]},{\"neuron_idx\":2,\"gate\":\"xnor\",\"inputs\":[0,2]},{\"neuron_idx\":3,\"gate\":\"or\",\"inputs\":[1,3]},{\"neuron_idx\":4,\"gate\":\"true\",\"inputs\":[2,4]}]"));}}),
+__turbopack_export_value__(JSON.parse("[{\"neuron_idx\":0,\"gate\":\"not_a\",\"inputs\":[-2000,-2001]},{\"neuron_idx\":1,\"gate\":\"and\",\"inputs\":[-4096,-4095]},{\"neuron_idx\":2,\"gate\":\"not_xor\",\"inputs\":[3,4]},{\"neuron_idx\":3,\"gate\":\"or\",\"inputs\":[1,0]},{\"neuron_idx\":4,\"gate\":\"not_a\",\"inputs\":[-1999,-1000]}]"));}}),
 "[project]/components/Main/Main.tsx [app-client] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
@@ -898,6 +1355,35 @@ var _s = __turbopack_refresh__.signature();
 ;
 ;
 ;
+// Custom Node Component
+const CustomNode = ({ id, data })=>{
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        children: [
+            data.label,
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "source-handle-a",
+                "data-handleid": "a"
+            }, void 0, false, {
+                fileName: "[project]/components/Main/Main.tsx",
+                lineNumber: 30,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "source-handle-b",
+                "data-handleid": "b"
+            }, void 0, false, {
+                fileName: "[project]/components/Main/Main.tsx",
+                lineNumber: 31,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/components/Main/Main.tsx",
+        lineNumber: 27,
+        columnNumber: 5
+    }, this);
+};
+_c = CustomNode;
 function Main(props) {
     _s();
     const [leftImagePosition, setLeftImagePosition] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])({
@@ -980,82 +1466,82 @@ function Main(props) {
             const gateMap = {
                 'zero': /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Main$2f$nodes$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FalseGate"], {}, void 0, false, {
                     fileName: "[project]/components/Main/Main.tsx",
-                    lineNumber: 91,
+                    lineNumber: 103,
                     columnNumber: 15
                 }, this),
                 'and': /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Main$2f$nodes$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AndGate"], {}, void 0, false, {
                     fileName: "[project]/components/Main/Main.tsx",
-                    lineNumber: 92,
+                    lineNumber: 104,
                     columnNumber: 14
                 }, this),
                 'not_implies': /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Main$2f$nodes$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["NotImplyGate"], {}, void 0, false, {
                     fileName: "[project]/components/Main/Main.tsx",
-                    lineNumber: 93,
+                    lineNumber: 105,
                     columnNumber: 22
                 }, this),
                 'a': /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Main$2f$nodes$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["PassThroughGate"], {}, void 0, false, {
                     fileName: "[project]/components/Main/Main.tsx",
-                    lineNumber: 94,
+                    lineNumber: 106,
                     columnNumber: 12
                 }, this),
                 'not_implied_by': /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Main$2f$nodes$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["NotImpliedByGate"], {}, void 0, false, {
                     fileName: "[project]/components/Main/Main.tsx",
-                    lineNumber: 95,
+                    lineNumber: 107,
                     columnNumber: 25
                 }, this),
                 'b': /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Main$2f$nodes$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["PassThroughGate"], {}, void 0, false, {
                     fileName: "[project]/components/Main/Main.tsx",
-                    lineNumber: 96,
+                    lineNumber: 108,
                     columnNumber: 12
                 }, this),
                 'xor': /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Main$2f$nodes$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["XorGate"], {}, void 0, false, {
                     fileName: "[project]/components/Main/Main.tsx",
-                    lineNumber: 97,
+                    lineNumber: 109,
                     columnNumber: 14
                 }, this),
                 'or': /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Main$2f$nodes$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["OrGate"], {}, void 0, false, {
                     fileName: "[project]/components/Main/Main.tsx",
-                    lineNumber: 98,
+                    lineNumber: 110,
                     columnNumber: 13
                 }, this),
                 'not_or': /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Main$2f$nodes$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["NorGate"], {}, void 0, false, {
                     fileName: "[project]/components/Main/Main.tsx",
-                    lineNumber: 99,
+                    lineNumber: 111,
                     columnNumber: 17
                 }, this),
                 'not_xor': /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Main$2f$nodes$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["XnorGate"], {}, void 0, false, {
                     fileName: "[project]/components/Main/Main.tsx",
-                    lineNumber: 100,
+                    lineNumber: 112,
                     columnNumber: 18
                 }, this),
                 'not_b': /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Main$2f$nodes$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["NotGate"], {}, void 0, false, {
                     fileName: "[project]/components/Main/Main.tsx",
-                    lineNumber: 101,
+                    lineNumber: 113,
                     columnNumber: 16
                 }, this),
                 'implied_by': /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Main$2f$nodes$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["ImpliedByGate"], {}, void 0, false, {
                     fileName: "[project]/components/Main/Main.tsx",
-                    lineNumber: 102,
+                    lineNumber: 114,
                     columnNumber: 21
                 }, this),
                 'not_a': /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Main$2f$nodes$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["NotGate"], {}, void 0, false, {
                     fileName: "[project]/components/Main/Main.tsx",
-                    lineNumber: 103,
+                    lineNumber: 115,
                     columnNumber: 16
                 }, this),
                 'implies': /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Main$2f$nodes$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["ImplyGate"], {}, void 0, false, {
                     fileName: "[project]/components/Main/Main.tsx",
-                    lineNumber: 104,
+                    lineNumber: 116,
                     columnNumber: 18
                 }, this),
                 'not_and': /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Main$2f$nodes$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["NandGate"], {}, void 0, false, {
                     fileName: "[project]/components/Main/Main.tsx",
-                    lineNumber: 105,
+                    lineNumber: 117,
                     columnNumber: 18
                 }, this),
                 'one': /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Main$2f$nodes$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TrueGate"], {}, void 0, false, {
                     fileName: "[project]/components/Main/Main.tsx",
-                    lineNumber: 106,
+                    lineNumber: 118,
                     columnNumber: 14
                 }, this)
             };
@@ -1069,7 +1555,7 @@ function Main(props) {
                         children: "Unknown Gate"
                     }, void 0, false, {
                         fileName: "[project]/components/Main/Main.tsx",
-                        lineNumber: 115,
+                        lineNumber: 127,
                         columnNumber: 51
                     }, this);
                     return {
@@ -1090,7 +1576,7 @@ function Main(props) {
                             padding: 0
                         },
                         sourcePosition: 'right',
-                        targetPosition: 'left'
+                        targetPosition: 'right'
                     };
                 }
             }["Main.useEffect.newNodes"]);
@@ -1100,12 +1586,17 @@ function Main(props) {
                         setStartGate(node.neuron_idx.toString());
                     }
                     return node.inputs.map({
-                        "Main.useEffect.newEdges": (inputIdx)=>{
+                        "Main.useEffect.newEdges": (inputIdx, index)=>{
+                            let tar_han = 'a';
+                            if (index === 1) {
+                                tar_han = 'b';
+                            }
                             // Handle other cases as before
                             return {
                                 id: `e${inputIdx}-${node.neuron_idx}`,
                                 source: inputIdx.toString(),
                                 target: node.neuron_idx.toString(),
+                                targetHandle: tar_han,
                                 animated: true
                             };
                         }
@@ -1133,12 +1624,12 @@ function Main(props) {
                             }
                         }, void 0, false, {
                             fileName: "[project]/components/Main/Main.tsx",
-                            lineNumber: 158,
+                            lineNumber: 175,
                             columnNumber: 31
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/Main/Main.tsx",
-                        lineNumber: 157,
+                        lineNumber: 174,
                         columnNumber: 11
                     }, this)
                 },
@@ -1151,14 +1642,13 @@ function Main(props) {
                     color: 'white'
                 },
                 // @ts-ignore to suppress TypeScript error for sourcePosition
-                sourcePosition: 'right',
-                // @ts-ignore to suppress TypeScript error for sourcePosition
-                targetPosition: 'left'
+                sourcePosition: 'right'
             });
             newEdges.push({
                 id: 'e-4097-start',
                 source: '-4097',
                 target: startGate,
+                targetHandle: 'a',
                 animated: true
             });
             // Update state with generated nodes
@@ -1209,6 +1699,9 @@ function Main(props) {
                 edges: defaultEdges,
                 onNodesChange: onNodesChange,
                 onEdgesChange: onEdgesChange,
+                nodeTypes: {
+                    custom: CustomNode
+                },
                 fitView: true,
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$xyflow$2f$react$2f$dist$2f$esm$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["MiniMap"], {
                     nodeColor: nodeColor,
@@ -1217,25 +1710,26 @@ function Main(props) {
                     pannable: true
                 }, void 0, false, {
                     fileName: "[project]/components/Main/Main.tsx",
-                    lineNumber: 221,
+                    lineNumber: 237,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/Main/Main.tsx",
-                lineNumber: 220,
+                lineNumber: 236,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/Main/Main.tsx",
-        lineNumber: 217,
+        lineNumber: 233,
         columnNumber: 5
     }, this);
 }
 _s(Main, "2Uep473kLC5/AwOelN5+QDdYvBA=");
-_c = Main;
-var _c;
-__turbopack_refresh__.register(_c, "Main");
+_c1 = Main;
+var _c, _c1;
+__turbopack_refresh__.register(_c, "CustomNode");
+__turbopack_refresh__.register(_c1, "Main");
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
     __turbopack_refresh__.registerExports(module, globalThis.$RefreshHelpers$);
 }

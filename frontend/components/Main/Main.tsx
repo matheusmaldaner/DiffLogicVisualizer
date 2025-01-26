@@ -21,6 +21,18 @@ import NodeGate from '../NodeGate';
 import jsonData from '../../temp.json';
 import { start } from 'repl';
 
+// Custom Node Component
+const CustomNode = ({ id, data }) => {
+  return (
+    <div>
+      {data.label}
+      {/* Explicitly define source handles */}
+      <div className="source-handle-a" data-handleid="a" />
+      <div className="source-handle-b" data-handleid="b" />
+    </div>
+  );
+};
+
 export function Main(props: any) {
   const [leftImagePosition, setLeftImagePosition] = useState<{ top: number, left: number }>({ top: 0, left: 0 });
   const [centerImagePosition, setCenterImagePosition] = useState<{ top: number, left: number }>({ top: 0, left: 0 });
@@ -127,7 +139,7 @@ export function Main(props: any) {
           padding: 0,
         },
         sourcePosition: 'right',
-        targetPosition: 'left',
+        targetPosition: 'right',
       };
     });
 
@@ -136,12 +148,17 @@ export function Main(props: any) {
       if (node.inputs.includes(-4096)) {
         setStartGate(node.neuron_idx.toString());
       }
-      return node.inputs.map((inputIdx: number) => {
+      return node.inputs.map((inputIdx: number, index: number) => {
+        let tar_han = 'a';
+          if (index === 1){
+            tar_han = 'b';
+          }
           // Handle other cases as before
           return {
             id: `e${inputIdx}-${node.neuron_idx}`,
             source: inputIdx.toString(),
             target: node.neuron_idx.toString(),
+            targetHandle: tar_han,
             animated: true, // Optional: you can toggle the animation
           };
         }
@@ -163,14 +180,13 @@ export function Main(props: any) {
       style: { backgroundColor: '#6ede87', color: 'white' },
       // @ts-ignore to suppress TypeScript error for sourcePosition
       sourcePosition: 'right',
-      // @ts-ignore to suppress TypeScript error for sourcePosition
-      targetPosition: 'left',
     })
 
     newEdges.push({
       id: 'e-4097-start',
       source: '-4097',
       target: startGate,
+      targetHandle: 'a',
       animated: true,
     })
 
@@ -217,7 +233,7 @@ export function Main(props: any) {
     <div style={{ height: '500px', width: '100%' }}> {/* Specify a height */}
     {/* @ts-ignore to suppress TypeScript error */}
     {defaultNodes.length > 0 && (
-      <ReactFlow nodes={defaultNodes} edges={defaultEdges} onNodesChange={onNodesChange} onEdgesChange={onEdgesChange} fitView>
+      <ReactFlow nodes={defaultNodes} edges={defaultEdges} onNodesChange={onNodesChange} onEdgesChange={onEdgesChange} nodeTypes={{custom: CustomNode}} fitView>
         <MiniMap nodeColor={nodeColor} nodeStrokeWidth={3} zoomable pannable />
       </ReactFlow>
     )}

@@ -1,8 +1,21 @@
-import { Node } from 'react-flow-renderer';
+import { Node, Handle, Position, ReactFlowProvider } from 'react-flow-renderer';
 import Image from 'next/image';
 import EmperorPenguinBabyImage from '../../pics/EmperorPenguinBaby.jpeg';
 
 export const AndGate = () => (
+  <ReactFlowProvider>
+    <Handle
+    type="target"
+    position={Position.Left}
+    id="a"
+    style={{ top: '10%' }}
+  />
+  <Handle
+    type="target"
+    position={Position.Left}
+    id="b"
+    style={{ top: '90%' }}
+  />
   <svg
     width="80"
     height="50"
@@ -17,9 +30,23 @@ export const AndGate = () => (
       strokeWidth="2"
     />
   </svg>
+  </ReactFlowProvider>
 );
 
 export const OrGate = () => (
+  <ReactFlowProvider>
+  <Handle
+  type="target"
+  position={Position.Left}
+  id="a"
+  style={{ top: '10%' }}
+/>
+<Handle
+  type="target"
+  position={Position.Left}
+  id="b"
+  style={{ top: '90%' }}
+/>
   <svg
     width="65"
     height="50"
@@ -34,29 +61,63 @@ export const OrGate = () => (
       strokeWidth="2"
     />
   </svg>
+  </ReactFlowProvider>
 );
 
 export const NotGate = () => (
-  <svg
-    width="60"
-    height="50"
-    viewBox="0 0 70 50" // Adjusted to fit the NOT gate perfectly
-    xmlns="http://www.w3.org/2000/svg"
-    style={{ display: 'block', margin: 'auto' }}
-  >
-    {/* Triangle for the NOT gate */}
-    <path
-      d="M 5 5 L 55 25 L 5 45 Z"
-      fill="#ff0072"
-      stroke="black"
-      strokeWidth="2"
+  <ReactFlowProvider>
+  <div>
+    {/* Target Handle (Input) */}
+    <Handle
+      type="target"
+      position={Position.Left}
+      id="a" // Unique ID for the target handle
+      style={{ background: '#555' }} // Optional: Custom styling
     />
-    {/* Circle for the NOT gate's negation */}
-    <circle cx="60" cy="25" r="5" fill="#ffffff" stroke="black" strokeWidth="2" />
-  </svg>
+
+    {/* Source Handle (Output) */}
+    <Handle
+      type="source"
+      position={Position.Right}
+      style={{ background: '#555' }} // Optional: Custom styling
+    />
+
+    {/* SVG for the NOT Gate */}
+    <svg
+      width="60"
+      height="50"
+      viewBox="0 0 70 50" // Adjusted to fit the NOT gate perfectly
+      xmlns="http://www.w3.org/2000/svg"
+      style={{ display: 'block', margin: 'auto' }}
+    >
+      {/* Triangle for the NOT gate */}
+      <path
+        d="M 5 5 L 55 25 L 5 45 Z"
+        fill="#ff0072"
+        stroke="black"
+        strokeWidth="2"
+      />
+      {/* Circle for the NOT gate's negation */}
+      <circle cx="60" cy="25" r="5" fill="#ffffff" stroke="black" strokeWidth="2" />
+    </svg>
+  </div>
+  </ReactFlowProvider>
 );
 
 export const XorGate = () => (
+  <ReactFlowProvider>
+        <Handle
+    type="target"
+    position={Position.Left}
+    id="a"
+    style={{ top: '10%' }}
+  />
+  <Handle
+    type="target"
+    position={Position.Left}
+    id="b"
+    style={{ top: '90%' }}
+  />
   <svg
     width="65"
     height="50"
@@ -79,9 +140,23 @@ export const XorGate = () => (
       strokeWidth="2"
     />
   </svg>
+  </ReactFlowProvider>
 );
 
 export const NorGate = () => (
+  <ReactFlowProvider>
+        <Handle
+    type="target"
+    position={Position.Left}
+    id="a"
+    style={{ top: '10%' }}
+  />
+  <Handle
+    type="target"
+    position={Position.Left}
+    id="b"
+    style={{ top: '90%' }}
+  />
   <svg
     width="70"
     height="50"
@@ -99,9 +174,23 @@ export const NorGate = () => (
     {/* Inverted Circle for NOR gate */}
     <circle cx="75" cy="25" r="6" fill="white" stroke="black" strokeWidth="2" />
   </svg>
+  </ReactFlowProvider>
 );
 
 export const XnorGate = () => (
+  <ReactFlowProvider>
+        <Handle
+    type="target"
+    position={Position.Left}
+    id="a"
+    style={{ top: '10%' }}
+  />
+  <Handle
+    type="target"
+    position={Position.Left}
+    id="b"
+    style={{ top: '90%' }}
+  />
   <svg
     width="100"
     height="50"
@@ -125,9 +214,23 @@ export const XnorGate = () => (
     {/* Inverted Circle for XNOR gate */}
     <circle cx="90" cy="25" r="6" fill="white" stroke="black" strokeWidth="2" />
   </svg>
+  </ReactFlowProvider>
 );
 
 export const ImplyGate = () => (
+  <ReactFlowProvider>
+        <Handle
+    type="target"
+    position={Position.Left}
+    id="a"
+    style={{ top: '10%' }}
+  />
+  <Handle
+    type="target"
+    position={Position.Left}
+    id="b"
+    style={{ top: '90%' }}
+  />
   <svg
     width="100"
     height="50"
@@ -150,9 +253,23 @@ export const ImplyGate = () => (
       strokeWidth="2"
     />
   </svg>
+  </ReactFlowProvider>
 );
 
 export const NotImplyGate = () => (
+  <ReactFlowProvider>
+        <Handle
+    type="target"
+    position={Position.Left}
+    id="a"
+    style={{ top: '10%' }}
+  />
+  <Handle
+    type="target"
+    position={Position.Left}
+    id="b"
+    style={{ top: '90%' }}
+  />
   <svg
     width="100"
     height="50"
@@ -177,9 +294,23 @@ export const NotImplyGate = () => (
     {/* NOT Gate at Output (Small Circle) */}
     <circle cx="90" cy="25" r="6" fill="white" stroke="black" strokeWidth="2" />
   </svg>
+  </ReactFlowProvider>
 );
 
 export const ImpliedByGate = () => (
+  <ReactFlowProvider>
+        <Handle
+    type="target"
+    position={Position.Left}
+    id="a"
+    style={{ top: '10%' }}
+  />
+  <Handle
+    type="target"
+    position={Position.Left}
+    id="b"
+    style={{ top: '90%' }}
+  />
   <svg
     width="100"
     height="50"
@@ -202,9 +333,23 @@ export const ImpliedByGate = () => (
       strokeWidth="2"
     />
   </svg>
+  </ReactFlowProvider>
 );
 
 export const NotImpliedByGate = () => (
+  <ReactFlowProvider>
+        <Handle
+    type="target"
+    position={Position.Left}
+    id="a"
+    style={{ top: '10%' }}
+  />
+  <Handle
+    type="target"
+    position={Position.Left}
+    id="b"
+    style={{ top: '90%' }}
+  />
   <svg
     width="100"
     height="50"
@@ -229,9 +374,25 @@ export const NotImpliedByGate = () => (
     {/* NOT Gate at Output (Small Circle) */}
     <circle cx="90" cy="25" r="6" fill="white" stroke="black" strokeWidth="2" />
   </svg>
+  </ReactFlowProvider>
 );
 
 export const PassThroughGate = () => (
+  <ReactFlowProvider>
+    {/* Target Handle (Input) */}
+    <Handle
+      type="target"
+      position={Position.Left}
+      id="a" // Unique ID for the target handle
+      style={{ background: '#555' }} // Optional: Custom styling
+    />
+
+    {/* Source Handle (Output) */}
+    <Handle
+      type="source"
+      position={Position.Right}
+      style={{ background: '#555' }} // Optional: Custom styling
+    />
   <svg
     width="50" // Adjust width as needed
     height="50" // Adjust height as needed
@@ -249,9 +410,23 @@ export const PassThroughGate = () => (
       strokeWidth="2" // Border thickness
     />
   </svg>
+  </ReactFlowProvider>
 );
 
 export const NandGate = () => (
+  <ReactFlowProvider>
+        <Handle
+    type="target"
+    position={Position.Left}
+    id="a"
+    style={{ top: '10%' }}
+  />
+  <Handle
+    type="target"
+    position={Position.Left}
+    id="b"
+    style={{ top: '90%' }}
+  />
   <svg
     width="80"
     height="50"
@@ -269,9 +444,25 @@ export const NandGate = () => (
     {/* Inverted Circle for NAND gate */}
     <circle cx="80" cy="25" r="6" fill="white" stroke="black" strokeWidth="2" />
   </svg>
+  </ReactFlowProvider>
 );
 
 export const FalseGate = () => (
+  <ReactFlowProvider>
+        {/* Target Handle (Input) */}
+        <Handle
+      type="target"
+      position={Position.Left}
+      id="a" // Unique ID for the target handle
+      style={{ background: '#555' }} // Optional: Custom styling
+    />
+
+    {/* Source Handle (Output) */}
+    <Handle
+      type="source"
+      position={Position.Right}
+      style={{ background: '#555' }} // Optional: Custom styling
+    />
   <svg
     width="50"
     height="50"
@@ -283,9 +474,25 @@ export const FalseGate = () => (
     <circle cx="20" cy="20" r="10" fill="red" stroke="black" strokeWidth="2" />
     <text x="50%" y="50%" fontSize="14" textAnchor="middle" fill="white" dy=".3em">0</text>
   </svg>
+  </ReactFlowProvider>
 );
 
 export const TrueGate = () => (
+  <ReactFlowProvider>
+        {/* Target Handle (Input) */}
+        <Handle
+      type="target"
+      position={Position.Left}
+      id="a" // Unique ID for the target handle
+      style={{ background: '#555' }} // Optional: Custom styling
+    />
+
+    {/* Source Handle (Output) */}
+    <Handle
+      type="source"
+      position={Position.Right}
+      style={{ background: '#555' }} // Optional: Custom styling
+    />
   <svg
     width="50"
     height="50"
@@ -297,6 +504,7 @@ export const TrueGate = () => (
     <circle cx="20" cy="20" r="10" fill="green" stroke="black" strokeWidth="2" />
     <text x="50%" y="50%" fontSize="14" textAnchor="middle" fill="white" dy=".3em">1</text>
   </svg>
+  </ReactFlowProvider>
 );
 
 
