@@ -1,4 +1,4 @@
-# Logic Gate Neural Network Visualizer
+# Neural Network Visualizer
 
 A tool to visualize the internal structure and activation paths of logic gate neural networks. This project aims to make neural networks more interpretable and user-friendly by providing an interactive graph-based visualization of their operations.
 
@@ -13,7 +13,7 @@ A tool to visualize the internal structure and activation paths of logic gate ne
 
 ## Overview
 
-**Logic Gate Neural Network Visualizer** is an interactive web-based tool designed to:
+**Neural Network Visualizer** is an interactive web-based tool designed to:
 1. Visualize the structure and connections within a trained logic gate neural network.
 2. Demonstrate the forward pass of the model on user-provided input images.
 3. Highlight the activation paths and provide insights into how the model arrives at a classification.
