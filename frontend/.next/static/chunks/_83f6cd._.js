@@ -592,7 +592,7 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 
 var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, t: __turbopack_require_real__ } = __turbopack_context__;
 {
-__turbopack_export_value__(JSON.parse("[{\"neuron_idx\":0,\"gate\":\"not\",\"inputs\":[0,1]},{\"neuron_idx\":1,\"gate\":\"and\",\"inputs\":[-2,-1]},{\"neuron_idx\":2,\"gate\":\"xnor\",\"inputs\":[0,2]},{\"neuron_idx\":3,\"gate\":\"or\",\"inputs\":[1,3]},{\"neuron_idx\":4,\"gate\":\"true\",\"inputs\":[2,4]}]"));}}),
+__turbopack_export_value__(JSON.parse("[{\"neuron_idx\":0,\"gate\":\"not\",\"inputs\":[0,1]},{\"neuron_idx\":1,\"gate\":\"and\",\"inputs\":[-4096,-4095]},{\"neuron_idx\":2,\"gate\":\"xnor\",\"inputs\":[0,2]},{\"neuron_idx\":3,\"gate\":\"or\",\"inputs\":[1,3]},{\"neuron_idx\":4,\"gate\":\"true\",\"inputs\":[2,4]}]"));}}),
 "[project]/components/Main/Main.tsx [app-client] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
@@ -602,6 +602,7 @@ __turbopack_esm__({
     "Main": (()=>Main)
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/image.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$d3$2f$src$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$module__evaluation$3e$__ = __turbopack_import__("[project]/node_modules/d3/src/index.js [app-client] (ecmascript) <module evaluation>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$pics$2f$EmperorPenguinBaby$2e$jpeg$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$pics$2f$EmperorPenguinBaby$2e$jpeg__$5b$app$2d$client$5d$__$28$static$2922$__$7d$__$5b$app$2d$client$5d$__$28$structured__image__object$2c$__ecmascript$29$__ = __turbopack_import__('[project]/pics/EmperorPenguinBaby.jpeg.mjs { IMAGE => "[project]/pics/EmperorPenguinBaby.jpeg [app-client] (static)" } [app-client] (structured image object, ecmascript)');
@@ -615,6 +616,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$d3$2f$src$2f
 ;
 var _s = __turbopack_refresh__.signature();
 'use client';
+;
 ;
 ;
 ;
@@ -639,33 +641,80 @@ function Main(props) {
     const centerImageRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
     const [defaultNodes, setDefaultNodes] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])([]);
     const [defaultEdges, setDefaultEdges] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])([]);
+    const [startGate, setStartGate] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])('');
+    const onNodesChange = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useCallback"])({
+        "Main.useCallback[onNodesChange]": // @ts-ignore to suppress TypeScript error
+        (changes)=>setDefaultNodes({
+                "Main.useCallback[onNodesChange]": (nds)=>(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$xyflow$2f$react$2f$dist$2f$esm$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["applyNodeChanges"])(changes, nds)
+            }["Main.useCallback[onNodesChange]"])
+    }["Main.useCallback[onNodesChange]"], []);
+    const onEdgesChange = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useCallback"])({
+        "Main.useCallback[onEdgesChange]": // @ts-ignore to suppress TypeScript error
+        (changes)=>setDefaultEdges({
+                "Main.useCallback[onEdgesChange]": (eds)=>(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$xyflow$2f$react$2f$dist$2f$esm$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["applyEdgeChanges"])(changes, eds)
+            }["Main.useCallback[onEdgesChange]"])
+    }["Main.useCallback[onEdgesChange]"], []);
+    const [selectedImage, setSelectedImage] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(__TURBOPACK__imported__module__$5b$project$5d2f$pics$2f$EmperorPenguinBaby$2e$jpeg$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$pics$2f$EmperorPenguinBaby$2e$jpeg__$5b$app$2d$client$5d$__$28$static$2922$__$7d$__$5b$app$2d$client$5d$__$28$structured__image__object$2c$__ecmascript$29$__["default"]);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "Main.useEffect": ()=>{
+            if (props.selectedImage === '/_next/static/media/EmperorPenguinBaby.7955bfc0.jpeg') {
+                setSelectedImage(__TURBOPACK__imported__module__$5b$project$5d2f$pics$2f$EmperorPenguinBaby$2e$jpeg$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$pics$2f$EmperorPenguinBaby$2e$jpeg__$5b$app$2d$client$5d$__$28$static$2922$__$7d$__$5b$app$2d$client$5d$__$28$structured__image__object$2c$__ecmascript$29$__["default"]);
+            } else if (props.selectedImage === '/_next/static/media/SouthernRockhopperPenguin.ae32a423.jpg') {
+                setSelectedImage(__TURBOPACK__imported__module__$5b$project$5d2f$pics$2f$SouthernRockhopperPenguin$2e$jpg$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$pics$2f$SouthernRockhopperPenguin$2e$jpg__$5b$app$2d$client$5d$__$28$static$2922$__$7d$__$5b$app$2d$client$5d$__$28$structured__image__object$2c$__ecmascript$29$__["default"]);
+            } else if (props.selectedImage === '/_next/static/media/GentooPenguin.8585d424.jpg') {
+                setSelectedImage(__TURBOPACK__imported__module__$5b$project$5d2f$pics$2f$GentooPenguin$2e$jpg$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$pics$2f$GentooPenguin$2e$jpg__$5b$app$2d$client$5d$__$28$static$2922$__$7d$__$5b$app$2d$client$5d$__$28$structured__image__object$2c$__ecmascript$29$__["default"]);
+            } else {
+                setSelectedImage(props.selectedImage);
+            }
+        }
+    }["Main.useEffect"], [
+        props.selectedImage
+    ]);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "Main.useEffect": ()=>{
+            if (leftImageRef.current) {
+                const leftImageRect = leftImageRef.current.getBoundingClientRect();
+                setLeftImagePosition({
+                    top: (leftImageRect.top + leftImageRect.bottom) / 2,
+                    left: leftImageRect.right
+                });
+            }
+            if (centerImageRef.current) {
+                const centerImageRect = centerImageRef.current.getBoundingClientRect();
+                setCenterImagePosition({
+                    top: (centerImageRect.top + centerImageRect.bottom) / 2,
+                    left: centerImageRect.left
+                });
+            }
+        }
+    }["Main.useEffect"], []);
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
         "Main.useEffect": ()=>{
             // Map gate strings to corresponding components
             const gateMap = {
                 'not': /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Main$2f$nodes$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["NotGate"], {}, void 0, false, {
                     fileName: "[project]/components/Main/Main.tsx",
-                    lineNumber: 37,
+                    lineNumber: 81,
                     columnNumber: 14
                 }, this),
                 'and': /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Main$2f$nodes$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AndGate"], {}, void 0, false, {
                     fileName: "[project]/components/Main/Main.tsx",
-                    lineNumber: 38,
+                    lineNumber: 82,
                     columnNumber: 14
                 }, this),
                 'or': /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Main$2f$nodes$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["OrGate"], {}, void 0, false, {
                     fileName: "[project]/components/Main/Main.tsx",
-                    lineNumber: 39,
+                    lineNumber: 83,
                     columnNumber: 13
                 }, this),
                 'xnor': /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Main$2f$nodes$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["XnorGate"], {}, void 0, false, {
                     fileName: "[project]/components/Main/Main.tsx",
-                    lineNumber: 40,
+                    lineNumber: 84,
                     columnNumber: 15
                 }, this),
                 'true': /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Main$2f$nodes$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TrueGate"], {}, void 0, false, {
                     fileName: "[project]/components/Main/Main.tsx",
-                    lineNumber: 41,
+                    lineNumber: 85,
                     columnNumber: 15
                 }, this)
             };
@@ -679,7 +728,7 @@ function Main(props) {
                         children: "Unknown Gate"
                     }, void 0, false, {
                         fileName: "[project]/components/Main/Main.tsx",
-                        lineNumber: 50,
+                        lineNumber: 94,
                         columnNumber: 51
                     }, this);
                     return {
@@ -706,67 +755,79 @@ function Main(props) {
             }["Main.useEffect.newNodes"]);
             const newEdges = __TURBOPACK__imported__module__$5b$project$5d2f$temp$2e$json__$28$json$29$__["default"].flatMap({
                 "Main.useEffect.newEdges": (node)=>{
+                    if (node.inputs.includes(-4096)) {
+                        setStartGate(node.neuron_idx.toString());
+                    }
                     return node.inputs.map({
-                        "Main.useEffect.newEdges": (inputIdx)=>({
+                        "Main.useEffect.newEdges": (inputIdx)=>{
+                            // Handle other cases as before
+                            return {
                                 id: `e${inputIdx}-${node.neuron_idx}`,
                                 source: inputIdx.toString(),
                                 target: node.neuron_idx.toString(),
                                 animated: true
-                            })
+                            };
+                        }
                     }["Main.useEffect.newEdges"]);
                 }
             }["Main.useEffect.newEdges"]);
+            newNodes.push({
+                id: '-4097',
+                type: 'input',
+                data: {
+                    label: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        style: {
+                            width: 'auto',
+                            height: 'auto'
+                        },
+                        children: selectedImage && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                            src: selectedImage,
+                            alt: "Input Node",
+                            layout: "intrinsic",
+                            width: 500,
+                            height: 500,
+                            style: {
+                                width: 'auto',
+                                height: 'auto'
+                            }
+                        }, void 0, false, {
+                            fileName: "[project]/components/Main/Main.tsx",
+                            lineNumber: 137,
+                            columnNumber: 31
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/components/Main/Main.tsx",
+                        lineNumber: 136,
+                        columnNumber: 11
+                    }, this)
+                },
+                position: {
+                    x: 50,
+                    y: 50
+                },
+                style: {
+                    backgroundColor: '#6ede87',
+                    color: 'white'
+                },
+                // @ts-ignore to suppress TypeScript error for sourcePosition
+                sourcePosition: 'right',
+                // @ts-ignore to suppress TypeScript error for sourcePosition
+                targetPosition: 'left'
+            });
+            newEdges.push({
+                id: 'e-4097-start',
+                source: '-4097',
+                target: startGate,
+                animated: true
+            });
             // Update state with generated nodes
             setDefaultNodes(newNodes);
             setDefaultEdges(newEdges);
         }
-    }["Main.useEffect"], []); // Empty dependency array to run once on mount
-    const onNodesChange = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useCallback"])({
-        "Main.useCallback[onNodesChange]": // @ts-ignore to suppress TypeScript error
-        (changes)=>setDefaultNodes({
-                "Main.useCallback[onNodesChange]": (nds)=>(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$xyflow$2f$react$2f$dist$2f$esm$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["applyNodeChanges"])(changes, nds)
-            }["Main.useCallback[onNodesChange]"])
-    }["Main.useCallback[onNodesChange]"], []);
-    const onEdgesChange = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useCallback"])({
-        "Main.useCallback[onEdgesChange]": // @ts-ignore to suppress TypeScript error
-        (changes)=>setDefaultEdges({
-                "Main.useCallback[onEdgesChange]": (eds)=>(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$xyflow$2f$react$2f$dist$2f$esm$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["applyEdgeChanges"])(changes, eds)
-            }["Main.useCallback[onEdgesChange]"])
-    }["Main.useCallback[onEdgesChange]"], []);
-    const [selectedImage, setSelectedImage] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(__TURBOPACK__imported__module__$5b$project$5d2f$pics$2f$EmperorPenguinBaby$2e$jpeg$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$pics$2f$EmperorPenguinBaby$2e$jpeg__$5b$app$2d$client$5d$__$28$static$2922$__$7d$__$5b$app$2d$client$5d$__$28$structured__image__object$2c$__ecmascript$29$__["default"]);
-    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
-        "Main.useEffect": ()=>{
-            if (props.selectedImage === '/_next/static/media/EmperorPenguinBaby.7955bfc0.jpeg') {
-                setSelectedImage(__TURBOPACK__imported__module__$5b$project$5d2f$pics$2f$EmperorPenguinBaby$2e$jpeg$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$pics$2f$EmperorPenguinBaby$2e$jpeg__$5b$app$2d$client$5d$__$28$static$2922$__$7d$__$5b$app$2d$client$5d$__$28$structured__image__object$2c$__ecmascript$29$__["default"]);
-            }
-            if (props.selectedImage === '/_next/static/media/SouthernRockhopperPenguin.ae32a423.jpg') {
-                setSelectedImage(__TURBOPACK__imported__module__$5b$project$5d2f$pics$2f$SouthernRockhopperPenguin$2e$jpg$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$pics$2f$SouthernRockhopperPenguin$2e$jpg__$5b$app$2d$client$5d$__$28$static$2922$__$7d$__$5b$app$2d$client$5d$__$28$structured__image__object$2c$__ecmascript$29$__["default"]);
-            }
-            if (props.selectedImage === '/_next/static/media/GentooPenguin.8585d424.jpg') {
-                setSelectedImage(__TURBOPACK__imported__module__$5b$project$5d2f$pics$2f$GentooPenguin$2e$jpg$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$pics$2f$GentooPenguin$2e$jpg__$5b$app$2d$client$5d$__$28$static$2922$__$7d$__$5b$app$2d$client$5d$__$28$structured__image__object$2c$__ecmascript$29$__["default"]);
-            }
-        }
     }["Main.useEffect"], [
-        props.selectedImage
-    ]);
-    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
-        "Main.useEffect": ()=>{
-            if (leftImageRef.current) {
-                const leftImageRect = leftImageRef.current.getBoundingClientRect();
-                setLeftImagePosition({
-                    top: (leftImageRect.top + leftImageRect.bottom) / 2,
-                    left: leftImageRect.right
-                });
-            }
-            if (centerImageRef.current) {
-                const centerImageRect = centerImageRef.current.getBoundingClientRect();
-                setCenterImagePosition({
-                    top: (centerImageRect.top + centerImageRect.bottom) / 2,
-                    left: centerImageRect.left
-                });
-            }
-        }
-    }["Main.useEffect"], []);
+        selectedImage,
+        startGate
+    ]); // Empty dependency array to run once on mount
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
         "Main.useEffect": ()=>{
             // Draw the lines using D3
@@ -815,22 +876,22 @@ function Main(props) {
                     pannable: true
                 }, void 0, false, {
                     fileName: "[project]/components/Main/Main.tsx",
-                    lineNumber: 161,
+                    lineNumber: 200,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/Main/Main.tsx",
-                lineNumber: 160,
+                lineNumber: 199,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/Main/Main.tsx",
-        lineNumber: 157,
+        lineNumber: 196,
         columnNumber: 5
     }, this);
 }
-_s(Main, "jwYspraJdOK2Ne3LB/t6FF+qD5g=");
+_s(Main, "hTPWIGHU6joBRHIlYA5mFQNRRaU=");
 _c = Main;
 var _c;
 __turbopack_refresh__.register(_c, "Main");
@@ -847,24 +908,32 @@ __turbopack_esm__({
     "Dropdown": (()=>Dropdown)
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
-(()=>{
-    const e = new Error("Cannot find module 'axios'");
-    e.code = 'MODULE_NOT_FOUND';
-    throw e;
-})();
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$axios$2f$lib$2f$axios$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/axios/lib/axios.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mantine$2f$core$2f$esm$2f$components$2f$Select$2f$Select$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@mantine/core/esm/components/Select/Select.mjs [app-client] (ecmascript)");
+;
+var _s = __turbopack_refresh__.signature();
 ;
 ;
 ;
 function Dropdown() {
+    _s();
+    const [loading, setLoading] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
+    // Handle model selection from dropdown
     const handleModelSelect = async (value)=>{
+        if (!value) return; // If user clears the selection, do nothing
+        setLoading(true);
         try {
-            const response = await axios.post('http://127.0.0.1:8000/api/model/', {
+            // IMPORTANT: use the correct endpoint from your Django urls.py:
+            // path('difflogic-models/', ModelAPIView.as_view(), ...)
+            const response = await __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$axios$2f$lib$2f$axios$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].post('http://127.0.0.1:8000/api/difflogic-models/', {
                 model_choice: value
             });
             console.log('Response from API:', response.data);
         } catch (error) {
             console.error('Error loading model:', error.response?.data || error.message);
+        } finally{
+            setLoading(false);
         }
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -884,19 +953,20 @@ function Dropdown() {
             style: {
                 width: 250
             },
-            // @ts-ignore
-            onChange: (value)=>handleModelSelect(value)
+            onChange: (value)=>handleModelSelect(value),
+            disabled: loading
         }, void 0, false, {
             fileName: "[project]/components/Dropdown/Dropdown.tsx",
-            lineNumber: 19,
-            columnNumber: 5
+            lineNumber: 29,
+            columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/Dropdown/Dropdown.tsx",
-        lineNumber: 18,
+        lineNumber: 28,
         columnNumber: 5
     }, this);
 }
+_s(Dropdown, "/Rjh5rPqCCqf0XYnTUk9ZNavw3Q=");
 _c = Dropdown;
 var _c;
 __turbopack_refresh__.register(_c, "Dropdown");
@@ -921,6 +991,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$pics$2f$GentooPenguin$2e$jpg
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Main$2f$Main$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/components/Main/Main.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Dropdown$2f$Dropdown$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/components/Dropdown/Dropdown.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$axios$2f$lib$2f$axios$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/axios/lib/axios.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mantine$2f$core$2f$esm$2f$core$2f$Box$2f$Box$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@mantine/core/esm/core/Box/Box.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mantine$2f$core$2f$esm$2f$components$2f$Group$2f$Group$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@mantine/core/esm/components/Group/Group.mjs [app-client] (ecmascript)");
 ;
@@ -935,12 +1006,48 @@ var _s = __turbopack_refresh__.signature();
 ;
 ;
 ;
+;
 function HeaderMegaMenu() {
     _s();
-    const [image, setImage] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])('../../pics/EmperorPenguinBaby.jpeg');
+    const [image, setImage] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])('/_next/static/media/EmperorPenguinBaby.7955bfc0.jpeg');
+    const [selectedFile, setSelectedFile] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
+    const [responseMessage, setResponseMessage] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
+    const [predictedClass, setPredictedClass] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
+    const [modelChoice, setModelChoice] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("model_001");
     function onImageClick(src) {
         setImage(src);
     }
+    // Handle file input change
+    const handleFileChange = (event)=>{
+        if (event.target.files) {
+            setSelectedFile(event.target.files[0]);
+            uploadImage(event.target.files[0]);
+        }
+    };
+    // Upload image to the backend
+    const uploadImage = async (file)=>{
+        if (!file) {
+            alert("Please select an image.");
+            return;
+        }
+        const formData = new FormData();
+        formData.append('image_file', file);
+        formData.append('model_choice', modelChoice);
+        try {
+            const response = await __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$axios$2f$lib$2f$axios$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].post('http://127.0.0.1:8000/api/difflogic-images/', formData, {
+                headers: {
+                    'Content-Type': 'multipart/form-data'
+                }
+            });
+            setResponseMessage(response.data.message);
+            setPredictedClass(response.data.predicted_class);
+            setImage(response.data.image_url);
+            console.log(response.data);
+        } catch (error) {
+            console.error("Error uploading image:", error);
+            alert("An error occurred while uploading the image.");
+        }
+    };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mantine$2f$core$2f$esm$2f$core$2f$Box$2f$Box$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Box"], {
         pb: 120,
         style: {
@@ -969,12 +1076,12 @@ function HeaderMegaMenu() {
                                     onClick: ()=>onImageClick(__TURBOPACK__imported__module__$5b$project$5d2f$pics$2f$EmperorPenguinBaby$2e$jpeg$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$pics$2f$EmperorPenguinBaby$2e$jpeg__$5b$app$2d$client$5d$__$28$static$2922$__$7d$__$5b$app$2d$client$5d$__$28$structured__image__object$2c$__ecmascript$29$__["default"].src)
                                 }, void 0, false, {
                                     fileName: "[project]/components/Header/HeaderMegaMenu.tsx",
-                                    lineNumber: 31,
+                                    lineNumber: 77,
                                     columnNumber: 17
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/components/Header/HeaderMegaMenu.tsx",
-                                lineNumber: 30,
+                                lineNumber: 76,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -989,12 +1096,12 @@ function HeaderMegaMenu() {
                                     onClick: ()=>onImageClick(__TURBOPACK__imported__module__$5b$project$5d2f$pics$2f$SouthernRockhopperPenguin$2e$jpg$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$pics$2f$SouthernRockhopperPenguin$2e$jpg__$5b$app$2d$client$5d$__$28$static$2922$__$7d$__$5b$app$2d$client$5d$__$28$structured__image__object$2c$__ecmascript$29$__["default"].src)
                                 }, void 0, false, {
                                     fileName: "[project]/components/Header/HeaderMegaMenu.tsx",
-                                    lineNumber: 41,
+                                    lineNumber: 87,
                                     columnNumber: 17
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/components/Header/HeaderMegaMenu.tsx",
-                                lineNumber: 40,
+                                lineNumber: 86,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -1009,17 +1116,17 @@ function HeaderMegaMenu() {
                                     onClick: ()=>onImageClick(__TURBOPACK__imported__module__$5b$project$5d2f$pics$2f$GentooPenguin$2e$jpg$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$pics$2f$GentooPenguin$2e$jpg__$5b$app$2d$client$5d$__$28$static$2922$__$7d$__$5b$app$2d$client$5d$__$28$structured__image__object$2c$__ecmascript$29$__["default"].src)
                                 }, void 0, false, {
                                     fileName: "[project]/components/Header/HeaderMegaMenu.tsx",
-                                    lineNumber: 45,
+                                    lineNumber: 91,
                                     columnNumber: 17
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/components/Header/HeaderMegaMenu.tsx",
-                                lineNumber: 44,
+                                lineNumber: 90,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                 type: "button",
-                                onClick: ()=>alert("Add Image functionality to be implemented"),
+                                onClick: ()=>document.getElementById('file-input')?.click(),
                                 style: {
                                     width: 45,
                                     height: 35,
@@ -1043,28 +1150,41 @@ function HeaderMegaMenu() {
                                     children: "+"
                                 }, void 0, false, {
                                     fileName: "[project]/components/Header/HeaderMegaMenu.tsx",
-                                    lineNumber: 65,
+                                    lineNumber: 111,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/components/Header/HeaderMegaMenu.tsx",
-                                lineNumber: 49,
+                                lineNumber: 95,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                                type: "file",
+                                id: "file-input",
+                                style: {
+                                    display: 'none'
+                                },
+                                accept: "image/*",
+                                onChange: handleFileChange
+                            }, void 0, false, {
+                                fileName: "[project]/components/Header/HeaderMegaMenu.tsx",
+                                lineNumber: 124,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/Header/HeaderMegaMenu.tsx",
-                        lineNumber: 29,
+                        lineNumber: 75,
                         columnNumber: 13
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/components/Header/HeaderMegaMenu.tsx",
-                    lineNumber: 27,
+                    lineNumber: 73,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/Header/HeaderMegaMenu.tsx",
-                lineNumber: 26,
+                lineNumber: 72,
                 columnNumber: 9
             }, this),
             image && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Main$2f$Main$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Main"], {
@@ -1075,22 +1195,22 @@ function HeaderMegaMenu() {
                 }
             }, void 0, false, {
                 fileName: "[project]/components/Header/HeaderMegaMenu.tsx",
-                lineNumber: 83,
+                lineNumber: 137,
                 columnNumber: 19
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Dropdown$2f$Dropdown$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Dropdown"], {}, void 0, false, {
                 fileName: "[project]/components/Header/HeaderMegaMenu.tsx",
-                lineNumber: 85,
+                lineNumber: 139,
                 columnNumber: 9
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/Header/HeaderMegaMenu.tsx",
-        lineNumber: 25,
+        lineNumber: 71,
         columnNumber: 7
     }, this);
 }
-_s(HeaderMegaMenu, "IY/u+mFfunrdRlW8Ol0WEYQjeLg=");
+_s(HeaderMegaMenu, "BQBxOQHUHRmUFWwiJt3VKvAioDw=");
 _c = HeaderMegaMenu;
 var _c;
 __turbopack_refresh__.register(_c, "HeaderMegaMenu");

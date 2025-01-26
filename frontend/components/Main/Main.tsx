@@ -19,6 +19,7 @@ import { defaultEdges } from './edges';
 import NodeGate from '../NodeGate';
 
 import jsonData from '../../temp.json';
+import { start } from 'repl';
 
 export function Main(props: any) {
   const [leftImagePosition, setLeftImagePosition] = useState<{ top: number, left: number }>({ top: 0, left: 0 });
@@ -30,6 +31,49 @@ export function Main(props: any) {
   const [defaultNodes, setDefaultNodes] = useState<any[]>([]);
   const [defaultEdges, setDefaultEdges] = useState<any[]>([]);
 
+  const [startGate, setStartGate] = useState('');
+
+
+  const onNodesChange = useCallback(
+    // @ts-ignore to suppress TypeScript error
+    (changes) => setDefaultNodes((nds) => applyNodeChanges(changes, nds)),
+    []
+  );
+
+  const onEdgesChange = useCallback(
+    // @ts-ignore to suppress TypeScript error
+    (changes) => setDefaultEdges((eds) => applyEdgeChanges(changes, eds)),
+    []
+  );
+  
+  const [selectedImage, setSelectedImage] = useState(EmperorPenguinBabyImage);
+
+  useEffect(() => {
+    if (props.selectedImage === '/_next/static/media/EmperorPenguinBaby.7955bfc0.jpeg') {
+      setSelectedImage(EmperorPenguinBabyImage);
+    }
+    else if (props.selectedImage === '/_next/static/media/SouthernRockhopperPenguin.ae32a423.jpg') {
+      setSelectedImage(SouthernRockhopperPenguinImage);
+    }
+    else if (props.selectedImage === '/_next/static/media/GentooPenguin.8585d424.jpg') {
+      setSelectedImage(GentooPenguin);
+    }
+    else{
+      setSelectedImage(props.selectedImage);
+    }
+  }, [props.selectedImage]);
+
+  useEffect(() => {
+    if (leftImageRef.current) {
+      const leftImageRect = leftImageRef.current.getBoundingClientRect();
+      setLeftImagePosition({ top: (leftImageRect.top + leftImageRect.bottom) / 2, left: leftImageRect.right });
+    }
+
+    if (centerImageRef.current) {
+      const centerImageRect = centerImageRef.current.getBoundingClientRect();
+      setCenterImagePosition({ top: (centerImageRect.top + centerImageRect.bottom) / 2, left: centerImageRect.left });
+    }
+  }, []);
 
   useEffect(() => {
     // Map gate strings to corresponding components
@@ -67,57 +111,52 @@ export function Main(props: any) {
     });
 
     const newEdges = jsonData.flatMap((node: { neuron_idx: number; inputs: number[] }) => {
-      return node.inputs.map((inputIdx: number) => ({
-        id: `e${inputIdx}-${node.neuron_idx}`,
-        source: inputIdx.toString(),
-        target: node.neuron_idx.toString(),
-        animated: true, // Optional: you can toggle the animation
-      }));
+
+      if (node.inputs.includes(-4096)) {
+        setStartGate(node.neuron_idx.toString());
+      }
+      return node.inputs.map((inputIdx: number) => {
+          // Handle other cases as before
+          return {
+            id: `e${inputIdx}-${node.neuron_idx}`,
+            source: inputIdx.toString(),
+            target: node.neuron_idx.toString(),
+            animated: true, // Optional: you can toggle the animation
+          };
+        }
+      );
     });
+    
+
+    newNodes.push({
+      id: '-4097',
+      type: 'input',
+      data: {
+        label: (
+          <div style={{ width: 'auto', height: 'auto' }}>
+            {selectedImage && <Image src={selectedImage} alt="Input Node" layout="intrinsic" width={500} height={500}  style={{ width: 'auto', height: 'auto' }}/>}
+          </div>
+        ),
+      },
+      position: { x: 50, y: 50 },
+      style: { backgroundColor: '#6ede87', color: 'white' },
+      // @ts-ignore to suppress TypeScript error for sourcePosition
+      sourcePosition: 'right',
+      // @ts-ignore to suppress TypeScript error for sourcePosition
+      targetPosition: 'left',
+    })
+
+    newEdges.push({
+      id: 'e-4097-start',
+      source: '-4097',
+      target: startGate,
+      animated: true,
+    })
 
     // Update state with generated nodes
     setDefaultNodes(newNodes);
     setDefaultEdges(newEdges);
-  }, []); // Empty dependency array to run once on mount
-
-
-  const onNodesChange = useCallback(
-    // @ts-ignore to suppress TypeScript error
-    (changes) => setDefaultNodes((nds) => applyNodeChanges(changes, nds)),
-    []
-  );
-
-  const onEdgesChange = useCallback(
-    // @ts-ignore to suppress TypeScript error
-    (changes) => setDefaultEdges((eds) => applyEdgeChanges(changes, eds)),
-    []
-  );
-  
-  const [selectedImage, setSelectedImage] = useState(EmperorPenguinBabyImage);
-
-  useEffect(() => {
-    if (props.selectedImage === '/_next/static/media/EmperorPenguinBaby.7955bfc0.jpeg') {
-      setSelectedImage(EmperorPenguinBabyImage);
-    }
-    if (props.selectedImage === '/_next/static/media/SouthernRockhopperPenguin.ae32a423.jpg') {
-      setSelectedImage(SouthernRockhopperPenguinImage);
-    }
-    if (props.selectedImage === '/_next/static/media/GentooPenguin.8585d424.jpg') {
-      setSelectedImage(GentooPenguin);
-    }
-  }, [props.selectedImage]);
-
-  useEffect(() => {
-    if (leftImageRef.current) {
-      const leftImageRect = leftImageRef.current.getBoundingClientRect();
-      setLeftImagePosition({ top: (leftImageRect.top + leftImageRect.bottom) / 2, left: leftImageRect.right });
-    }
-
-    if (centerImageRef.current) {
-      const centerImageRect = centerImageRef.current.getBoundingClientRect();
-      setCenterImagePosition({ top: (centerImageRect.top + centerImageRect.bottom) / 2, left: centerImageRect.left });
-    }
-  }, []);
+  }, [selectedImage, startGate]); // Empty dependency array to run once on mount
 
   useEffect(() => {
     // Draw the lines using D3

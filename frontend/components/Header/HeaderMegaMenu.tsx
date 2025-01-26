@@ -12,14 +12,60 @@ import GentooPenguin from '../../pics/GentooPenguin.jpg';
 import {Main} from '../Main/Main.tsx';
 import { useState } from 'react';
 import { Dropdown } from "../Dropdown/Dropdown.tsx";
+import axios from 'axios';
+
   
   export function HeaderMegaMenu() {
     
-    const [image, setImage] = useState('../../pics/EmperorPenguinBaby.jpeg');
+    const [image, setImage] = useState('/_next/static/media/EmperorPenguinBaby.7955bfc0.jpeg');
+
+    const [selectedFile, setSelectedFile] = useState<File | null>(null);
+    const [responseMessage, setResponseMessage] = useState<string | null>(null);
+    const [predictedClass, setPredictedClass] = useState<number | null>(null);
+    const [modelChoice, setModelChoice] = useState<string>("model_001");
 
     function onImageClick(src: string) {
       setImage(src)
     }
+
+      // Handle file input change
+  const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    if (event.target.files) {
+      setSelectedFile(event.target.files[0]);
+      uploadImage(event.target.files[0]);
+    }
+  };
+
+  // Upload image to the backend
+  const uploadImage = async (file: File) => {
+    if (!file) {
+      alert("Please select an image.");
+      return;
+    }
+
+    const formData = new FormData();
+    formData.append('image_file', file);
+    formData.append('model_choice', modelChoice);
+
+    try {
+      const response = await axios.post('http://127.0.0.1:8000/api/difflogic-images/', formData, {
+        headers: {
+          'Content-Type': 'multipart/form-data',
+        },
+      });
+
+      setResponseMessage(response.data.message);
+      setPredictedClass(response.data.predicted_class);
+
+      setImage(response.data.image_url);
+
+      console.log(response.data);
+    } catch (error) {
+      console.error("Error uploading image:", error);
+      alert("An error occurred while uploading the image.");
+    }
+  };
+
   
     return (
       <Box pb={120} style={{ position: 'relative' }}>
@@ -48,7 +94,7 @@ import { Dropdown } from "../Dropdown/Dropdown.tsx";
             {/* Custom Add Button */}
             <button
               type="button"
-              onClick={() => alert("Add Image functionality to be implemented")}
+              onClick={() => document.getElementById('file-input')?.click()}
               style={{
                 width: 45,
                 height: 35,
@@ -74,6 +120,14 @@ import { Dropdown } from "../Dropdown/Dropdown.tsx";
                 +
               </span>
             </button>
+
+            <input
+              type="file"
+              id="file-input"
+              style={{ display: 'none' }}
+              accept="image/*"
+              onChange={handleFileChange}
+            />
 
             </Group>
   
