@@ -1344,7 +1344,6 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mantine$2f
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mantine$2f$core$2f$esm$2f$components$2f$Popover$2f$Popover$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@mantine/core/esm/components/Popover/Popover.mjs [app-client] (ecmascript)");
 ;
 var _s = __turbopack_refresh__.signature();
-'use client';
 ;
 ;
 ;
@@ -1366,7 +1365,7 @@ const CustomNode = ({ id, data })=>{
                 "data-handleid": "a"
             }, void 0, false, {
                 fileName: "[project]/components/Main/Main.tsx",
-                lineNumber: 33,
+                lineNumber: 31,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1374,13 +1373,13 @@ const CustomNode = ({ id, data })=>{
                 "data-handleid": "b"
             }, void 0, false, {
                 fileName: "[project]/components/Main/Main.tsx",
-                lineNumber: 34,
+                lineNumber: 32,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/Main/Main.tsx",
-        lineNumber: 30,
+        lineNumber: 28,
         columnNumber: 5
     }, this);
 };
@@ -1422,6 +1421,8 @@ function Main(props) {
     const [predClasses, setPrediction] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
     const [connections, setConnections] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
     const [probabilities, setProbabilities] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
+    const LAYER_SPACING = 300; // Horizontal spacing between layers
+    const NODE_SPACING = 100; // Vertical spacing between nodes in the same layer
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
         "Main.useEffect": ()=>{
             if (props.selectedImage === '/_next/static/media/EmperorPenguinBaby.7955bfc0.jpeg') {
@@ -1558,90 +1559,77 @@ function Main(props) {
                     columnNumber: 14
                 }, this)
             };
-            // Create new nodes based on jsonData
-            const newNodes = connections[0].map({
-                "Main.useEffect.newNodes": (node)=>{
-                    console.log('tomato');
-                    if (node.inputs === null || node.inputs === undefined) {
-                        console.log("No inputs for node", node.neuron_idx);
-                        return null;
-                    }
-                    const [left, right] = node.inputs;
-                    const nodeGate = new __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$NodeGate$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"](node.neuron_idx.toString(), node.gate, left.toString(), right.toString(), true, node.probabilities);
-                    console.log(nodeGate.displayNodeInfo());
-                    // @ts-ignore
-                    const gateComponent = gateMap[node.gate] || /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        children: "Unknown Gate"
-                    }, void 0, false, {
-                        fileName: "[project]/components/Main/Main.tsx",
-                        lineNumber: 146,
-                        columnNumber: 51
-                    }, this);
-                    return {
-                        id: nodeGate.index,
-                        data: {
-                            label: gateComponent,
-                            probabilities: nodeGate.probabilities
-                        },
-                        position: {
-                            x: Math.random() * 500,
-                            y: Math.random() * 500
-                        },
-                        style: {
-                            backgroundColor: 'transparent',
-                            border: 'none',
-                            boxShadow: 'none',
-                            width: 'auto',
-                            height: 'auto',
-                            padding: 0
-                        },
-                        sourcePosition: 'right',
-                        targetPosition: 'right'
-                    };
-                }
-            }["Main.useEffect.newNodes"]).filter({
-                "Main.useEffect.newNodes": (edge)=>edge !== null
-            }["Main.useEffect.newNodes"]);
-            const newEdges = connections[0].flatMap({
-                "Main.useEffect.newEdges": (node)=>{
-                    if (node.inputs === null || node.inputs === undefined) {
-                        return [];
-                    }
-                    if (node.inputs.includes(-4096)) {
-                        setStartGate(node.neuron_idx.toString());
-                    }
-                    return node.inputs.map({
-                        "Main.useEffect.newEdges": (inputIdx, index)=>{
-                            let tar_han = 'a';
-                            if (index === 1 && node.gate !== 'not_a' && node.gate !== 'not_b' && node.gate !== 'zero' && node.gate !== 'one') {
-                                tar_han = 'b';
+            const newNodes = [];
+            const newEdges = [];
+            connections.forEach({
+                "Main.useEffect": (layer, layerIndex)=>{
+                    const layerX = layerIndex * LAYER_SPACING; // Fixed x position for this layer
+                    // Create nodes for this layer
+                    layer.forEach({
+                        "Main.useEffect": (node, nodeIndex)=>{
+                            if (node.inputs === null || node.inputs === undefined) {
+                                console.log("No inputs for node", node.neuron_idx);
+                                return;
                             }
-                            if (node.gate === 'not_a' && index === 1) {
-                                return [];
-                            }
-                            if (node.gate === 'not_b' && index === 0) {
-                                return [];
-                            }
-                            if (node.gate === 'one' && index === 0) {
-                                return [];
-                            }
-                            if (node.gate === 'zero' && index === 1) {
-                                return [];
-                            }
-                            // Handle other cases as before
-                            return {
-                                id: `e${inputIdx}-${node.neuron_idx}`,
-                                source: inputIdx.toString(),
-                                target: node.neuron_idx.toString(),
-                                targetHandle: tar_han,
-                                animated: true
-                            };
+                            const [left, right] = node.inputs;
+                            const nodeGate = new __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$NodeGate$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"](`${layerIndex}-${node.neuron_idx}`, node.gate, left.toString(), right.toString(), true, node.probabilities);
+                            // @ts-ignore
+                            const gateComponent = gateMap[node.gate] || /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                children: "Unknown Gate"
+                            }, void 0, false, {
+                                fileName: "[project]/components/Main/Main.tsx",
+                                lineNumber: 158,
+                                columnNumber: 53
+                            }, this);
+                            // Calculate y position with constant spacing
+                            const nodeY = nodeIndex * NODE_SPACING;
+                            newNodes.push({
+                                id: nodeGate.index,
+                                data: {
+                                    label: gateComponent,
+                                    probabilities: nodeGate.probabilities
+                                },
+                                position: {
+                                    x: layerX,
+                                    y: nodeY
+                                },
+                                style: {
+                                    backgroundColor: 'transparent',
+                                    border: 'none',
+                                    boxShadow: 'none',
+                                    width: 'auto',
+                                    height: 'auto',
+                                    padding: 0
+                                },
+                                sourcePosition: 'right',
+                                targetPosition: 'right'
+                            });
+                            // Skip edges for the first layer
+                            if (layerIndex === 0) return;
+                            // Create edges for this layer
+                            node.inputs.forEach({
+                                "Main.useEffect": (inputIdx, inputIndex)=>{
+                                    let tar_han = 'a';
+                                    if (inputIndex === 1 && node.gate !== 'not_a' && node.gate !== 'not_b' && node.gate !== 'zero' && node.gate !== 'one') {
+                                        tar_han = 'b';
+                                    }
+                                    if (node.gate === 'not_a' && inputIndex === 1) return;
+                                    if (node.gate === 'not_b' && inputIndex === 0) return;
+                                    if (node.gate === 'one' && inputIndex === 0) return;
+                                    if (node.gate === 'zero' && inputIndex === 1) return;
+                                    newEdges.push({
+                                        id: `e${layerIndex}-${inputIdx}-${node.neuron_idx}`,
+                                        source: `${layerIndex - 1}-${inputIdx}`,
+                                        target: `${layerIndex}-${node.neuron_idx}`,
+                                        targetHandle: tar_han,
+                                        animated: true
+                                    });
+                                }
+                            }["Main.useEffect"]);
                         }
-                    }["Main.useEffect.newEdges"]).filter({
-                        "Main.useEffect.newEdges": (edge)=>edge !== null
-                    }["Main.useEffect.newEdges"]);
+                    }["Main.useEffect"]);
                 }
-            }["Main.useEffect.newEdges"]);
+            }["Main.useEffect"]);
             newNodes.push({
                 id: '-4097',
                 type: 'input',
@@ -1663,12 +1651,12 @@ function Main(props) {
                             }
                         }, void 0, false, {
                             fileName: "[project]/components/Main/Main.tsx",
-                            lineNumber: 211,
-                            columnNumber: 31
+                            lineNumber: 218,
+                            columnNumber: 15
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/Main/Main.tsx",
-                        lineNumber: 210,
+                        lineNumber: 216,
                         columnNumber: 11
                     }, this)
                 },
@@ -1680,13 +1668,12 @@ function Main(props) {
                     backgroundColor: '#6ede87',
                     color: 'white'
                 },
-                // @ts-ignore to suppress TypeScript error for sourcePosition
                 sourcePosition: 'right'
             });
             newEdges.push({
-                id: 'e-4097-start',
+                id: `e-4097-${startGate}`,
                 source: '-4097',
-                target: startGate,
+                target: `0-${startGate}`,
                 targetHandle: 'a',
                 animated: true
             });
@@ -1731,106 +1718,130 @@ function Main(props) {
     };
     const renderProbabilityTable = (probabilities)=>{
         return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mantine$2f$core$2f$esm$2f$components$2f$Table$2f$Table$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Table"], {
-            verticalSpacing: "xs",
+            verticalSpacing: "2px",
             style: {
-                maxWidth: '200px'
+                fontSize: '10px'
             },
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mantine$2f$core$2f$esm$2f$components$2f$Table$2f$Table$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Table"].Thead, {
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mantine$2f$core$2f$esm$2f$components$2f$Table$2f$Table$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Table"].Tr, {
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mantine$2f$core$2f$esm$2f$components$2f$Table$2f$Table$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Table"].Th, {
+                                style: {
+                                    padding: '2px'
+                                },
                                 children: "Gate"
                             }, void 0, false, {
                                 fileName: "[project]/components/Main/Main.tsx",
-                                lineNumber: 276,
+                                lineNumber: 290,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mantine$2f$core$2f$esm$2f$components$2f$Table$2f$Table$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Table"].Th, {
+                                style: {
+                                    padding: '2px'
+                                },
                                 children: "Probability"
                             }, void 0, false, {
                                 fileName: "[project]/components/Main/Main.tsx",
-                                lineNumber: 277,
+                                lineNumber: 291,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/Main/Main.tsx",
-                        lineNumber: 275,
+                        lineNumber: 289,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/components/Main/Main.tsx",
-                    lineNumber: 274,
+                    lineNumber: 288,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mantine$2f$core$2f$esm$2f$components$2f$Table$2f$Table$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Table"].Tbody, {
-                    children: Object.entries(probabilities).map(([gate, prob])=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mantine$2f$core$2f$esm$2f$components$2f$Table$2f$Table$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Table"].Tr, {
+                    children: Object.entries(probabilities).map(([gate, prob], index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mantine$2f$core$2f$esm$2f$components$2f$Table$2f$Table$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Table"].Tr, {
+                            style: {
+                                height: '20px'
+                            },
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mantine$2f$core$2f$esm$2f$components$2f$Table$2f$Table$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Table"].Td, {
+                                    style: {
+                                        padding: '2px'
+                                    },
                                     children: gate
                                 }, void 0, false, {
                                     fileName: "[project]/components/Main/Main.tsx",
-                                    lineNumber: 283,
-                                    columnNumber: 15
+                                    lineNumber: 297,
+                                    columnNumber: 5
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mantine$2f$core$2f$esm$2f$components$2f$Table$2f$Table$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Table"].Td, {
+                                    style: {
+                                        padding: '2px'
+                                    },
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mantine$2f$core$2f$esm$2f$components$2f$Group$2f$Group$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Group"], {
                                         justify: "space-between",
+                                        gap: "4px",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mantine$2f$core$2f$esm$2f$components$2f$Text$2f$Text$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Text"], {
                                                 fz: "xs",
                                                 c: "teal",
                                                 fw: 700,
+                                                style: {
+                                                    fontSize: '8px'
+                                                },
                                                 children: [
                                                     (prob * 100).toFixed(2),
                                                     "%"
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/Main/Main.tsx",
-                                                lineNumber: 286,
-                                                columnNumber: 19
+                                                lineNumber: 300,
+                                                columnNumber: 9
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mantine$2f$core$2f$esm$2f$components$2f$Progress$2f$Progress$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Progress"].Root, {
+                                                size: "xs",
+                                                style: {
+                                                    width: '80px',
+                                                    height: '6px'
+                                                },
                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mantine$2f$core$2f$esm$2f$components$2f$Progress$2f$Progress$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Progress"].Section, {
                                                     value: prob * 100,
                                                     color: "teal"
-                                                }, void 0, false, {
+                                                }, `${gate}-progress-${index}`, false, {
                                                     fileName: "[project]/components/Main/Main.tsx",
-                                                    lineNumber: 290,
-                                                    columnNumber: 21
+                                                    lineNumber: 304,
+                                                    columnNumber: 11
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/components/Main/Main.tsx",
-                                                lineNumber: 289,
-                                                columnNumber: 19
+                                                lineNumber: 303,
+                                                columnNumber: 9
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/Main/Main.tsx",
-                                        lineNumber: 285,
-                                        columnNumber: 17
+                                        lineNumber: 299,
+                                        columnNumber: 7
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/components/Main/Main.tsx",
-                                    lineNumber: 284,
-                                    columnNumber: 15
+                                    lineNumber: 298,
+                                    columnNumber: 5
                                 }, this)
                             ]
-                        }, gate, true, {
+                        }, `${gate}-${index}`, true, {
                             fileName: "[project]/components/Main/Main.tsx",
-                            lineNumber: 282,
-                            columnNumber: 13
+                            lineNumber: 296,
+                            columnNumber: 3
                         }, this))
                 }, void 0, false, {
                     fileName: "[project]/components/Main/Main.tsx",
-                    lineNumber: 280,
+                    lineNumber: 294,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/components/Main/Main.tsx",
-            lineNumber: 273,
+            lineNumber: 287,
             columnNumber: 7
         }, this);
     };
@@ -1851,10 +1862,13 @@ function Main(props) {
                 },
                 fitView: true,
                 onNodeMouseEnter: (event, node)=>{
+                    const nodeElement = event.currentTarget;
+                    const nodeRect = nodeElement.getBoundingClientRect();
+                    const nodeWidth = nodeRect.width;
                     setHoveredNode(node);
                     setPopoverPosition({
-                        x: event.clientX,
-                        y: event.clientY
+                        x: nodeRect.left + nodeWidth * 0.75,
+                        y: nodeRect.top
                     });
                 },
                 onNodeMouseLeave: ()=>setHoveredNode(null),
@@ -1866,7 +1880,7 @@ function Main(props) {
                         pannable: true
                     }, void 0, false, {
                         fileName: "[project]/components/Main/Main.tsx",
-                        lineNumber: 309,
+                        lineNumber: 328,
                         columnNumber: 9
                     }, this),
                     hoveredNode && hoveredNode.data.probabilities && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mantine$2f$core$2f$esm$2f$components$2f$Popover$2f$Popover$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Popover"], {
@@ -1874,8 +1888,8 @@ function Main(props) {
                         position: "top",
                         style: {
                             position: 'absolute',
-                            top: popoverPosition.y - 100,
-                            left: popoverPosition.x + 10,
+                            top: popoverPosition.y,
+                            left: popoverPosition.x - 200,
                             pointerEvents: 'none',
                             zIndex: 1000
                         },
@@ -1884,46 +1898,54 @@ function Main(props) {
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mantine$2f$core$2f$esm$2f$components$2f$Popover$2f$Popover$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Popover"].Target, {
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {}, void 0, false, {
                                     fileName: "[project]/components/Main/Main.tsx",
-                                    lineNumber: 325,
+                                    lineNumber: 344,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/components/Main/Main.tsx",
-                                lineNumber: 324,
+                                lineNumber: 343,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mantine$2f$core$2f$esm$2f$components$2f$Popover$2f$Popover$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Popover"].Dropdown, {
+                                style: {
+                                    padding: '4px'
+                                },
                                 children: [
+                                    " ",
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
+                                        style: {
+                                            fontSize: '10px'
+                                        },
                                         children: hoveredNode.data.label
                                     }, void 0, false, {
                                         fileName: "[project]/components/Main/Main.tsx",
-                                        lineNumber: 328,
+                                        lineNumber: 347,
                                         columnNumber: 15
                                     }, this),
+                                    " ",
                                     renderProbabilityTable(hoveredNode.data.probabilities)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/Main/Main.tsx",
-                                lineNumber: 327,
+                                lineNumber: 346,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/Main/Main.tsx",
-                        lineNumber: 312,
+                        lineNumber: 331,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/Main/Main.tsx",
-                lineNumber: 305,
+                lineNumber: 321,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/Main/Main.tsx",
-        lineNumber: 302,
+        lineNumber: 318,
         columnNumber: 5
     }, this);
 }

@@ -10,6 +10,17 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }: { children: any }) {
+  // Suppress React warnings in development mode
+  if (process.env.NODE_ENV === 'development') {
+    const originalError = console.error;
+    console.error = (...args) => {
+      if (args[0].includes('Each child in a list should have a unique "key" prop')) {
+        return; // Ignore the specific warning
+      }
+      originalError(...args); // Log all other errors
+    };
+  }
+
   return (
     <html lang="en" {...mantineHtmlProps}>
       <head>
