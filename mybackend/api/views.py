@@ -4,6 +4,9 @@ from rest_framework import status
 import torch
 from PIL import Image
 import io
+from django.core.files.base import ContentFile
+from django.core.files.storage import default_storage
+from datetime import datetime
 
 from .difflogic_setup import (
     load_difflogic_model,
@@ -76,33 +79,44 @@ class ImageAPIView(APIView):
         model = load_difflogic_model(path)
 
         # 2. Convert the uploaded image to a flat tensor
-        pil_img = Image.open(image_file).convert('L')
-        width, height = pil_img.size
-        image_tensor = torch.tensor(list(pil_img.getdata()), dtype=torch.float32)
+        try:
+            # Create a unique filename for the uploaded image
+            timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+            filename = f"uploaded_images/{timestamp}_{image_file.name}"
+            
+            # Read the file content and reset the file pointer
+            file_content = image_file.read()
+            image_file.seek(0)  # Reset the file pointer to the beginning
+
+            # Save the file to the server's media directory
+            file_path = default_storage.save(filename, ContentFile(file_content))
+            
+            # Generate the URL for the saved image
+            image_url = request.build_absolute_uri(default_storage.url(file_path))
+
+            # Verify the saved file by attempting to open it
+            with default_storage.open(file_path, 'rb') as saved_file:
+                pil_img = Image.open(saved_file).convert('L')
+                width, height = pil_img.size
+                image_tensor = torch.tensor(list(pil_img.getdata()), dtype=torch.float32)
+
+            print('Image saved and verified successfully')
+        except Exception as e:
+            return Response({"error": f"Failed to save or verify image: {str(e)}"}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
         # 3. (Optional) Resize/check shape. For a 20x20 model:
-        if width * height != 400:
-            return Response({
-                "error": f"Expected 20x20=400 pixels, got {width}x{height}."
-            }, status=status.HTTP_400_BAD_REQUEST)
+        # if width * height != 400:
+        #     return Response({
+        #         "error": f"Expected 20x20=400 pixels, got {width}x{height}."
+        #     }, status=status.HTTP_400_BAD_REQUEST)
 
         # 4. Forward pass to get model outputs (and gate distributions)
         with torch.no_grad():
-            logits, layer_soft_probs_list = model(
-                image_tensor.unsqueeze(0),
-                return_soft_probs=True
-            )
+            outputs = model(image_tensor.unsqueeze(0))
 
         # 5. Determine predicted class
-        _, predicted_class = torch.max(logits, dim=1)
+        _, predicted_class = torch.max(outputs, dim=1)
         predicted_class = predicted_class.item()
-
-        # 6. Convert gate probabilities to lists for JSON
-        all_layers_serialized = []
-        for layer_idx, layer_probs in enumerate(layer_soft_probs_list):
-            # layer_probs shape => [out_dim, 16]
-            layer_probs_cpu = layer_probs.cpu().numpy().tolist()
-            all_layers_serialized.append(layer_probs_cpu)
 
         # 7. Retrieve model structure info
         info = get_model_info(model)
@@ -110,6 +124,6 @@ class ImageAPIView(APIView):
         # 8. Return everything in the response
         return Response({
             "predicted_class": predicted_class,
-            "layer_gate_distributions": all_layers_serialized,
             "model_info": info,
+            "image_url": image_url
         }, status=status.HTTP_200_OK)

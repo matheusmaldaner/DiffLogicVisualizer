@@ -59,13 +59,26 @@ def bin_op_s(a, b, i_s):
 # LogicLayer (CPU version)
 # ----------------------------------------------------
 class LogicLayer(nn.Module):
-    def __init__(self, in_dim, out_dim, device="cpu", grad_factor=1.0, implementation="cpu", connections="random"):
+    """
+    The core module for differentiable logic gate networks. CPU-based.
+    """
+    def __init__(
+            self,
+            in_dim: int,
+            out_dim: int,
+            device: str = 'cpu',
+            grad_factor: float = 1.,
+            implementation: str = 'cpu',
+            connections: str = 'random'
+    ):
         super().__init__()
         self.in_dim = in_dim
         self.out_dim = out_dim
         self.grad_factor = grad_factor
-        self.device = "cpu"
-        self.implementation = "python"
+
+        # Force CPU usage
+        self.device = 'cpu'
+        self.implementation = 'python'
 
         # Learned weights for each possible operation (16 ops)
         self.weights = nn.Parameter(torch.randn(out_dim, 16, device=self.device))
@@ -73,39 +86,6 @@ class LogicLayer(nn.Module):
         # Connection pattern
         self.connections = connections
         self.indices = self.get_connections(self.connections, self.device)
-
-    def forward(self, x, return_soft_probs=False):
-        x = x.to("cpu").float()
-        all_soft_probs = []  # We'll store the distribution per layer
-
-        out = x
-        for layer in self.logic_layers:
-            if isinstance(layer, LogicLayer) and return_soft_probs:
-                out, layer_probs = layer(out, return_soft_probs=True)
-                all_soft_probs.append(layer_probs)
-            else:
-                out = layer(out)
-
-        final_output = self.group(out)
-        if return_soft_probs:
-            return final_output, all_soft_probs
-        else:
-            return final_output
-
-
-    
-
-
-
-    def get_connections(self, connections, device='cpu'):
-        """
-        Generate or retrieve the input wiring for each of the out_dim neurons.
-        Each neuron picks 2 inputs from the in_dim.
-        """
-        # ... same code as before ...
-        # (not repeated for brevity)
-        ...
-
 
     def get_connections(self, connections, device='cpu'):
         """
@@ -129,6 +109,28 @@ class LogicLayer(nn.Module):
             raise NotImplementedError("unique connections not implemented here.")
         else:
             raise ValueError(f"Unknown connections mode: {connections}")
+
+    def forward(self, x):
+        """
+        x shape: [batch_size, in_dim]
+        Indices shape: 2 x out_dim
+        weights shape: [out_dim, 16]
+        """
+        # a, b: [batch_size, out_dim]
+        a, b = x[..., self.indices[0]], x[..., self.indices[1]]
+
+        # Softmax over last dim (the 16 bin ops)
+        if self.training:
+            weight_probs = torch.nn.functional.softmax(self.weights, dim=-1)
+        else:
+            # Hard (argmax) version in eval mode
+            weight_probs = torch.nn.functional.one_hot(
+                self.weights.argmax(dim=-1),
+                16
+            ).float()
+
+        out = bin_op_s(a, b, weight_probs)  # [batch_size, out_dim]
+        return out
 
     def extra_repr(self):
         return f"LogicLayer(in_dim={self.in_dim}, out_dim={self.out_dim}, device=CPU)"
@@ -157,16 +159,19 @@ class GroupSum(nn.Module):
 # DiffLogic model
 # ----------------------------------------------------
 class DiffLogic(nn.Module):
+    """
+    Full differentiable logic network, stacking multiple LogicLayers + GroupSum at the end.
+    """
     def __init__(self, layers_config, output_size, tau=30):
         super(DiffLogic, self).__init__()
-
+        
         layers = []
         for layer_name, cfg in layers_config.items():
             layer = LogicLayer(
                 in_dim=cfg['in_dim'],
                 out_dim=cfg['out_dim'],
-                device='cpu',
-                implementation='python',
+                device='cpu',             # forced CPU
+                implementation='python',  # forced CPU
                 connections=cfg['connections'],
                 grad_factor=cfg['grad_factor']
             )
@@ -176,32 +181,16 @@ class DiffLogic(nn.Module):
         self.group = GroupSum(k=output_size, tau=tau)
         self.log_text = ""
 
-  
-    def forward(self, x, return_soft_probs=False):
-        # a, b => shape [batch_size, out_dim]
-        a, b = x[..., self.indices[0]], x[..., self.indices[1]]
-
-        if self.training:
-            # Use purely softmax in training
-            weight_probs = torch.nn.functional.softmax(self.weights, dim=-1)
-            out = bin_op_s(a, b, weight_probs)
-            if return_soft_probs:
-                return out, weight_probs  # they match the actual usage
-            return out
-        else:
-            # EVAL mode => physically apply "hard gating"
-            #  (one-hot picks exactly one gate)
-            chosen_indices = self.weights.argmax(dim=-1) 
-            # shape [out_dim], each is [0..15]
-            one_hot_probs = torch.nn.functional.one_hot(chosen_indices, 16).float()
-            out = bin_op_s(a, b, one_hot_probs)  
-
-            if return_soft_probs:
-                # We ALSO compute the soft distribution for logging/visualization
-                soft_probs = torch.nn.functional.softmax(self.weights, dim=-1)
-                return out, soft_probs  
-            return out
-
+    def forward(self, x):
+        """
+        Forward pass: x shape [batch_size, in_dim]
+        """
+        # Ensure x is float and on CPU
+        x = x.to('cpu').float()
+        logits = self.logic_layers(x)
+        grouped = self.group(logits)
+        return grouped
+    
     # ------------------------------------------------
     #  Checkpoint Save/Load
     # ------------------------------------------------
