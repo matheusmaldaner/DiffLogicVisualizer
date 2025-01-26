@@ -1,6 +1,6 @@
 [
   {"neuron_idx": 0, "gate": "not", "inputs": [0, 1]},
-  {"neuron_idx": 1, "gate": "and", "inputs": [-2, -1]},
+  {"neuron_idx": 1, "gate": "and", "inputs": [-4096, -4095]},
   {"neuron_idx": 2, "gate": "xnor", "inputs": [0, 2]},
   {"neuron_idx": 3, "gate": "or", "inputs": [1, 3]},
   {"neuron_idx": 4, "gate": "true", "inputs": [2, 4]}
