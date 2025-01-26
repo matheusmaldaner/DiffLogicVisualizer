@@ -86,20 +86,30 @@ class ImageAPIView(APIView):
                 "error": f"Expected 20x20=400 pixels, got {width}x{height}."
             }, status=status.HTTP_400_BAD_REQUEST)
 
-        # 4. Forward pass to get model outputs
-        #    Make sure we use [batch_size=1, in_dim=400]
+        # 4. Forward pass to get model outputs (and gate distributions)
         with torch.no_grad():
-            outputs = model(image_tensor.unsqueeze(0))  # shape: [1, 10]
-        
-        # 5. Determine predicted class (argmax along dimension=1)
-        _, predicted_class = torch.max(outputs, dim=1)
+            logits, layer_soft_probs_list = model(
+                image_tensor.unsqueeze(0),
+                return_soft_probs=True
+            )
+
+        # 5. Determine predicted class
+        _, predicted_class = torch.max(logits, dim=1)
         predicted_class = predicted_class.item()
 
-        # 6. (Optional) retrieve model structure info for the response
+        # 6. Convert gate probabilities to lists for JSON
+        all_layers_serialized = []
+        for layer_idx, layer_probs in enumerate(layer_soft_probs_list):
+            # layer_probs shape => [out_dim, 16]
+            layer_probs_cpu = layer_probs.cpu().numpy().tolist()
+            all_layers_serialized.append(layer_probs_cpu)
+
+        # 7. Retrieve model structure info
         info = get_model_info(model)
 
+        # 8. Return everything in the response
         return Response({
-            "message": f"Image processed with '{model_choice}' on CPU.",
-            "predicted_class": predicted_class,  # <--- The top-1 predicted class
-            "model_info": info
+            "predicted_class": predicted_class,
+            "layer_gate_distributions": all_layers_serialized,
+            "model_info": info,
         }, status=status.HTTP_200_OK)
