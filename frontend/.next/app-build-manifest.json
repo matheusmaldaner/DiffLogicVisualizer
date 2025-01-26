@@ -1,13 +1,13 @@
 {
   "pages": {
-    "/landing/page": [
+    "/page": [
       "static/chunks/node_modules_@mantine_core_styles_23cc72.css",
       "static/chunks/node_modules_a2a589._.js",
       "static/chunks/_5bec28._.js",
       "static/chunks/app_layout_tsx_61af54._.js",
-      "static/chunks/node_modules_2ed038._.js",
-      "static/chunks/_0d0d8a._.js",
-      "static/chunks/app_landing_page_tsx_f88f2f._.js",
+      "static/chunks/node_modules_ec16cf._.js",
+      "static/chunks/_3dd28b._.js",
+      "static/chunks/app_page_tsx_f88f2f._.js",
       "static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js",
       "static/chunks/node_modules_next_dist_compiled_107ce8._.js",
       "static/chunks/node_modules_next_dist_client_523921._.js",
@@ -17,7 +17,7 @@
       "static/chunks/_e69f0d._.js",
       "static/chunks/_d95469._.js"
     ],
-    "/page": [
+    "/header-mega-menu/page": [
       "static/chunks/node_modules_@mantine_core_styles_23cc72.css",
       "static/chunks/node_modules_a2a589._.js",
       "static/chunks/_5bec28._.js",
@@ -34,23 +34,9 @@
       "static/chunks/node_modules_@floating-ui_react_dist_c1a64d._.js",
       "static/chunks/node_modules_@floating-ui_9ec1fa._.js",
       "static/chunks/node_modules_5f104c._.js",
-      "static/chunks/_83f6cd._.js",
+      "static/chunks/_00a9ef._.js",
       "static/chunks/_a15553._.css",
-      "static/chunks/app_page_tsx_f88f2f._.js",
-      "static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js",
-      "static/chunks/node_modules_next_dist_compiled_107ce8._.js",
-      "static/chunks/node_modules_next_dist_client_523921._.js",
-      "static/chunks/node_modules_next_dist_4bb10e._.js",
-      "static/chunks/node_modules_@swc_helpers_cjs_00636a._.js",
-      "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_d0a96d._.js",
-      "static/chunks/_e69f0d._.js",
-      "static/chunks/_d95469._.js"
-    ],
-    "/_not-found/page": [
-      "static/chunks/node_modules_@mantine_core_styles_23cc72.css",
-      "static/chunks/node_modules_a2a589._.js",
-      "static/chunks/_5bec28._.js",
-      "static/chunks/app_layout_tsx_61af54._.js",
+      "static/chunks/app_header-mega-menu_page_tsx_f88f2f._.js",
       "static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js",
       "static/chunks/node_modules_next_dist_compiled_107ce8._.js",
       "static/chunks/node_modules_next_dist_client_523921._.js",

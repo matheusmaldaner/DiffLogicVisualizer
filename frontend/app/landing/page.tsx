@@ -1,5 +1,6 @@
 "use client";  // Ensure client-side rendering
 
+import {useRouter} from "next/navigation"
 import {
   Container,
   Title,
@@ -19,6 +20,12 @@ import AnimatedBackground from "@/components/AnimatedBackground";
 import WhiteBackground from "@/pics/white-background.jpg";
 
 export default function LandingPage() {
+  const router = useRouter();
+
+  const handleStart = () => {
+    router.push("/header-mega-menu")
+  }
+
   // Mouse hover handlers
   const handleMouseOver = (e: React.MouseEvent<HTMLElement>) => {
     const target = e.target as HTMLElement;
@@ -240,6 +247,7 @@ export default function LandingPage() {
             }}
             onMouseOver={handleMouseOver}
             onMouseOut={handleMouseOut}
+            onClick={handleStart}
           >
             Start
           </Button>
