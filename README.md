@@ -2,16 +2,17 @@
  
 A tool to visualize the internal structure and activation paths of logic gate neural networks. This project aims to make neural networks more interpretable and user-friendly by providing an interactive graph-based visualization of their operations.
 
-![Magnifying Glass GIF](https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExaXZtOTFlMjh5a3RnNnozMWNlaG85ZnIxMHhmNzNxcW9vOTBtMW54ciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/2YMTiU37AgRXyjTX1q/giphy.gif)
+<img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExbWY5b2I4MW5pZjh3cmRnY3Z1NTE5a3o4emdtaWVyaGFyc3poajFtcSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/pvQdvmsOrx9Xt3joHZ/giphy.gif" alt="Workflow" style="width:800px; height:auto; display:block; margin:0; padding:0;">
 
 ## Table of Contents
+
 - [Overview](#overview)
 - [Features](#features)
 - [Getting Started](#getting-started)
 - [Technologies Used](#technologies-used)
 - [Usage](#usage)
 - [Future Enhancements](#future-enhancements)
-- [Contributing](#contributing)
+
 
 ## Overview
 
@@ -21,6 +22,7 @@ A tool to visualize the internal structure and activation paths of logic gate ne
 3. Highlight the activation paths and provide insights into how the model arrives at a classification.
 
 This project was developed as part of **SwampHacks X** (2025), a 24-hour hackathon hosted at the University of Florida.
+![Magnifying Glass GIF](https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExaXZtOTFlMjh5a3RnNnozMWNlaG85ZnIxMHhmNzNxcW9vOTBtMW54ciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/2YMTiU37AgRXyjTX1q/giphy.gif)
 
 ## Features
 
@@ -94,18 +96,16 @@ To run this project locally, you will need:
 - Enable graph export to PDF or image format.
 - Incorporate generative AI for natural language explanations.
 - Optimize performance for large models.
-- Create a demo mode with preloaded models and images.
 
-## Contributing
+## Authors
 
-While this project was coded for the SwampHacks hackathon, we also welcome contributions from the community! If you'd like to contribute, please follow these steps:
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature-branch-name`).
-3. Commit your changes (`git commit -m "Add a new feature"`).
-4. Push to the branch (`git push origin feature-branch-name`).
-5. Open a Pull Request.
+- Pranav Bhargava- [GitHub](https://github.com/pranavb05) 
+- Danush Singla - [GitHub](https://github.com/danushsingla)
+- Kristian O'Connor - [GitHub](https://github.com/kroc99)
+- Matheus Kunzler Maldaner - [GitHub](https://github.com/matheusmaldaner)
 
 ## Acknowledgments
 
 - SwampHacks X organizers and sponsors
 - [MLH](https://mlh.io) for hackathon guidance
+
