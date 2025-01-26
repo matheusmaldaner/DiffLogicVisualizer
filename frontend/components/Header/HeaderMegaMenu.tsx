@@ -26,6 +26,7 @@ import axios from 'axios';
     const [info, setInfo] = useState<any | null>(null);
     const [prediction, setPrediction] = useState<any | null>(null);
     const [connections, setConnections] = useState<any | null>(null);
+    const [probabilities, setProbabilities] = useState<any | null>(null);
 
     function onImageClick(src: string) {
       setImage(src)
@@ -61,6 +62,7 @@ import axios from 'axios';
       setPrediction(response.data.predicted_class);
       setInfo(response.data.model_info);
       setConnections(response.data.connections);
+      setProbabilities(response.data.probabilities);
 
       setImage(response.data.image_url);
 
@@ -139,7 +141,7 @@ import axios from 'axios';
           </Group>
         </header>
 
-        {image && <Main selectedImage={image} modelInfo={info} predClasses={prediction} connections={connections} style={{ position: 'absolute', top: '100vh' }} />}
+        {image && <Main selectedImage={image} modelInfo={info} predClasses={prediction} connections={connections} probabilities={probabilities} style={{ position: 'absolute', top: '100vh' }} />}
 
         <Dropdown />
       </Box>

@@ -88,11 +88,19 @@ class ImageAPIView(APIView):
                 input_neuron_a = layer.indices[0][neuron_idx].item()
                 input_neuron_b = layer.indices[1][neuron_idx].item()
 
+                # Get the probabilities of all gates for the neuron
+                gate_probs = torch.nn.functional.softmax(layer.weights[neuron_idx], dim=0).tolist()
+
+                for i, prob in enumerate(gate_probs):
+                    print(prob)
+    
+
                 # store the gate and connections
                 layer_connections.append({
                     'neuron_idx': neuron_idx,
                     'gate': learned_gate,
                     'inputs': (input_neuron_a, input_neuron_b),
+                    'probabilities': {ALL_OPERATIONS[i]: prob for i, prob in enumerate(gate_probs)}
                 })
             
             gates_per_layer.append(layer_connections)
