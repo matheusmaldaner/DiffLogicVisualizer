@@ -1,6 +1,8 @@
 # Neural Network Visualizer
-
+ 
 A tool to visualize the internal structure and activation paths of logic gate neural networks. This project aims to make neural networks more interpretable and user-friendly by providing an interactive graph-based visualization of their operations.
+
+![Magnifying Glass GIF](https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExaXZtOTFlMjh5a3RnNnozMWNlaG85ZnIxMHhmNzNxcW9vOTBtMW54ciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/2YMTiU37AgRXyjTX1q/giphy.gif)
 
 ## Table of Contents
 - [Overview](#overview)
