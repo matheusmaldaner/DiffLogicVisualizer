@@ -1,0 +1,1111 @@
+models:
+  model_001:
+    input_dim: 81
+    layers_config:
+      LogicLayer001:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 81
+        out_dim: 50
+      LogicLayer002:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 50
+        out_dim: 50
+    learning_rate: 0.01
+    output_size: 10
+    tau: 10
+  model_002:
+    input_dim: 81
+    layers_config:
+      LogicLayer001:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 81
+        out_dim: 50
+      LogicLayer002:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 50
+        out_dim: 50
+      LogicLayer003:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 50
+        out_dim: 50
+      LogicLayer004:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 50
+        out_dim: 50
+    learning_rate: 0.01
+    output_size: 10
+    tau: 10
+  model_003:
+    input_dim: 81
+    layers_config:
+      LogicLayer001:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 81
+        out_dim: 50
+      LogicLayer002:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 50
+        out_dim: 50
+      LogicLayer003:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 50
+        out_dim: 50
+      LogicLayer004:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 50
+        out_dim: 50
+      LogicLayer005:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 50
+        out_dim: 50
+      LogicLayer006:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 50
+        out_dim: 50
+    learning_rate: 0.01
+    output_size: 10
+    tau: 10
+  model_004:
+    input_dim: 81
+    layers_config:
+      LogicLayer001:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 81
+        out_dim: 50
+      LogicLayer002:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 50
+        out_dim: 50
+      LogicLayer003:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 50
+        out_dim: 50
+      LogicLayer004:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 50
+        out_dim: 50
+      LogicLayer005:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 50
+        out_dim: 50
+      LogicLayer006:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 50
+        out_dim: 50
+      LogicLayer007:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 50
+        out_dim: 50
+      LogicLayer008:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 50
+        out_dim: 50
+    learning_rate: 0.01
+    output_size: 10
+    tau: 10
+  model_005:
+    input_dim: 81
+    layers_config:
+      LogicLayer001:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 81
+        out_dim: 50
+      LogicLayer002:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 50
+        out_dim: 50
+      LogicLayer003:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 50
+        out_dim: 50
+      LogicLayer004:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 50
+        out_dim: 50
+      LogicLayer005:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 50
+        out_dim: 50
+      LogicLayer006:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 50
+        out_dim: 50
+      LogicLayer007:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 50
+        out_dim: 50
+      LogicLayer008:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 50
+        out_dim: 50
+      LogicLayer009:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 50
+        out_dim: 50
+      LogicLayer010:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 50
+        out_dim: 50
+    learning_rate: 0.01
+    output_size: 10
+    tau: 10
+  model_006:
+    input_dim: 81
+    layers_config:
+      LogicLayer001:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 81
+        out_dim: 100
+      LogicLayer002:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 100
+        out_dim: 100
+    learning_rate: 0.01
+    output_size: 10
+    tau: 10
+  model_007:
+    input_dim: 81
+    layers_config:
+      LogicLayer001:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 81
+        out_dim: 100
+      LogicLayer002:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 100
+        out_dim: 100
+      LogicLayer003:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 100
+        out_dim: 100
+      LogicLayer004:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 100
+        out_dim: 100
+    learning_rate: 0.01
+    output_size: 10
+    tau: 10
+  model_008:
+    input_dim: 81
+    layers_config:
+      LogicLayer001:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 81
+        out_dim: 100
+      LogicLayer002:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 100
+        out_dim: 100
+      LogicLayer003:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 100
+        out_dim: 100
+      LogicLayer004:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 100
+        out_dim: 100
+      LogicLayer005:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 100
+        out_dim: 100
+      LogicLayer006:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 100
+        out_dim: 100
+    learning_rate: 0.01
+    output_size: 10
+    tau: 10
+  model_009:
+    input_dim: 81
+    layers_config:
+      LogicLayer001:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 81
+        out_dim: 100
+      LogicLayer002:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 100
+        out_dim: 100
+      LogicLayer003:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 100
+        out_dim: 100
+      LogicLayer004:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 100
+        out_dim: 100
+      LogicLayer005:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 100
+        out_dim: 100
+      LogicLayer006:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 100
+        out_dim: 100
+      LogicLayer007:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 100
+        out_dim: 100
+      LogicLayer008:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 100
+        out_dim: 100
+    learning_rate: 0.01
+    output_size: 10
+    tau: 10
+  model_010:
+    input_dim: 81
+    layers_config:
+      LogicLayer001:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 81
+        out_dim: 10
+      LogicLayer002:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 10
+        out_dim: 10
+      LogicLayer003:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 10
+        out_dim: 10
+      LogicLayer004:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 10
+        out_dim: 10
+      LogicLayer005:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 10
+        out_dim: 10
+      LogicLayer006:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 10
+        out_dim: 10
+      LogicLayer007:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 10
+        out_dim: 10
+      LogicLayer008:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 10
+        out_dim: 10
+      LogicLayer009:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 10
+        out_dim: 10
+      LogicLayer010:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 10
+        out_dim: 10
+      LogicLayer011:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 10
+        out_dim: 10
+      LogicLayer012:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 10
+        out_dim: 10
+      LogicLayer013:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 10
+        out_dim: 10
+      LogicLayer014:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 10
+        out_dim: 10
+      LogicLayer015:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 10
+        out_dim: 10
+      LogicLayer016:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 10
+        out_dim: 10
+      LogicLayer017:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 10
+        out_dim: 10
+      LogicLayer018:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 10
+        out_dim: 10
+      LogicLayer019:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 10
+        out_dim: 10
+      LogicLayer020:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 10
+        out_dim: 10
+      LogicLayer021:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 10
+        out_dim: 10
+      LogicLayer022:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 10
+        out_dim: 10
+      LogicLayer023:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 10
+        out_dim: 10
+      LogicLayer024:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 10
+        out_dim: 10
+      LogicLayer025:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 10
+        out_dim: 10
+      LogicLayer026:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 10
+        out_dim: 10
+      LogicLayer027:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 10
+        out_dim: 10
+      LogicLayer028:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 10
+        out_dim: 10
+      LogicLayer029:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 10
+        out_dim: 10
+      LogicLayer030:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 10
+        out_dim: 10
+      LogicLayer031:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 10
+        out_dim: 10
+      LogicLayer032:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 10
+        out_dim: 10
+      LogicLayer033:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 10
+        out_dim: 10
+      LogicLayer034:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 10
+        out_dim: 10
+      LogicLayer035:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 10
+        out_dim: 10
+      LogicLayer036:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 10
+        out_dim: 10
+      LogicLayer037:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 10
+        out_dim: 10
+      LogicLayer038:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 10
+        out_dim: 10
+      LogicLayer039:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 10
+        out_dim: 10
+      LogicLayer040:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 10
+        out_dim: 10
+      LogicLayer041:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 10
+        out_dim: 10
+      LogicLayer042:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 10
+        out_dim: 10
+      LogicLayer043:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 10
+        out_dim: 10
+      LogicLayer044:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 10
+        out_dim: 10
+      LogicLayer045:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 10
+        out_dim: 10
+      LogicLayer046:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 10
+        out_dim: 10
+      LogicLayer047:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 10
+        out_dim: 10
+      LogicLayer048:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 10
+        out_dim: 10
+      LogicLayer049:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 10
+        out_dim: 10
+      LogicLayer050:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 10
+        out_dim: 10
+      LogicLayer051:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 10
+        out_dim: 10
+      LogicLayer052:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 10
+        out_dim: 10
+      LogicLayer053:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 10
+        out_dim: 10
+      LogicLayer054:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 10
+        out_dim: 10
+      LogicLayer055:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 10
+        out_dim: 10
+      LogicLayer056:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 10
+        out_dim: 10
+      LogicLayer057:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 10
+        out_dim: 10
+      LogicLayer058:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 10
+        out_dim: 10
+      LogicLayer059:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 10
+        out_dim: 10
+      LogicLayer060:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 10
+        out_dim: 10
+      LogicLayer061:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 10
+        out_dim: 10
+      LogicLayer062:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 10
+        out_dim: 10
+      LogicLayer063:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 10
+        out_dim: 10
+      LogicLayer064:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 10
+        out_dim: 10
+      LogicLayer065:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 10
+        out_dim: 10
+      LogicLayer066:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 10
+        out_dim: 10
+      LogicLayer067:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 10
+        out_dim: 10
+      LogicLayer068:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 10
+        out_dim: 10
+      LogicLayer069:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 10
+        out_dim: 10
+      LogicLayer070:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 10
+        out_dim: 10
+      LogicLayer071:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 10
+        out_dim: 10
+      LogicLayer072:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 10
+        out_dim: 10
+      LogicLayer073:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 10
+        out_dim: 10
+      LogicLayer074:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 10
+        out_dim: 10
+      LogicLayer075:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 10
+        out_dim: 10
+      LogicLayer076:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 10
+        out_dim: 10
+      LogicLayer077:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 10
+        out_dim: 10
+      LogicLayer078:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 10
+        out_dim: 10
+      LogicLayer079:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 10
+        out_dim: 10
+      LogicLayer080:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 10
+        out_dim: 10
+      LogicLayer081:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 10
+        out_dim: 10
+      LogicLayer082:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 10
+        out_dim: 10
+      LogicLayer083:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 10
+        out_dim: 10
+      LogicLayer084:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 10
+        out_dim: 10
+      LogicLayer085:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 10
+        out_dim: 10
+      LogicLayer086:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 10
+        out_dim: 10
+      LogicLayer087:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 10
+        out_dim: 10
+      LogicLayer088:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 10
+        out_dim: 10
+      LogicLayer089:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 10
+        out_dim: 10
+      LogicLayer090:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 10
+        out_dim: 10
+      LogicLayer091:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 10
+        out_dim: 10
+      LogicLayer092:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 10
+        out_dim: 10
+      LogicLayer093:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 10
+        out_dim: 10
+      LogicLayer094:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 10
+        out_dim: 10
+      LogicLayer095:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 10
+        out_dim: 10
+      LogicLayer096:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 10
+        out_dim: 10
+      LogicLayer097:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 10
+        out_dim: 10
+      LogicLayer098:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 10
+        out_dim: 10
+      LogicLayer099:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 10
+        out_dim: 10
+      LogicLayer100:
+        connections: random
+        device: cuda
+        grad_factor: 2
+        implementation: cuda
+        in_dim: 10
+        out_dim: 10
+    learning_rate: 0.01
+    output_size: 10
+    tau: 10
