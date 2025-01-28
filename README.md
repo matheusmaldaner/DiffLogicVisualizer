@@ -26,11 +26,6 @@ A tool to visualize the internal structure and activation paths of logic gate ne
 This project was developed as part of **SwampHacks X** (2025), a 24-hour hackathon hosted at the University of Florida.
 ![Magnifying Glass GIF](https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExaXZtOTFlMjh5a3RnNnozMWNlaG85ZnIxMHhmNzNxcW9vOTBtMW54ciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/2YMTiU37AgRXyjTX1q/giphy.gif)
 
-## 🎥 Demo Video
-[![Watch the demo video](https://github.com/user-attachments/assets/d6ec7ac3-1de9-4e86-a393-e3f66e15a5e7)](https://www.youtube.com/watch?v=QbDwbOWFjFY&ab_channel=Singla%2CDanushK)
-
-
-
 ## Features
 
 - Upload trained model files (`.pth` format).
@@ -38,6 +33,9 @@ This project was developed as part of **SwampHacks X** (2025), a 24-hour hackath
 - Display activation paths for user-uploaded images during the forward pass.
 - Support for real-time interaction with the visualization (zoom, filter, highlight).
 - Educational insights on neural network operations.
+
+## 🎥 Demo Video
+[![Watch the demo video](https://github.com/user-attachments/assets/d6ec7ac3-1de9-4e86-a393-e3f66e15a5e7)](https://www.youtube.com/watch?v=QbDwbOWFjFY&ab_channel=Singla%2CDanushK)
 
 ## Getting Started
 
