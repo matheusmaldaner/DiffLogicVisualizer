@@ -4,6 +4,8 @@ A tool to visualize the internal structure and activation paths of logic gate ne
 
 <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExbWY5b2I4MW5pZjh3cmRnY3Z1NTE5a3o4emdtaWVyaGFyc3poajFtcSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/pvQdvmsOrx9Xt3joHZ/giphy.gif" alt="Workflow" style="width:800px; height:auto; display:block; margin:0; padding:0;">
 
+
+
 ## Table of Contents
 
 - [Overview](#overview)
@@ -23,6 +25,11 @@ A tool to visualize the internal structure and activation paths of logic gate ne
 
 This project was developed as part of **SwampHacks X** (2025), a 24-hour hackathon hosted at the University of Florida.
 ![Magnifying Glass GIF](https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExaXZtOTFlMjh5a3RnNnozMWNlaG85ZnIxMHhmNzNxcW9vOTBtMW54ciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/2YMTiU37AgRXyjTX1q/giphy.gif)
+
+## 🎥 Demo Video
+[![Watch the demo video](https://github.com/user-attachments/assets/d6ec7ac3-1de9-4e86-a393-e3f66e15a5e7)](https://www.youtube.com/watch?v=QbDwbOWFjFY&ab_channel=Singla%2CDanushK)
+
+
 
 ## Features
 
