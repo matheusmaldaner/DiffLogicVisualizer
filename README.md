@@ -1,6 +1,6 @@
-# Neural Network Visualizer
+# DiffLogic Visualizer
  
-A tool to visualize the internal structure and activation paths of logic gate neural networks. This project aims to make neural networks more interpretable and user-friendly by providing an interactive graph-based visualization of their operations.
+A tool to visualize the internal structure and activation paths of Differentiable Logic Gate Networks (DiffLogic). This project aims to make DiffLogic more interpretable and user-friendly by providing an interactive graph-based visualization of its internal operations.
 
 <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExbWY5b2I4MW5pZjh3cmRnY3Z1NTE5a3o4emdtaWVyaGFyc3poajFtcSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/pvQdvmsOrx9Xt3joHZ/giphy.gif" alt="Workflow" style="width:800px; height:auto; display:block; margin:0; padding:0;">
 
@@ -18,12 +18,11 @@ A tool to visualize the internal structure and activation paths of logic gate ne
 
 ## Overview
 
-**Neural Network Visualizer** is an interactive web-based tool designed to:
-1. Visualize the structure and connections within a trained logic gate neural network.
+**DiffLogic Visualizer** is an interactive web-based tool designed to:
+1. Visualize the structure and connections within a trained differentiable logic gate neural network.
 2. Demonstrate the forward pass of the model on user-provided input images.
 3. Highlight the activation paths and provide insights into how the model arrives at a classification.
 
-This project was developed as part of **SwampHacks X** (2025), a 24-hour hackathon hosted at the University of Florida.
 ![Magnifying Glass GIF](https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExaXZtOTFlMjh5a3RnNnozMWNlaG85ZnIxMHhmNzNxcW9vOTBtMW54ciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/2YMTiU37AgRXyjTX1q/giphy.gif)
 
 ## Features
@@ -32,7 +31,7 @@ This project was developed as part of **SwampHacks X** (2025), a 24-hour hackath
 - Generate a graph-based visualization of nodes (neurons) and edges (connections).
 - Display activation paths for user-uploaded images during the forward pass.
 - Support for real-time interaction with the visualization (zoom, filter, highlight).
-- Educational insights on neural network operations.
+- Educational insights on internal DiffLogic decision making process.
 
 ## 🎥 Demo Video
 [![Watch the demo video](https://github.com/user-attachments/assets/d6ec7ac3-1de9-4e86-a393-e3f66e15a5e7)](https://www.youtube.com/watch?v=QbDwbOWFjFY&ab_channel=Singla%2CDanushK)
@@ -108,9 +107,4 @@ To run this project locally, you will need:
 - Danush Singla - [GitHub](https://github.com/danushsingla)
 - Kristian O'Connor - [GitHub](https://github.com/kroc99)
 - Matheus Kunzler Maldaner - [GitHub](https://github.com/matheusmaldaner)
-
-## Acknowledgments
-
-- SwampHacks X organizers and sponsors
-- [MLH](https://mlh.io) for hackathon guidance
 
