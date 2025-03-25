@@ -58,7 +58,8 @@ MIDDLEWARE = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3001",  # Might need to change depending on where nxtjs is running
+    "http://localhost:3001",
+    "http://192.168.1.97:3001",  # Might need to change depending on where nxtjs is running
 ]
 
 ROOT_URLCONF = "mybackend.urls"

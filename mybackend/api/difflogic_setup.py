@@ -3,7 +3,7 @@ import torch
 import numpy as np
 from .difflogic_cpu import DiffLogic
 
-MODEL_ROOT = "mybackend/api/trained_models/mnist_trained_models" 
+MODEL_ROOT = "api/trained_models/mnist_trained_models" 
 BUILTIN_MODELS = {"model_001", "model_002", "model_003"}
 
 def load_difflogic_model(path: str) -> DiffLogic:
