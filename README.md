@@ -7,11 +7,9 @@
 
 <!-- Badges (edit links as needed) -->
 ![Python](https://img.shields.io/badge/python-3.9%2B-orange)
-![Node.js](https://img.shields.io/badge/node.js-%3E%3D16-339933?logo=node.js&logoColor=white)
 [![Backend](https://img.shields.io/badge/backend-Django-0C4B33?logo=django&logoColor=white)](https://www.djangoproject.com/)
 [![ML](https://img.shields.io/badge/ML-PyTorch-EE4C2C?logo=pytorch&logoColor=white)](https://pytorch.org/)
 [![Frontend](https://img.shields.io/badge/frontend-Next.js-000000?logo=nextdotjs&logoColor=white)](https://nextjs.org/)
-[![Viz](https://img.shields.io/badge/visualization-D3.js-F9A03C?logo=d3dotjs&logoColor=white)](https://d3js.org/)
 <a href="https://devpost.com/software/neural-network-visualizer">
   <img alt="🏆 SwampHacks X - Best AI Hack" src="https://img.shields.io/badge/🏆%20SwampHacks%20X-Best%20AI%20Hack-yellow">
 </a>
