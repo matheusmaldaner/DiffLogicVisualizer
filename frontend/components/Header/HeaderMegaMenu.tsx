@@ -65,10 +65,10 @@ import axios from 'axios';
       setProbabilities(response.data.probabilities);
 
       setImage(response.data.image_url);
-
-      console.log(response.data);
     } catch (error) {
-      console.error("Error uploading image:", error);
+      if (process.env.NODE_ENV === 'development') {
+        console.error("Error uploading image:", error);
+      }
       alert("An error occurred while uploading the image.");
     }
   };

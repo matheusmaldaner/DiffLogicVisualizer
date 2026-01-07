@@ -4,6 +4,7 @@ from rest_framework import status
 import torch
 from PIL import Image
 import io
+import logging
 from django.core.files.base import ContentFile
 from django.core.files.storage import default_storage
 from datetime import datetime
@@ -16,8 +17,8 @@ from .difflogic_setup import (
     get_model_info
 )
 
-pr_cl = None
-mod_info = None
+# Use logging instead of print statements
+logger = logging.getLogger(__name__)
 
 class ModelAPIView(APIView):
     """
@@ -91,10 +92,6 @@ class ImageAPIView(APIView):
                 # Get the probabilities of all gates for the neuron
                 gate_probs = torch.nn.functional.softmax(layer.weights[neuron_idx], dim=0).tolist()
 
-                for i, prob in enumerate(gate_probs):
-                    print(prob)
-    
-
                 # store the gate and connections
                 layer_connections.append({
                     'neuron_idx': neuron_idx,
@@ -147,8 +144,9 @@ class ImageAPIView(APIView):
                 width, height = pil_img.size
                 image_tensor = torch.tensor(list(pil_img.getdata()), dtype=torch.float32)
 
-            print('Image saved and verified successfully')
+            logger.debug('Image saved and verified successfully')
         except Exception as e:
+            logger.error(f"Failed to save or verify image: {str(e)}")
             return Response({"error": f"Failed to save or verify image: {str(e)}"}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
         # 3. (Optional) Resize/check shape. For a 20x20 model:
@@ -167,8 +165,10 @@ class ImageAPIView(APIView):
 
         # 7. Retrieve model structure info
         info = get_model_info(model)
-        mod_info = info
-        pr_cl = predicted_class
+
+        # Store in session for retrieval via OutputAPIView (thread-safe)
+        request.session['predicted_class'] = predicted_class
+        request.session['model_info'] = info
 
         # 8. Return everything in the response
         return Response({
@@ -177,16 +177,23 @@ class ImageAPIView(APIView):
             "image_url": image_url,
             "connections": connections
         }, status=status.HTTP_200_OK)
-    
+
+
 class OutputAPIView(APIView):
+    """
+    Retrieve the last processed image results from session storage.
+    This is thread-safe unlike the previous global variable approach.
+    """
     def get(self, request, *args, **kwargs):
-        global pr_cl
-        global mod_info
-        if pr_cl is None or mod_info is None:
+        predicted_class = request.session.get('predicted_class')
+        model_info = request.session.get('model_info')
+
+        if predicted_class is None or model_info is None:
             return Response({
                 "error": "No image has been processed yet."
             }, status=status.HTTP_400_BAD_REQUEST)
+
         return Response({
-            "predicted_class": pr_cl,
-            "model_info": mod_info
+            "predicted_class": predicted_class,
+            "model_info": model_info
         }, status=status.HTTP_200_OK)

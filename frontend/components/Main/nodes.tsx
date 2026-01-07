@@ -522,27 +522,23 @@ export const defaultNodes: Node<any>[] = [
     },
     position: { x: 50, y: 50 },
     style: { backgroundColor: '#6ede87', color: 'white' },
-    // @ts-ignore to suppress TypeScript error for sourcePosition
-    sourcePosition: 'right',
-    // @ts-ignore to suppress TypeScript error for sourcePosition
-    targetPosition: 'left',
+    sourcePosition: Position.Right,
+    targetPosition: Position.Left,
   },
   {
     id: '2',
     data: { label: <XnorGate /> },
     position: { x: 300, y: 50 },
     style: {
-      backgroundColor: 'transparent', // Make background transparent
-      border: 'none', // Remove border
-      boxShadow: 'none', // Remove shadow
-      width: 'auto', // Fit to content
-      height: 'auto', // Fit to content
-      padding: 0, // Remove padding
+      backgroundColor: 'transparent',
+      border: 'none',
+      boxShadow: 'none',
+      width: 'auto',
+      height: 'auto',
+      padding: 0,
     },
-    // @ts-ignore to suppress TypeScript error for sourcePosition
-    sourcePosition: 'right',
-    // @ts-ignore to suppress TypeScript error for sourcePosition
-    targetPosition: 'left',
+    sourcePosition: Position.Right,
+    targetPosition: Position.Left,
   },
   {
     id: '3',
@@ -550,9 +546,7 @@ export const defaultNodes: Node<any>[] = [
     data: { label: 'Output Node' },
     position: { x: 500, y: 50 },
     style: { backgroundColor: '#6865A5', color: 'white' },
-    // @ts-ignore to suppress TypeScript error for sourcePosition
-    sourcePosition: 'right',
-    // @ts-ignore to suppress TypeScript error for sourcePosition
-    targetPosition: 'left',
+    sourcePosition: Position.Right,
+    targetPosition: Position.Left,
   },
 ];

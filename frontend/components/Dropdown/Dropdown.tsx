@@ -13,12 +13,14 @@ export function Dropdown() {
     try {
       // IMPORTANT: use the correct endpoint from your Django urls.py:
       // path('difflogic-models/', ModelAPIView.as_view(), ...)
-      const response = await axios.post('http://127.0.0.1:8000/api/difflogic-models/', {
-        model_choice: value, // Send the selected model choice
+      await axios.post('http://127.0.0.1:8000/api/difflogic-models/', {
+        model_choice: value,
       });
-      console.log('Response from API:', response.data);
     } catch (error: any) {
-      console.error('Error loading model:', error.response?.data || error.message);
+      // Log errors for debugging in development
+      if (process.env.NODE_ENV === 'development') {
+        console.error('Error loading model:', error.response?.data || error.message);
+      }
     } finally {
       setLoading(false);
     }

@@ -1,10 +1,9 @@
-import { Grid, Container, Table, Popover, Text, Group, Progress } from '@mantine/core';
+import { Table, Popover, Text, Group, Progress } from '@mantine/core';
 import Image from 'next/image';
-import classes from './Main.module.css';
 import { useEffect, useRef, useState, useCallback } from 'react';
 import * as d3 from 'd3';
 
-import { ReactFlow, MiniMap, applyNodeChanges, applyEdgeChanges } from '@xyflow/react';
+import { ReactFlow, MiniMap, applyNodeChanges, applyEdgeChanges, NodeChange, EdgeChange, Node, Edge } from '@xyflow/react';
 import '@xyflow/react/dist/style.css';
 
 import EmperorPenguinBabyImage from '../../pics/EmperorPenguinBaby.jpeg';
@@ -12,18 +11,22 @@ import SouthernRockhopperPenguinImage from '../../pics/SouthernRockhopperPenguin
 import GentooPenguin from '../../pics/GentooPenguin.jpg';
 
 import { AndGate, NorGate, OrGate, XorGate, NandGate, XnorGate, TrueGate, FalseGate, NotGate, PassThroughGate, ImplyGate, NotImplyGate, ImpliedByGate, NotImpliedByGate } from './nodes';
-import { defaultEdges } from './edges';
 
 import NodeGate from '../NodeGate';
 
-import jsonData from '../../temp.json';
-import { start } from 'repl';
-import { input } from '@testing-library/user-event/dist/types/event';
+// Type definitions for better TypeScript support
+interface NodeData {
+  label: React.ReactNode;
+  probabilities?: Record<string, number>;
+}
 
-import { ProbabilityTable } from '../ProbabilityPopup/ProbabilityPopup';
+interface CustomNodeProps {
+  id: string;
+  data: NodeData;
+}
 
 // Custom Node Component
-const CustomNode = ({ id, data }) => {
+const CustomNode = ({ id, data }: CustomNodeProps) => {
   return (
     <div>
       {data.label}
@@ -34,15 +37,23 @@ const CustomNode = ({ id, data }) => {
   );
 };
 
-export function Main(props: any) {
+interface MainProps {
+  selectedImage?: string;
+  modelInfo?: unknown;
+  predClasses?: unknown;
+  connections?: unknown[];
+  probabilities?: unknown;
+}
+
+export function Main(props: MainProps) {
   const [leftImagePosition, setLeftImagePosition] = useState<{ top: number, left: number }>({ top: 0, left: 0 });
   const [centerImagePosition, setCenterImagePosition] = useState<{ top: number, left: number }>({ top: 0, left: 0 });
 
   const leftImageRef = useRef<HTMLImageElement | null>(null);
   const centerImageRef = useRef<HTMLImageElement | null>(null);
 
-  const [defaultNodes, setDefaultNodes] = useState<any[]>([]);
-  const [defaultEdges, setDefaultEdges] = useState<any[]>([]);
+  const [nodes, setNodes] = useState<Node[]>([]);
+  const [edges, setEdges] = useState<Edge[]>([]);
 
   const [hoveredNode, setHoveredNode] = useState<any | null>(null); // Track hovered node
   const [popoverPosition, setPopoverPosition] = useState<{ x: number; y: number }>({ x: 0, y: 0 }); // Position of popover
@@ -50,14 +61,12 @@ export function Main(props: any) {
   const [startGate, setStartGate] = useState('');
 
   const onNodesChange = useCallback(
-    // @ts-ignore to suppress TypeScript error
-    (changes) => setDefaultNodes((nds) => applyNodeChanges(changes, nds)),
+    (changes: NodeChange[]) => setNodes((nds) => applyNodeChanges(changes, nds)),
     []
   );
 
   const onEdgesChange = useCallback(
-    // @ts-ignore to suppress TypeScript error
-    (changes) => setDefaultEdges((eds) => applyEdgeChanges(changes, eds)),
+    (changes: EdgeChange[]) => setEdges((eds) => applyEdgeChanges(changes, eds)),
     []
   );
   
@@ -90,7 +99,6 @@ export function Main(props: any) {
     setPrediction(props.predClasses);
     setConnections(props.connections);
     setProbabilities(props.probabilities);
-    console.log(props.connections)
   }, [props.modelInfo, props.predClasses, props.connections, props.probabilities]);
 
   useEffect(() => {
@@ -106,13 +114,12 @@ export function Main(props: any) {
   }, []);
 
   useEffect(() => {
-    console.log("Before connections:", connections);
-    if (!connections || !Array.isArray(connections) || connections === null || connections === undefined) {
+    if (!connections || !Array.isArray(connections)) {
       return;
     }
 
     // Map gate strings to corresponding components
-    const gateMap = {
+    const gateMap: Record<string, React.ReactNode> = {
       'zero': <FalseGate />,
       'and': <AndGate />,
       'not_implies': <NotImplyGate />,
@@ -131,19 +138,18 @@ export function Main(props: any) {
       'one': <TrueGate />,
     };
 
-    const newNodes = [];
-    const newEdges = [];
+    const newNodes: Node[] = [];
+    const newEdges: Edge[] = [];
 
-    connections.forEach((layer, layerIndex) => {
+    connections.forEach((layer: any, layerIndex: number) => {
       const layerX = layerIndex * LAYER_SPACING; // Fixed x position for this layer
-    
+
       // Create nodes for this layer
-      layer.forEach((node, nodeIndex) => {
+      layer.forEach((node: any, nodeIndex: number) => {
         if (node.inputs === null || node.inputs === undefined) {
-          console.log("No inputs for node", node.neuron_idx);
           return;
         }
-    
+
         const [left, right] = node.inputs;
         const nodeGate = new NodeGate(
           `${layerIndex}-${node.neuron_idx}`, // Combine layerIndex and neuron_idx for a unique key
@@ -153,9 +159,8 @@ export function Main(props: any) {
           true,
           node.probabilities
         );
-    
-        // @ts-ignore
-        const gateComponent = gateMap[node.gate] || <div>Unknown Gate</div>;
+
+        const gateComponent = gateMap[node.gate as string] || <div>Unknown Gate</div>;
     
         // Calculate y position with constant spacing
         const nodeY = nodeIndex * NODE_SPACING;
@@ -241,12 +246,9 @@ export function Main(props: any) {
     });
 
     // Update state with generated nodes
-    setDefaultNodes(newNodes);
-    setDefaultEdges(newEdges);
-
-    console.log(newNodes)
-    console.log(newEdges)
-  }, [connections, selectedImage, startGate]); // Empty dependency array to run once on mount
+    setNodes(newNodes);
+    setEdges(newEdges);
+  }, [connections, selectedImage, startGate]);
 
   useEffect(() => {
     // Draw the lines using D3
@@ -315,10 +317,9 @@ export function Main(props: any) {
   };
 
   return (
-    <div style={{ height: '500px', width: '100%' }}> {/* Specify a height */}
-    {/* @ts-ignore to suppress TypeScript error */}
-    {defaultNodes.length > 0 && (
-      <ReactFlow nodes={defaultNodes} edges={defaultEdges} onNodesChange={onNodesChange} onEdgesChange={onEdgesChange} nodeTypes={{custom: CustomNode}} fitView   onNodeMouseEnter={(event, node) => {
+    <div style={{ height: '500px', width: '100%' }}>
+    {nodes.length > 0 && (
+      <ReactFlow nodes={nodes} edges={edges} onNodesChange={onNodesChange} onEdgesChange={onEdgesChange} nodeTypes={{custom: CustomNode}} fitView onNodeMouseEnter={(event, node) => {
         const nodeElement = event.currentTarget;
         const nodeRect = nodeElement.getBoundingClientRect();
         const nodeWidth = nodeRect.width;

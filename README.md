@@ -68,8 +68,8 @@ You have to run the backend and frontend in **two** separate terminal sessions.
 
 ```bash
 git clone https://github.com/matheusmaldaner/DiffLogicVisualizer.git
-cd logic-gate-visualizer
-cd backend
+cd DiffLogicVisualizer
+cd mybackend
 
 python -m venv venv
 source venv/bin/activate  # Windows: venv\Scripts\activate
@@ -87,12 +87,12 @@ python manage.py runserver
 In a new terminal (while the backend is running):
 
 ```bash
-cd frontend
+cd DiffLogicVisualizer/frontend
 npm install
 npm run dev
 ```
 
-Open: `http://localhost:3000`
+Open: `http://localhost:3001`
 
 ## 🧩 Tech Stack
 
