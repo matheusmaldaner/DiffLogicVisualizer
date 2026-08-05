@@ -58,7 +58,7 @@ export function Main(props: MainProps) {
   const [hoveredNode, setHoveredNode] = useState<any | null>(null); // Track hovered node
   const [popoverPosition, setPopoverPosition] = useState<{ x: number; y: number }>({ x: 0, y: 0 }); // Position of popover
 
-  const [startGate, setStartGate] = useState('');
+  const [startGate, setStartGate] = useState('0');
 
   const onNodesChange = useCallback(
     (changes: NodeChange[]) => setNodes((nds) => applyNodeChanges(changes, nds)),
@@ -80,13 +80,13 @@ export function Main(props: MainProps) {
   const NODE_SPACING = 100; // Vertical spacing between nodes in the same layer
 
   useEffect(() => {
-    if (props.selectedImage === '/_next/static/media/EmperorPenguinBaby.7955bfc0.jpeg') {
+    if (props.selectedImage === EmperorPenguinBabyImage.src) {
       setSelectedImage(EmperorPenguinBabyImage);
     }
-    else if (props.selectedImage === '/_next/static/media/SouthernRockhopperPenguin.ae32a423.jpg') {
+    else if (props.selectedImage === SouthernRockhopperPenguinImage.src) {
       setSelectedImage(SouthernRockhopperPenguinImage);
     }
-    else if (props.selectedImage === '/_next/static/media/GentooPenguin.8585d424.jpg') {
+    else if (props.selectedImage === GentooPenguin.src) {
       setSelectedImage(GentooPenguin);
     }
     else if (props.selectedImage) {
