@@ -141,7 +141,7 @@ import axios from 'axios';
           </Group>
         </header>
 
-        {image && <Main selectedImage={image} modelInfo={info} predClasses={prediction} connections={connections} probabilities={probabilities} style={{ position: 'absolute', top: '100vh' }} />}
+        {image && <Main selectedImage={image} modelInfo={info} predClasses={prediction} connections={connections} probabilities={probabilities} />}
 
         <Dropdown />
       </Box>

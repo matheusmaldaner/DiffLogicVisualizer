@@ -8,4 +8,6 @@ api/__pycache__
 mybackend/api/migrations/__pycache__
 node_modules*
 package-lock.json
-difflogic*
+difflogic*frontend/.next/
+frontend/out/
+frontend/.yarn/

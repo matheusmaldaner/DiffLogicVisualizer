@@ -70,7 +70,7 @@ export function Main(props: MainProps) {
     []
   );
   
-  const [selectedImage, setSelectedImage] = useState(EmperorPenguinBabyImage);
+  const [selectedImage, setSelectedImage] = useState<typeof EmperorPenguinBabyImage | string>(EmperorPenguinBabyImage);
   const [modelInfo, setModelInfo] = useState<any | null>(null);
   const [predClasses, setPrediction] = useState<any | null>(null);
   const [connections, setConnections] = useState<any | null>(null);
@@ -89,7 +89,7 @@ export function Main(props: MainProps) {
     else if (props.selectedImage === '/_next/static/media/GentooPenguin.8585d424.jpg') {
       setSelectedImage(GentooPenguin);
     }
-    else{
+    else if (props.selectedImage) {
       setSelectedImage(props.selectedImage);
     }
   }, [props.selectedImage]);
