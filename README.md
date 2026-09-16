@@ -117,3 +117,7 @@ Open: `http://localhost:3001`
 - Danush Singla — [GitHub](https://github.com/danushsingla)  
 - Kristian O'Connor — [GitHub](https://github.com/kroc99)  
 - Matheus Kunzler Maldaner — [GitHub](https://github.com/matheusmaldaner)  
+
+## Thesis reproducibility archive
+
+The retrospective artifact recovery, accuracy review, provenance records, errata, and executable checks for the associated undergraduate thesis are available in the public [Undergraduate Thesis Reproducibility Archive](https://github.com/matheusmaldaner/UndergradThesis).
